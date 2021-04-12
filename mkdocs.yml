@@ -1,11 +1,12 @@
 site_name: OSG Virtual School 2021
 site_url: https://opensciencegrid.org/virtual-school-2021
-repo_name: https://github.com/opensciencegrid/virtual-school-2021
+repo_name: null
 theme:
   name: material
 
 nav:
-  - Home: 'index.md'
+  - Home:                    index.md
+  - Schedule:                schedule.md
 
 markdown_extensions:
   - admonition

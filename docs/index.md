@@ -1,7 +1,25 @@
 # OSG Virtual School 2021
 
-More information about the Virtual School, including schedule and materials for participants,
-will be posted soon!
+The OSG User School for 2021 will be virtual again,
+so we call it the OSG Virtual School 2021.
+
+Based on experiences with the successful
+[the OSG Virtual School Pilot 2020](https://opensciencegrid.org/virtual-school-pilot-2020/),
+the goal is to provide a training and consulting event
+in which each participant works to get their research computing running within the two week period.
+We think that this approach is a better use of the virtual format
+rather than simply translating the User School for remote participation.
+
+The Virtual School will be held the weeks of August 2&ndash;6 and 9&ndash;13.
+While no travel is involved and the schedule allows for some flexibility,
+the expectation is that participants commit to about 20 hours each week.
+Thus, the time commitment is similar to the in-person User School.
+
+Applications will open in late April or early May.
+A link to the application system will be posted here for the entire application period.
+
+Until then, there is [a high-level schedule](schedule.md) available
+so that you can get a better sense of what the Virtual School is about.
 
 ## Contact Us
 
