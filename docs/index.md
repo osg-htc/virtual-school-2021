@@ -1,7 +1,7 @@
 # OSG Virtual School 2021
 
-The OSG User School for 2021 will be virtual again,
-so we call it the OSG Virtual School 2021.
+The OSG Virtual School 2021 will be offered instead of in in-person OSG User School.
+We hope to return to an in-person OSG User School in 2022!
 
 Based on experiences with the successful
 [the OSG Virtual School Pilot 2020](https://opensciencegrid.org/virtual-school-pilot-2020/),
