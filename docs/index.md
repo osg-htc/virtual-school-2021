@@ -20,7 +20,7 @@ The Virtual School will be held **the weeks of August 2&ndash;6 and 9&ndash;13**
 Participation is **free** and with materials publicly posted. A selective application process is required 
 for live participation, which includes access to HTC systems via the 
 [Center for High Throughput Computing](https://chtc.cs.wisc.edu/approach.shtml) (at UW-Madison)
-and [OSG Connect service](https://www.osgconnect.net/) (otherwise available to researchers working for 
+and [OSG Connect](https://www.osgconnect.net/) service (otherwise available to researchers working for 
 on US-based academic/govt/non-profit research project).
 
 While **no travel is involved and the schedule allows for some flexibility**,
