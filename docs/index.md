@@ -16,7 +16,7 @@ _We hope to return to an in-person OSG User School in 2022!_ This virtual offeri
 participation, with the goal of helping attendees get their own work running within a two-week period, and 
 is not merely a translation of the in-person program (last offered in [2019](https://opensciencegrid.org/user-school-2019/)).
 
-The Virtual School will be held **the weeks of August 2&ndash;6 and 9&ndash;13**. 
+**The Virtual School will be held the weeks of August 2&ndash;6 and 9&ndash;13**. 
 Participation is **free** and with materials publicly posted. A selective application process is required 
 for live participation, which includes access to HTC systems via the 
 [Center for High Throughput Computing](https://chtc.cs.wisc.edu/approach.shtml) (at UW-Madison)
