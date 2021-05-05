@@ -12,7 +12,7 @@ The School is ideal for graduate students in any research area for whom beyond-t
 is a vital part of the research process; we also accept applications from advanced undergraduates, 
 post-doctoral students, faculty, and staff!
 
-We hope to return to an in-person OSG User School in 2022! This virtual offering has been tuned for remote 
+_We hope to return to an in-person OSG User School in 2022!_ This virtual offering has been tuned for remote 
 participation, with the goal of helping attendees get their own work running within a two-week period, and 
 is not merely a translation of the in-person program (last offered in [2019](https://opensciencegrid.org/user-school-2019/)).
 
