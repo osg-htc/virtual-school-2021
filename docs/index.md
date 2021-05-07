@@ -1,5 +1,7 @@
 # OSG Virtual School 2021
 
+<p style="color: #FF6600;"><strong>Applications now open!</strong> Due May 28 &ndash; see below for link.</p>
+
 <p style="font-size: larger; font-weight: bold;">Transform your research with vast amounts of computing!</p>
 
 The OSG Virtual School 2021 will prepare you to use high throughput computing (HTC)&nbsp;&mdash;
@@ -32,9 +34,43 @@ You can view [the high-level schedule for 2021](schedule.md),
 and we expect the detailed schedule and materials to be similar to the 
 [2020 OSG Virtual School Pilot](https://opensciencegrid.org/virtual-school-pilot-2020/).
 
-**Applications will open in early May**; check back here then.
-
 Note: We hope to return to an in-person OSG User School in 2022!
+
+## Applications
+
+Applications are now open.
+**The deadline for applications is Friday, 28 May 2021.**
+Submit your application soon to ensure consideration!
+
+To apply, complete both of the steps below (in parallel, if you like):
+
+*   Complete the [online application form](https://uwmadison.co1.qualtrics.com/jfe/form/SV_0SZ8duEyHLZYVdI)
+    (link goes to Qualtrics website, which hosts the application)
+
+*   Have someone email a letter of recommendation for you to
+    [user-school@opensciencegrid.org](mailto:user-school@opensciencegrid.org)
+    (any reasonable format is fine; we like PDF or plain text best)
+
+For the letter of recommendation, ask someone who knows you professionally&nbsp;&mdash;
+ideally a faculty member or other supervisor.
+They should clearly identify your name and “OSG Virtual School 2021” in the subject line and letter,
+so that we can associate your application and letter.
+
+Ideal candidates will:
+
+*   Be graduate students doing research or support staff helping researchers (but see below)
+*   Need large amounts of computing, which could transform research or open new paths to discovery
+*   Have basic experience with the Linux command line (or learn beforehand)
+*   Be able to commit to at least 20 hours each week for the School dates
+
+**Not a graduate student or support staff?**
+We consider applications from advanced undergraduates,
+especially those who are involved in graduate-level research or coursework;
+make a good case for yourself!
+Also, we consider people in other groups
+(post-doctoral researchers, faculty, researchers, other staff, etc.),
+especially if you convince us that this opportunity is likely
+to have a significant effect on your work or research, or that of others.
 
 ## Contact Us
 
