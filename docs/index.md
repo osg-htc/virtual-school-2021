@@ -4,7 +4,7 @@
 
 The OSG Virtual School 2021 will prepare you to use high throughput computing (HTC)&nbsp;&mdash;
 whether on a local system or using the 
-OSG](https://www.youtube.com/watch?v=t2PzIy-vvaE&list=PLBWb4iScSWcPy7LQ4BuXmm8Z2xO4ZW1J_)&nbsp;&mdash;
+[OSG](https://www.youtube.com/watch?v=t2PzIy-vvaE&list=PLBWb4iScSWcPy7LQ4BuXmm8Z2xO4ZW1J_)&nbsp;&mdash;
 to run large-scale research simulation, analysis, and other applications for cutting-edge science.
 Through lecture, demonstration, hands-on exercises, and
 a personalized learning plan that includes one-on-one and small-group consulting with experienced OSG staff,
