@@ -13,7 +13,8 @@ The first instance is for School participants only,
 and the second instance is for School participants and the general public who have registered in advance.
 Participants may attend one or both times.
 
-During the times marked as &ldquo;Free&rdquo;, School staff will be monitoring email and Slack for questions.
+During the times marked as &ldquo;Staff available&rdquo;,
+School staff will be monitoring email and Slack for questions.
 So these are good times to work on School-related activities&nbsp;&mdash;
 such as exercises or applying things to your own work.
 
@@ -25,51 +26,51 @@ such as exercises or applying things to your own work.
 
 | **Times<br>(US Central)** | **Activities** |
 | ---: | :--- |
-|  9:00&ndash;10:00 | Free *or* (scheduled separately:) mentor 1-1 meetings and mentor group meetings |
+|  9:00&ndash;10:00 | Staff available; (scheduled separately:) mentor 1-1 meetings and mentor group meetings |
 | 10:00&ndash;11:00 | **Lecture:** Introduction to High Throughput Computing (participants only) |
-| 11:00&ndash;14:30 | Free *or* (scheduled separately:) mentor 1-1 meetings and mentor group meetings |
+| 11:00&ndash;14:30 | Staff available; (scheduled separately:) mentor 1-1 meetings and mentor group meetings |
 | 14:30&ndash;15:30 | **Lecture:** Introduction to High Throughput Computing (public) |
-| 15:30&ndash;17:00 | Free *or* (scheduled separately:) mentor 1-1 meetings and mentor group meetings |
+| 15:30&ndash;17:00 | Staff available; (scheduled separately:) mentor 1-1 meetings and mentor group meetings |
 
 ### Tuesday, August 3
 
 | **Times<br>(US Central)** | **Activities** |
 | ---: | :--- |
-|  9:00&ndash;10:00 | Free |
+|  9:00&ndash;10:00 | Staff available |
 | 10:00&ndash;11:30 | **Lecture and demonstration:** Introduction to HTCondor (participants only) |
-| 11:30&ndash;14:30 | Free |
+| 11:30&ndash;14:30 | Staff available |
 | 14:30&ndash;16:00 | **Lecture and demonstration:** Introduction to HTCondor (public) |
-| 16:00&ndash;17:00 | Free |
+| 16:00&ndash;17:00 | Staff available |
 
 ### Wednesday, August 4
 
 | **Times<br>(US Central)** | **Activities** |
 | ---: | :--- |
-|  9:00&ndash;10:00 | Free |
+|  9:00&ndash;10:00 | Staff available |
 | 10:00&ndash;11:30 | **Lecture and demonstration:** Introduction to OSG (participants only) |
-| 11:30&ndash;14:30 | Free |
+| 11:30&ndash;14:30 | Staff available |
 | 14:30&ndash;16:00 | **Lecture and demonstration:** Introduction to OSG (public) |
-| 16:00&ndash;17:00 | Free |
+| 16:00&ndash;17:00 | Staff available |
 
 ### Thursday, August 5
 
 | **Times<br>(US Central)** | **Activities** |
 | ---: | :--- |
-|  9:00&ndash;10:00 | Free |
+|  9:00&ndash;10:00 | Staff available |
 | 10:00&ndash;11:30 | **Lecture and demonstration:** Software for HTC (participants only) |
-| 11:30&ndash;14:30 | Free |
+| 11:30&ndash;14:30 | Staff available |
 | 14:30&ndash;16:00 | **Lecture and demonstration:** Software for HTC (public) |
-| 16:00&ndash;17:00 | Free |
+| 16:00&ndash;17:00 | Staff available |
 
 ### Friday, August 6
 
 | **Times<br>(US Central)** | **Activities** |
 | ---: | :--- |
-|  9:00&ndash;10:00 | Free |
+|  9:00&ndash;10:00 | Staff available |
 | 10:00&ndash;11:30 | **Lecture and demonstration:** Data for HTC (participants only) |
-| 11:30&ndash;14:30 | Free |
+| 11:30&ndash;14:30 | Staff available |
 | 14:30&ndash;16:00 | **Lecture and demonstration:** Data for HTC (public) |
-| 16:00&ndash;17:00 | Free |
+| 16:00&ndash;17:00 | Staff available |
 
 ## Week 2: August 9&ndash;13
 
@@ -83,21 +84,21 @@ We will do our best to schedule the extra topics at times when interested partic
 
 | **Times<br>(US Central)** | **Activities** |
 | ---: | :--- |
-|  9:00&ndash;10:00 | Free *or* (scheduled separately:) mentor 1-1 meetings |
+|  9:00&ndash;10:00 | Staff available; (scheduled separately:) mentor 1-1 meetings |
 | 10:00&ndash;11:00 | **Extra Topic 1** (details TBD) |
-| 11:00&ndash;15:00 | Free *or* (scheduled separately:) mentor 1-1 meetings |
+| 11:00&ndash;15:00 | Staff available; (scheduled separately:) mentor 1-1 meetings |
 | 15:00&ndash;16:00 | **Extra Topic 2** (details TBD) |
-| 16:00&ndash;17:00 | Free *or* (scheduled separately:) mentor 1-1 meetings |
+| 16:00&ndash;17:00 | Staff available; (scheduled separately:) mentor 1-1 meetings |
 
 ### Tuesday, August 10
 
 | **Times<br>(US Central)** | **Activities** |
 | ---: | :--- |
-|  9:00&ndash;10:00 | Free |
+|  9:00&ndash;10:00 | Staff available |
 | 10:00&ndash;11:00 | **Extra Topic 3** (details TBD) |
-| 11:00&ndash;15:00 | Free |
+| 11:00&ndash;15:00 | Staff available |
 | 15:00&ndash;16:00 | **Extra Topic 4** (details TBD) |
-| 16:00&ndash;17:00 | Free |
+| 16:00&ndash;17:00 | Staff available |
 
 ### Wednesday, August 11
 
@@ -109,15 +110,15 @@ There will be time at the end to talk to the presenters.
 
 | **Times<br>(US Central)** | **Activities** |
 | ---: | :--- |
-|  9:00&ndash;11:00 | Free |
+|  9:00&ndash;11:00 | Staff available |
 | 11:00&ndash;12:30 | **OSG School Showcase** |
-| 12:30&ndash;17:00 | Free |
+| 12:30&ndash;17:00 | Staff available |
 
 ### Thursday, August 12
 
 | **Times<br>(US Central)** | **Activities** |
 | ---: | :--- |
-|  9:00&ndash;17:00 | Free *or* (scheduled separately:) mentor 1-1 meetings |
+|  9:00&ndash;17:00 | Staff available; (scheduled separately:) mentor 1-1 meetings |
 
 ### Friday, August 13
 
@@ -129,6 +130,6 @@ Details, including how to sign up, will be available during the School.
 
 | **Times<br>(US Central)** | **Activities** |
 | ---: | :--- |
-|  9:00&ndash;11:00 | Free *or* (scheduled separately:) mentor 1-1 meetings |
+|  9:00&ndash;11:00 | Staff available; (scheduled separately:) mentor 1-1 meetings |
 | 11:00&ndash;12:30 | **Wrap-up and Lightning Talks** |
-| 12:30&ndash;17:00 | Free *or* (scheduled separately:) mentor 1-1 meetings |
+| 12:30&ndash;17:00 | Staff available; (scheduled separately:) mentor 1-1 meetings |
