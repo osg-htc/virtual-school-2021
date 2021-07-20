@@ -16,7 +16,7 @@ Setup
 1. Log in to `login04.osgconnect.net`
 
 1. Create a directory for this exercise named `blast-split` and change into it.
-1. Copy over the following files from the [previous exercise](/materials/data/part1-ex2-file-transfer.md):
+1. Copy over the following files from the [previous exercise](../part1-ex2-file-transfer):
     - Your submit file
     - `blastx`
     - `pdbaa_files.tar.gz`
@@ -72,7 +72,7 @@ First, you'll create a new submit file that passes the input filename as an argu
 filenames.
 Follow the below steps:
 
-1. Copy the submit file from the [previous exercise](/materials/data/part1-ex2-file-transfer.md) to a new file called `blast_split.sub` and modify the "queue" line of the submit file to the
+1. Copy the submit file from the [previous exercise](../part1-ex2-file-transfer) to a new file called `blast_split.sub` and modify the "queue" line of the submit file to the
    following:
 
         queue inputfile matching mouse_rna.fa.*
@@ -130,7 +130,7 @@ Update the resource requests
 
 After the job finishes successfully, examine the `log` file for memory and disk usage, and update the requests in the
 submit file.
-In [Exercise 2.1](/materials/data/part2-ex1-blast-proxy) you'll submit many jobs at once *and*
+In [Exercise 2.1](../part2-ex1-blast-proxy) you'll submit many jobs at once *and*
 use a different method for handling the `pdbaa_files.tar.gz` file, which is a bit too large to use regular file transfer
 when submitting many jobs.
 

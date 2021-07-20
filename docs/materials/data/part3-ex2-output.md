@@ -78,7 +78,7 @@ Some important considerations:
 
 1.  We're writing our file to the job's working directory, so make sure to request several GB of disk space.
 1.  Add a line to the file that ensures your job will land on computers that have access to Staging
-    (see the file from the [last exercise](/materials/data/part3-ex1-input.md)).
+    (see the file from the [last exercise](../part3-ex1-input)).
 1.  The `executable` will be the script you wrote above.
 
 Once you have a submit file that does all these things, submit the test job.

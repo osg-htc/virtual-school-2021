@@ -7,7 +7,7 @@ Data Exercise 2.3: Using Stash for unique large input
 
 In this exercise, we will run a multimedia program that converts and manipulates video files.
 In particular, we want to convert large `.mov` files to smaller (10-100s of MB) `mp4` files.
-Just like the Blast database in the [previous exercise](/materials/data/part2-ex2-stash-shared.md), these video
+Just like the Blast database in the [previous exercise](../part2-ex2-stash-shared), these video
 files are too large to send to jobs using HTCondor's default file transfer mechanism, so we'll be using the Stash tool
 to send our data to jobs. This exercise should take 25-30 minutes.
 
@@ -63,7 +63,7 @@ We want to write a script that runs on the worker node that uses `ffmpeg` to con
 Our script will need to:
 
 1. **Copy** that movie file from Stash to the job's current working directory (as in the
-   [previous exercise](/materials/data/part2-ex2-stash-shared.md)
+   [previous exercise](../part2-ex2-stash-shared)
 1. **Run** the appropriate `ffmpeg` command
 1. **Remove** the original movie file so that it doesn't get transferred back to the submit server.
    This last step is particularly important, as otherwise you will have large files transferring into the submit server
@@ -88,7 +88,7 @@ Submit File
 -----------
 
 Create a submit file for this job, based on other submit files from the school
-([This file, for example](/materials/data/part1-ex2-file-transfer.md#start-with-a-test-submit-file).)
+([This file, for example](../part1-ex2-file-transfer#start-with-a-test-submit-file).)
 Things to consider:
 
 1.  We'll be copying the video file into the job's working directory, so make sure to request enough disk space for the
@@ -168,7 +168,7 @@ Note that we use the input file name multiple times in our script, so we'll have
         arguments = $(mov) $(mov).mp4
 
 1. To set these arguments, we will use the `queue .. from` syntax that we learned in the 
-   [HTC Exercise 2.3](/materials/htc/part2-ex3-queue-from).
+   [HTC Exercise 2.3](../../htc/part2-ex3-queue-from).
    In our submit file, we can then change our queue statement to:
 
         queue mov from movie_list.txt

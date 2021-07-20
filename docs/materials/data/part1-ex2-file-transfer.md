@@ -21,7 +21,7 @@ The executable we'll use in this exercise and later today is the same `blastx` e
 
 ### Review: HTCondor File Transfer
 
-![OSG data transfer](/materials/data/files/osgus18-data-part2-ex2-data-transfer.jpg)
+![OSG data transfer](../files/osgus18-day4-part2-ex2-data-transfer.jpg)
 
 Recall that OSG does **NOT** have a shared filesystem!
 Instead, HTCondor *transfers* your executable and input files (specified with the `executable` and
@@ -127,6 +127,5 @@ It should take a few minutes to complete, and then you can check to make sure th
 Run a **`du -sh`** on the directory with this job's input.
 How does it compare to the directory from Tuesday, and why?
 
-When you've completed the above, continue with the [next exercise](/materials/data/part1-ex3-blast-split).
+When you've completed the above, continue with the [next exercise](../part1-ex3-blast-split).
 
-/
