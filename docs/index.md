@@ -24,7 +24,7 @@ A selective application process is required for full participation,
 which includes access to HTC experts and to HTC systems via the
 [Center for High Throughput Computing](https://chtc.cs.wisc.edu/approach.shtml) and
 [OSG Connect](https://www.osgconnect.net/) service
-(otherwise available to researchers working on a U.S.-based academic, government, or non-profit research project).
+(the latter otherwise available to researchers working on a U.S.-based academic, government, or non-profit research project).
 
 While no travel is involved and the schedule allows for some flexibility,
 accepted applicants will be asked to commit at least 20 hours each week.
