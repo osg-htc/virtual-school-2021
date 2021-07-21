@@ -4,26 +4,26 @@
 
 ### Intro Exercises 1: Running and Viewing Simple Jobs (Strongly Recommended)
 
-- [Exercise 1.1: Log in to the local submit machine and look around](htc/part1-ex1-login)
-- [Exercise 1.2: Experiment with HTCondor commands](htc/part1-ex2-commands.md)
-- [Exercise 1.3: Run jobs!](htc/part1-ex3-jobs.md)
-- [Exercise 1.4: Read and interpret log files](htc/part1-ex4-logs.md)
-- [Exercise 1.5: Determining Resource Needs](htc/part1-ex5-request.md)
-- [Exercise 1.6: Remove jobs from the queue](htc/part1-ex6-remove.md)
-- [Bonus Exercise 1.7: Compile and run some C code](htc/part1-ex7-compile.md)
+- [Exercise 1.1: Log in to the local submit machine and look around](htcondor/part1-ex1-login)
+- [Exercise 1.2: Experiment with HTCondor commands](htcondor/part1-ex2-commands.md)
+- [Exercise 1.3: Run jobs!](htcondor/part1-ex3-jobs.md)
+- [Exercise 1.4: Read and interpret log files](htcondor/part1-ex4-logs.md)
+- [Exercise 1.5: Determining Resource Needs](htcondor/part1-ex5-request.md)
+- [Exercise 1.6: Remove jobs from the queue](htcondor/part1-ex6-remove.md)
+- [Bonus Exercise 1.7: Compile and run some C code](htcondor/part1-ex7-compile.md)
 
 ### Intro Exercises 2: Running Many HTC Jobs (Strongly Recommended)
 
-- [Exercise 2.1: Work with input and output files](htc/part2-ex1-files.md)
-- [Exercise 2.2: Use `queue N`, `$(Cluster)`, and `$(Process)`](htc/part2-ex2-queue-n.md)
-- [Exercise 2.3: Use `queue from` with custom variables](htc/part2-ex3-queue-from.md)
-- [Bonus Exercise 2.4: Use `queue matching` with a custom variable](htc/part2-ex4-queue-matching.md)
+- [Exercise 2.1: Work with input and output files](htcondor/part2-ex1-files.md)
+- [Exercise 2.2: Use `queue N`, `$(Cluster)`, and `$(Process)`](htcondor/part2-ex2-queue-n.md)
+- [Exercise 2.3: Use `queue from` with custom variables](htcondor/part2-ex3-queue-from.md)
+- [Bonus Exercise 2.4: Use `queue matching` with a custom variable](htcondor/part2-ex4-queue-matching.md)
 
 ### Bonus Exercises: Job Attributes and Handling
 
-- [Bonus Exercise 3.1: Explore `condor_q`](htc/part3-ex1-queue.md)
-- [Bonus Exercise 3.2: Explore `condor_status`](htc/part3-ex2-status.md)
-- [Bonus Exercise 3.3: A job that needs retries](htc/part3-ex3-job-retry.md)
+- [Bonus Exercise 3.1: Explore `condor_q`](htcondor/part3-ex1-queue.md)
+- [Bonus Exercise 3.2: Explore `condor_status`](htcondor/part3-ex2-status.md)
+- [Bonus Exercise 3.3: A job that needs retries](htcondor/part3-ex3-job-retry.md)
 
 ## Data
 
