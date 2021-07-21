@@ -135,13 +135,13 @@ Let’s follow the progress of the whole DAG:
         :::console
         username@learn $ watch -n 10 condor_q -nobatch -wide:80
 
-    %RED%**Here we see DAGMan running:**%ENDCOLOR% 
+    <span style="color:RED">**Here we see DAGMan running:**</span> 
 
         :::console
          ID  OWNER  SUBMITTED   RUN_TIME ST PRI SIZE CMD 
         71.0 roy   6/22 17:39 0+00:00:03 R  0    0.3 condor_dagman
 
-    %RED%**DAGMan has submitted the goatbrot jobs, but they haven't started running yet**%ENDCOLOR%
+    <span style="color:RED">**DAGMan has submitted the goatbrot jobs, but they haven't started running yet**</span>
     
         :::console
          ID  OWNER SUBMITTED   RUN_TIME ST PRI SIZE CMD 
@@ -151,7 +151,7 @@ Let’s follow the progress of the whole DAG:
         74.0 roy  6/22 17:39 0+00:00:00 I  0    0.0 goatbrot -i 100000 
         75.0 roy  6/22 17:39 0+00:00:00 I  0    0.0 goatbrot -i 100000
 
-    %RED%**They're running**%ENDCOLOR% 
+    <span style="color:RED">**They're running**</span> 
 
         :::console
          ID  OWNER SUBMITTED   RUN_TIME ST PRI SIZE CMD
@@ -161,7 +161,7 @@ Let’s follow the progress of the whole DAG:
         74.0 roy  6/22 17:39 0+00:00:03 R  0    0.0 goatbrot -i 100000 
         75.0 roy  6/22 17:39 0+00:00:03 R  0    0.0 goatbrot -i 100000
 
-    %RED%**They finished, but DAGMan hasn't noticed yet. It only checks periodically:**%ENDCOLOR%
+    <span style="color:RED">**They finished, but DAGMan hasn't noticed yet. It only checks periodically:**</span>
 
         :::console
          ID  OWNER SUBMITTED   RUN_TIME ST PRI SIZE CMD 

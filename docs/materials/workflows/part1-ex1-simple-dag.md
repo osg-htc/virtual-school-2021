@@ -166,7 +166,7 @@ username@learn $ tail -f --lines=500 simple.dag.dagman.out
 06/21/12 22:51:29 Submitting Condor Node Simple job(s)...
 ```
 
-%RED%**Here's where the job is submitted**%ENDCOLOR%
+<span style="color:RED">**Here's where the job is submitted**</span>
 
 ```file
 06/21/12 22:51:29 submitting: condor_submit 
@@ -192,7 +192,7 @@ username@learn $ tail -f --lines=500 simple.dag.dagman.out
 06/21/12 22:55:05 Currently monitoring 1 Condor log file(s)
 ```
 
-%RED%**Here's where DAGMan noticed that the job is running**%ENDCOLOR%
+<span style="color:RED">**Here's where DAGMan noticed that the job is running**</span>
 
 ```file
 06/21/12 22:55:05 Event: ULOG_EXECUTE for Condor Node Simple (62.0.0)
@@ -203,7 +203,7 @@ username@learn $ tail -f --lines=500 simple.dag.dagman.out
 06/21/12 22:56:05 Event: ULOG_IMAGE_SIZE for Condor Node Simple (62.0.0)
 ```
 
-%RED%**Here's where DAGMan noticed that the job finished.**%ENDCOLOR%
+<span style="color:RED">**Here's where DAGMan noticed that the job finished.**</span>
 
 ```file
 06/21/12 22:56:05 Event: ULOG_JOB_TERMINATED for Condor Node Simple (62.0.0)
@@ -217,7 +217,7 @@ username@learn $ tail -f --lines=500 simple.dag.dagman.out
 06/21/12 22:56:05 0 job proc(s) currently held
 ```
 
-%RED%**Here's where DAGMan noticed that all the work is done.**%ENDCOLOR%
+<span style="color:RED">**Here's where DAGMan noticed that all the work is done.**</span>
 
 ```file
 06/21/12 22:56:05 All jobs Completed!

@@ -17,9 +17,9 @@ Breaking Things
 
 Recall that DAGMan decides that a jobs fails if its exit code is non-zero. Let's modify our montage job so that it fails. Work in the same directory where you did the last DAG. Edit montage.sub to add a `-h` to the arguments. It will look like this (the change is highlighted in red):
 
-``` file
+```hl_lines="2"
 executable              = /usr/bin/montage
-arguments               = %RED%-h%ENDCOLOR% tile_0_0.ppm tile_0_1.ppm tile_1_0.ppm tile_1_1.ppm -mode Concatenate -tile 2x2 mandle-from-dag.jpg
+arguments               = -h tile_0_0.ppm tile_0_1.ppm tile_1_0.ppm tile_1_1.ppm -mode Concatenate -tile 2x2 mandle-from-dag.jpg
 transfer_input_files    = tile_0_0.ppm,tile_0_1.ppm,tile_1_0.ppm,tile_1_1.ppm
 output                  = montage.out
 error                   = montage.err
@@ -163,18 +163,18 @@ username@learn $ tail -f goatbrot.dag.dagman.out
 ...
 ```
 
-%RED%**Here is where DAGMAN notices that there is a rescue DAG**%ENDCOLOR%
+<span style="color:RED">**Here is where DAGMAN notices that there is a rescue DAG**</span>
 
-```console
+```hl_lines="3"
 06/23/12 11:30:53 Parsing 1 dagfiles
 06/23/12 11:30:53 Parsing goatbrot.dag ...
-%RED%06/23/12 11:30:53 Found rescue DAG number 1; running goatbrot.dag.rescue001 in combination with normal DAG file%ENDCOLOR%
+06/23/12 11:30:53 Found rescue DAG number 1; running goatbrot.dag.rescue001 in combination with normal DAG file
 06/23/12 11:30:53 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 06/23/12 11:30:53 USING RESCUE DAG goatbrot.dag.rescue001
 06/23/12 11:30:53 Dag contains 5 total jobs
 ```
 
-%RED%**Shortly thereafter it sees that four jobs have already finished.**%ENDCOLOR%
+<span style="color:RED">**Shortly thereafter it sees that four jobs have already finished.**</span>
 
 ```console
 06/23/12 11:31:05 Bootstrapping...
@@ -184,7 +184,7 @@ username@learn $ tail -f goatbrot.dag.dagman.out
 06/23/12 11:31:07 MultiLogFiles: truncating log file /home/roy/condor/goatbrot/montage.log
 ```
 
-%RED%**Here is where DAGMan resubmits the montage job and waits for it to complete.**%ENDCOLOR%
+<span style="color:RED">**Here is where DAGMan resubmits the montage job and waits for it to complete.**</span>
 
 ```console
 06/23/12 11:31:07 Submitting Condor Node montage job(s)...
@@ -216,7 +216,7 @@ username@learn $ tail -f goatbrot.dag.dagman.out
 06/23/12 11:40:22 Event: ULOG_JOB_TERMINATED for Condor Node montage (84.0.0)
 ```
 
-%RED%**This is where the montage finished.**%ENDCOLOR%
+<span style="color:RED">**This is where the montage finished.**</span>
 
 ```console
 06/23/12 11:40:22 Node montage job proc (84.0.0) completed successfully.
@@ -229,7 +229,7 @@ username@learn $ tail -f goatbrot.dag.dagman.out
 06/23/12 11:40:22 0 job proc(s) currently held
 ```
 
-%RED%**And here DAGMan decides that the work is all done.**%ENDCOLOR%
+<span style="color:RED">**And here DAGMan decides that the work is all done.**</span>
 
 ```console
 06/23/12 11:40:22 All jobs Completed!

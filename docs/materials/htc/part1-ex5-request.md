@@ -124,9 +124,11 @@ Setting Resource Requirements
 
 Once you know your job’s resource requirements, it is easy to declare them in your submit file. For example, taking our results above as an example, we might slightly increase our requests above what was used, just to be safe:
 
-``` file
-request_memory = 4MB  %BLUE%# rounded up from 3 MB%ENDCOLOR%
-request_disk = 7MB  %BLUE%# rounded up from 6.5 MB%ENDCOLOR%
+```hl_lines="1 3"
+# rounded up from 3 MB
+request_memory = 4MB  
+# rounded up from 6.5 MB
+request_disk = 7MB  
 ```
 
 Pay close attention to units:
