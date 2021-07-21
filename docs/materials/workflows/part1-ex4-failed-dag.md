@@ -15,7 +15,7 @@ DAGMan can handle a situation where some of the nodes in a DAG fail. DAGMan will
 Breaking Things
 ---------------
 
-Recall that DAGMan decides that a jobs fails if its exit code is non-zero. Let's modify our montage job so that it fails. Work in the same directory where you did the last DAG. Edit montage.sub to add a `-h` to the arguments. It will look like this (the change is highlighted in red):
+Recall that DAGMan decides that a jobs fails if its exit code is non-zero. Let's modify our montage job so that it fails. Work in the same directory where you did the last DAG. Edit montage.sub to add a `-h` to the arguments. It will look like this with the -h at the beginning of the highlighted line:
 
 ```hl_lines="2"
 executable              = /usr/bin/montage
