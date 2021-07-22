@@ -1018,32 +1018,41 @@ rm $1
 <li><code>run_ffmpeg.sh</code></li>
 </ol>
 <p>to do so?</p>
-<details markdown="1">
-  <summary><b><u>Show hint</u></b></summary> Here's the changes you can make to the various files:
+<details><summary>Show hint</summary><p>Here's the changes you can make to the various files:</p>
+<ol>
+<li>
+<p><code>movie_list.txt</code> </p>
+<div class="codehilite"><pre><span></span><code>ducks.mov ducks.mp4 500k 1280x720
+    teaching.mov teaching.mp4 400k 320x180
+    test_open_terminal.mov terminal.mp4 600k 640x360
+</code></pre></div>
 
-1.  `movie_list.txt` 
+</li>
+<li>
+<p>Submit file</p>
+<div class="codehilite"><pre><span></span><code>arguments = $(mov) $(mp4) $(bitrate) $(size)
 
-        ducks.mov ducks.mp4 500k 1280x720
-        teaching.mov teaching.mp4 400k 320x180
-        test_open_terminal.mov terminal.mp4 600k 640x360
+queue mov,mp4,bitrate,size from movie_list.txt
+</code></pre></div>
 
-1. Submit file
+</li>
+<li>
+<p><code>run_ffmpeg.sh</code></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="ch">#!/bin/bash</span>
 
-        arguments = $(mov) $(mp4) $(bitrate) $(size)
-
-        queue mov,mp4,bitrate,size from movie_list.txt
-
-
-1. `run_ffmpeg.sh`
-
-        #!/bin/bash
-
-        module load stashcache
-        stashcp /osgconnect/public/osgvsp20/$1 ./
-        ./ffmpeg -i $1 -b:v $3 -s $4 $2
-        rm $1
-
-
+module load stashcache
+    stashcp /osgconnect/public/osgvsp20/<span class="nv">$1</span> ./
+    ./ffmpeg -i <span class="nv">$1</span> -b:v <span class="nv">$3</span> -s <span class="nv">$4</span> <span class="nv">$2</span>
+    rm <span class="nv">$1</span>
+</code></pre></div>
+</td></tr></table>
+</li>
+</ol>
 </details>
                 
                   
