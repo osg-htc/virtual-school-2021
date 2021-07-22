@@ -186,32 +186,33 @@ If you wanted to set a different output file name, bitrate and/or size for each 
 
 to do so?
 
-<details markdown="1">
-  <summary><b><u>Show hint</u></b></summary> Here's the changes you can make to the various files:
-
-1.  `movie_list.txt` 
-
-        ducks.mov ducks.mp4 500k 1280x720
-        teaching.mov teaching.mp4 400k 320x180
-        test_open_terminal.mov terminal.mp4 600k 640x360
-
-1. Submit file
-
-        arguments = $(mov) $(mp4) $(bitrate) $(size)
-
-        queue mov,mp4,bitrate,size from movie_list.txt
 
 
-1. `run_ffmpeg.sh`
+??? "Show hint"
 
-        #!/bin/bash
+    Here's the changes you can make to the various files:
+    
+    1.  `movie_list.txt` 
+    
+            ducks.mov ducks.mp4 500k 1280x720
+            teaching.mov teaching.mp4 400k 320x180
+            test_open_terminal.mov terminal.mp4 600k 640x360
+    
+    1. Submit file
+    
+            arguments = $(mov) $(mp4) $(bitrate) $(size)
+    
+            queue mov,mp4,bitrate,size from movie_list.txt
+    
+    
+    1. `run_ffmpeg.sh`
+    
+            #!/bin/bash
+    
+            module load stashcache
+            stashcp /osgconnect/public/osgvsp20/$1 ./
+            ./ffmpeg -i $1 -b:v $3 -s $4 $2
+            rm $1
 
-        module load stashcache
-        stashcp /osgconnect/public/osgvsp20/$1 ./
-        ./ffmpeg -i $1 -b:v $3 -s $4 $2
-        rm $1
-
-
-</details>
 
 

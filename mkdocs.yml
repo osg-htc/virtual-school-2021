@@ -9,6 +9,7 @@ markdown_extensions:
   - codehilite:
       guess_lang: False
   - meta
+  - pymdownx.details
   - toc:
       permalink: True
 
