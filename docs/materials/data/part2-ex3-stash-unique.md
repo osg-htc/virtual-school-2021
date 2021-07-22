@@ -186,7 +186,7 @@ If you wanted to set a different output file name, bitrate and/or size for each 
 
 to do so?
 
-<details>
+<details markdown="1">
   <summary><b><u>Show hint</u></b></summary> Here's the changes you can make to the various files:
 
 1.  `movie_list.txt` 
