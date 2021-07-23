@@ -860,7 +860,7 @@ originally placed.</p>
 <li><code>mouse_rna.fa.1</code></li>
 <li><code>mouse_rna.fa.2</code></li>
 <li><code>mouse_rna.fa.3</code></li>
-<li>Your most recent submit file.</li>
+<li>Your most recent submit file (probably named <code>blast_split.sub</code>)</li>
 </ul>
 </li>
 </ul>
@@ -883,11 +883,11 @@ For your own work in the future, make sure that you never put any sensitive data
 <p>Now, load the <code>stashcache</code> module, which will allow you to test a copy of the file from StashCache into your <code>/home</code>
 directory on <code>login04.osgconnect.net</code>:</p>
 <div class="codehilite"><pre><span></span><code><span class="gp">user@login04 $ </span>module load stashcache
-<span class="gp">user@login04 $ </span>stashcp /osgconnect/public/&lt;USERNAME&gt;/pdbaa_files.tar.gz /home/&lt;USERNAME&gt;/
+<span class="gp">user@login04 $ </span>stashcp /osgconnect/public/&lt;USERNAME&gt;/pdbaa_files.tar.gz ./
 </code></pre></div>
 
 <p>Replacing all instances of <code>&lt;USERNAME&gt;</code> with your username on <code>login04.osgconnect.net</code>.
-You should now see the <code>pdbaa_files.tar.gz</code> file in your home directory.
+You should now see the <code>pdbaa_files.tar.gz</code> file in your current directory.
 Notice that we had to include the <strong><code>/osgconnect/public</code></strong> and your username in the file path for <code>stashcp</code>, which make sure you're
 copying from <strong>your</strong> <code>public</code> space.</p>
 <h2 id="modify-the-submit-file-and-wrapper">Modify the Submit File and Wrapper<a class="headerlink" href="#modify-the-submit-file-and-wrapper" title="Permanent link">&para;</a></h2>
@@ -920,6 +920,9 @@ stashcp /osgconnect/public/&lt;USERNAME&gt;/pdbaa_files.tar.gz ./
 requirements = (OSGVO_OS_STRING == &quot;RHEL 7&quot;) &amp;&amp; (HAS_MODULES =?= true)
 </code></pre></div>
 
+</li>
+<li>
+<p>Remove the HTTP address in the <code>transfer_input_files</code>.</p>
 </li>
 <li>
 <p>Confirm that your queue statement is correct for the current directory. It should be something like:</p>

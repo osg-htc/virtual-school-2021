@@ -858,15 +858,15 @@ For our input file, we'll use an abbreviated fasta file with mouse genome inform
 <ol>
 <li>
 <p>Copy the BLAST executables:</p>
-<div class="codehilite"><pre><span></span><code><span class="gp">user@login04 $ </span>wget http://stash.osgconnect.net/public/osgvsp20/ncbi-blast-2.7.1+-x64-linux.tar.gz
-<span class="gp">user@login04 $ </span>tar -xzvf ncbi-blast-2.7.1+-x64-linux.tar.gz
+<div class="codehilite"><pre><span></span><code><span class="gp">user@login04 $ </span>wget http://stash.osgconnect.net/public/osgvs21/ncbi-blast-2.12.0+-x64-linux.tar.gz
+<span class="gp">user@login04 $ </span>tar -xzvf ncbi-blast-2.12.0+-x64-linux.tar.gz
 </code></pre></div>
 
 </li>
 <li>
 <p>Download these files to your current directory:</p>
-<div class="codehilite"><pre><span></span><code><span class="gp">user@login04 $ </span>wget http://stash.osgconnect.net/public/osgvsp20/pdbaa.tar.gz
-<span class="gp">user@login04 $ </span>wget http://stash.osgconnect.net/public/osgvsp20/mouse.fa
+<div class="codehilite"><pre><span></span><code><span class="gp">user@login04 $ </span>wget http://stash.osgconnect.net/public/osgvs21/pdbaa.tar.gz
+<span class="gp">user@login04 $ </span>wget http://stash.osgconnect.net/public/osgvs21/mouse.fa
 </code></pre></div>
 
 </li>
@@ -884,7 +884,7 @@ For our input file, we'll use an abbreviated fasta file with mouse genome inform
 
 <p>In the above, the <code>&lt;INPUT FILE&gt;</code> is the name of a file containing a number of genetic sequences (e.g. <code>mouse.fa</code>), and
 the database that these are compared against is made up of several files that begin with the same <code>&lt;DATABASE ROOTNAME&gt;</code>,
-(e.g. <code>pdbaa</code>).
+(e.g. <code>pdbaa/pdbaa</code>).
 The output from this analysis will be printed to <code>&lt;RESULTS FILE&gt;</code> that is also indicated in the command.</p>
 <h2 id="calculating-data-needs">Calculating Data Needs<a class="headerlink" href="#calculating-data-needs" title="Permanent link">&para;</a></h2>
 <p>Using the files that you prepared in <code>blast-data</code>, we will calculate how much disk space is needed if we were to
@@ -953,13 +953,13 @@ Answers
     - Total: ~36MB
 - Worker Node: Compressed files + uncompressed files
     - pdbaa: 97MB
-    - blastx: 41MB
+    - blastx: 39MB
     - mouse.fa: 389KB
     - results: 11MB
     - stdout: 0
     - stderr: 0
     - Compressed files: ~36MB
-    - Total: ~185MB
+    - Total: ~183MB
 - How many files are needed and created for each run?
     - files in pdbaa: 12
     - blastx: 1
