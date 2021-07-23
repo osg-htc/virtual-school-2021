@@ -7,7 +7,7 @@ status: in progress
 Software Exercise 2.4: Running Compiled Matlab
 ==============================
 
-The goal of this exercise is to compile Matlab code and run it. This exercise will draw on the idea of writing a wrapper script to install and run code, first introduced in [Exercise 1.2](/materials/sw/part1-ex2-wrapper.md) and should take 25-30 minutes.
+The goal of this exercise is to compile Matlab code and run it. This exercise will draw on the idea of writing a wrapper script to install and run code, first introduced in [Exercise 1.2](../part1-ex2-wrapper) and should take 25-30 minutes.
 
 Background
 ----------
@@ -34,7 +34,7 @@ The first step in making Matlab portable is compiling our Matlab script.
 To compile this code, we need to access the machines with the Matlab compiler installed.
 For this exercise, we will use the compilers installed on special CHTC build machines.
 In the CHTC pool, you can't use `ssh` to directly connect to these machines.
-Instead, you must submit an interactive job (similar to [Exercise 2.2](/materials/sw/part2-ex2-prepackaged.md)) that
+Instead, you must submit an interactive job (similar to [Exercise 2.2](../part2-ex2-prepackaged)) that
 specifically requests these build machines.
 
 1.   Create a file called `compile.submit` with the lines below: 
@@ -120,7 +120,7 @@ Fortunately, the Matlab compiler has pre-written most of this wrapper script for
 Submitting the Job
 ------------------
 
-1.  Copy an existing submit file into your current directory. The submit file we used for  [Exercise 2.2](/materials/sw/part2-ex2-prepackaged) example would be a good candidate, as that example also used a wrapper script. 
+1.  Copy an existing submit file into your current directory. The submit file we used for  [Exercise 2.2](../part2-ex2-prepackaged) example would be a good candidate, as that example also used a wrapper script. 
 
 2. Modify your submit file for this job. 
 

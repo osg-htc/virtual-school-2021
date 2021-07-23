@@ -22,15 +22,15 @@ reference database, the BLAST program.
 
 1.  Search the internet for the BLAST software.  Searches might include "blast executable or "download blast software".  Hopefully these searches will lead you to a BLAST website page that looks like this:
 
-    ![BLAST landing page](/materials/sw/files/part1-ex1-blast-landing-page.png)
+    ![BLAST landing page](../files/part1-ex1-blast-landing-page.png)
 
-1.  Click on the title that says ["Download BLAST"](/materials/sw/files/part1-ex1-blast-front-page.png) and then look for the link that has the [latest installation and source code](/materials/sw/files/part1-ex1-blast-dl-page.png).  You should end up on a page with a list of each version of BLAST that is available for different operating systems.
+1.  Click on the title that says ["Download BLAST"](../files/part1-ex1-blast-front-page.png) and then look for the link that has the [latest installation and source code](../files/part1-ex1-blast-dl-page.png).  You should end up on a page with a list of each version of BLAST that is available for different operating systems.
 
 1.  We could download the source and compile it ourselves, but instead, we're going to use one of the pre-built binaries.  Before proceeding, look at the list of downloads and try to determine which one you want. 
 
 1.  Based on our operating system, we want to use the Linux binary, which is labelled with the `x64-linux` suffix. 
 
-	![BLAST downloads](/materials/sw/files/part1-ex1-blast-src-page.png)
+	![BLAST downloads](../files/part1-ex1-blast-src-page.png)
 
 	All the other links are either for source code or other operating systems. 
 	

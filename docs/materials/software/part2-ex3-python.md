@@ -33,7 +33,7 @@ The first step in our job process is building a Python installation that we can 
 
 1.  Due to the number of people on our submit server, we shouldn't use the submit server. Your own computer probably doesn't have the right operating system. The best place to install will be an interactive job. For this job, we can use the same interactive submit file as Exercise 2.2, with one change. What is it?
 
-1.  Make a copy of the interactive submit file from [Exercise 2.2](/materials/sw/part2-ex2-prepackaged) and change the `transfer_input_files` line to the Python tarball you just downloaded. Then submit it using the `-i` flag. 
+1.  Make a copy of the interactive submit file from [Exercise 2.2](../part2-ex2-prepackaged) and change the `transfer_input_files` line to the Python tarball you just downloaded. Then submit it using the `-i` flag. 
 
 		:::console
 		username@learn $ condor_submit -i build.submit

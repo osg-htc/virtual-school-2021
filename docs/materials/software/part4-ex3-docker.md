@@ -13,12 +13,12 @@ Setup
 -----
 
 For this exercise, you will need to be logged into `learn.chtc.wisc.edu`, not `login04.osgconnect.net`. If you haven't done one of the previous Python exercises, 
-make sure to get a copy of the script and recommended commands [here](/materials/sw/part2-ex3-python). 
+make sure to get a copy of the script and recommended commands [here](../part2-ex3-python). 
 
 Submit File Changes
 -------------------
 
-1.  Make a copy of your submit file from the [previous Python exercise](/materials/sw/part2-ex3-python) or build from an existing submit file. 
+1.  Make a copy of your submit file from the [previous Python exercise](../part2-ex3-python) or build from an existing submit file. 
 1.  Add the following lines to the submit file or modify existing lines to match the lines below: 
 
 		:::file
