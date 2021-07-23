@@ -2,6 +2,8 @@
 
 ## Intro to HTCondor Job Execution
 
+Slides will be posted here
+
 ### Intro Exercises 1: Running and Viewing Simple Jobs (Strongly Recommended)
 
 - [Exercise 1.1: Log in to the local submit machine and look around](htcondor/part1-ex1-login)
@@ -27,11 +29,7 @@
 
 ## Software
 
-View the slides
-([PDF](software/files/osgvsp20-software.pdf),
-[PowerPoint](software/files/osgvsp20-software.pptx))
-and a recording of the lecture
-([YouTube](https://www.youtube.com/watch?v=oqwlaPt9KOg))
+Slides will be posted here
 
 ### Software Exercises 1: Basic Software and Wrapper Script Use (Strongly Recommended)
 
@@ -59,6 +57,8 @@ and a recording of the lecture
 
 ## Data
 
+Slides will be posted here
+
 ### Data Exercises 1: HTCondor File Transfer (Strongly Recommended)
 
 - [Exercise 1.1: Understanding a job's data needs](data/part1-ex1-data-needs.md)
@@ -78,11 +78,30 @@ and a recording of the lecture
 
 ## Bonus Topics
 
+Bonus topics will be scheduled during the first week,
+based on interest and availability.
+
+### Self-checkpointing for long-running jobs
+
+Slides will be posted here.
+
 ### Workflows with DAGMan
+
+Slides will be posted here.
 
 - [Exercise 1.1: Coordinating set of jobs: A simple DAG](workflows/part1-ex1-simple-dag.md)
 - [Exercise 1.2: A brief detour through the Mandelbrot set](workflows/part1-ex2-mandelbrot.md)
 - [Exercise 1.3: A more complex DAG](workflows/part1-ex3-complex-dag.md)
 - [Exercise 1.4: Handling jobs that fail with DAGMan](workflows/part1-ex4-failed-dag.md)
 - [Bonus Exercise 4.5: HTCondor challenges](workflows/part1-ex5-challenges.md)
+
+### GPUs and Containers
+
+Slides will be posted here.
+
+### Introduction to Research Computing Facilitation
+
+Slides will be posted here.
+
+
 
