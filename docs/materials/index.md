@@ -25,6 +25,38 @@
 - [Bonus Exercise 3.2: Explore `condor_status`](htcondor/part3-ex2-status.md)
 - [Bonus Exercise 3.3: A job that needs retries](htcondor/part3-ex3-job-retry.md)
 
+## Software
+
+View the slides
+([PDF](software/files/osgvsp20-software.pdf),
+[PowerPoint](software/files/osgvsp20-software.pptx))
+and a recording of the lecture
+([YouTube](https://www.youtube.com/watch?v=oqwlaPt9KOg))
+
+### Software Exercises 1: Basic Software and Wrapper Script Use (Strongly Recommended)
+
+- [Exercise 1.1: Work With Downloaded Software](software/part1-ex1-download.md)
+- [Exercise 1.2: Use a Wrapper Script To Run Software](software/part1-ex2-wrapper.md)
+
+### Software Exercises 2: Specific Software Examples (Pick One)
+
+- [Exercise 2.1: Compiling and Running a Simple Code](srw/part2-ex1-compiling.md)
+- [Exercise 2.2: Compiling a Research Software](software/part2-ex2-prepackaged.md)
+- [Exercise 2.3: Compiling Python and Running Jobs](software/part2-ex3-python.md)
+- [Exercise 2.4: Compiling Matlab and Running Jobs](software/part2-ex4-matlab.md)
+
+### Software Exercises 3: Using Containers in Jobs (Strongly Recommended)
+
+- [Exercise 3.1: Using Software in a Singularity Container](software/part3-ex1-singularity.md)
+
+### Software Exercises 4: Bonus Exercises
+
+- [Exercise 4.1: Using Arguments With Wrapper Scripts](software/part4-ex1-arguments.md)
+- [Exercise 4.2: Additional Python ](software/part4-ex2-python-extras.md)
+- [Exercise 4.3: Using Software in a Docker Container](software/part4-ex3-docker.md)
+- [Exercise 4.4: Building Your Own Docker Container (Beta)](software/part4-ex4-docker-build.md)
+- [Exercise 4.5: Using Conda Environments (Beta)](software/part4-ex5-conda.md)
+
 ## Data
 
 ### Data Exercises 1: HTCondor File Transfer (Strongly Recommended)
