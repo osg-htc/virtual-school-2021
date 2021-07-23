@@ -1,5 +1,5 @@
 ---
-status: untested
+status: reviewed
 ---
 
 Data Exercise 2.2: Using Stash for Large Shared Data
@@ -32,7 +32,7 @@ Setup
     - `mouse_rna.fa.1`
     - `mouse_rna.fa.2`
     - `mouse_rna.fa.3`
-    - Your most recent submit file.
+    - Your most recent submit file (probably named `blast_split.sub`)
 
 Place the Database in Stash
 --------------------------------
@@ -63,11 +63,11 @@ directory on `login04.osgconnect.net`:
 
 ``` console
 user@login04 $ module load stashcache
-user@login04 $ stashcp /osgconnect/public/<USERNAME>/pdbaa_files.tar.gz /home/<USERNAME>/
+user@login04 $ stashcp /osgconnect/public/<USERNAME>/pdbaa_files.tar.gz ./
 ```
 
 Replacing all instances of `<USERNAME>` with your username on `login04.osgconnect.net`.
-You should now see the `pdbaa_files.tar.gz` file in your home directory.
+You should now see the `pdbaa_files.tar.gz` file in your current directory.
 Notice that we had to include the **`/osgconnect/public`** and your username in the file path for `stashcp`, which make sure you're
 copying from **your** `public` space.
 
@@ -101,7 +101,9 @@ You will have to modify the wrapper and submit files to use Stash:
         +WantsStashCache = true
         requirements = (OSGVO_OS_STRING == "RHEL 7") && (HAS_MODULES =?= true)
 
-5. Confirm that your queue statement is correct for the current directory. It should be something like:
+5. Remove the HTTP address in the `transfer_input_files`.
+
+6. Confirm that your queue statement is correct for the current directory. It should be something like:
 
         ::file
         queue inputfile matching mouse_rna.fa.*

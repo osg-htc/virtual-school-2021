@@ -1,5 +1,5 @@
 ---
-status: untested
+status: reviewed
 ---
 
 Data Exercise 2.3: Using Stash for unique large input
@@ -14,7 +14,7 @@ to send our data to jobs. This exercise should take 25-30 minutes.
 Data
 ----
 
-A copy of the movie files for this exercise have been placed in `/public/osgvsp20`, so that they'll be available to our jobs when they run out on OSG.
+A copy of the movie files for this exercise have been placed in `/public/osgvs21`, so that they'll be available to our jobs when they run out on OSG.
 
 1.  Log into `login04.osgconnect.net`
 1.  Create a directory for this exercise named `stash-unique` and change into it.
@@ -48,7 +48,7 @@ To get the `ffmpeg` binary do the following:
 1.  We'll be downloading the `ffmpeg` pre-built static binary originally from this page: <http://johnvansickle.com/ffmpeg/>. 
 
         :::console
-        user@login04 $ wget http://stash.osgconnect.net/public/osgvsp20/ffmpeg-release-64bit-static.tar.xz
+        user@login04 $ wget http://stash.osgconnect.net/public/osgvs21/ffmpeg-release-64bit-static.tar.xz
 
 1.  Once the binary is downloaded, un-tar it, and then copy the main `ffmpeg` program into your current directory: 
 
@@ -77,7 +77,7 @@ An example of that script is below:
     #!/bin/bash
 
     module load stashcache
-    stashcp /osgconnect/public/osgvsp20/test_open_terminal.mov ./
+    stashcp /osgconnect/public/osgvs21/test_open_terminal.mov ./
     ./ffmpeg -i test_open_terminal.mov -b:v 400k -s 640x360 test_open_terminal.mp4
     rm test_open_terminal.mov
 
@@ -91,9 +91,9 @@ Create a submit file for this job, based on other submit files from the school
 ([This file, for example](../part1-ex2-file-transfer#start-with-a-test-submit-file).)
 Things to consider:
 
-1.  We'll be copying the video file into the job's working directory, so make sure to request enough disk space for the
+1.  We'll be copying the video file into the job's working directory from StashCache, so make sure to request enough disk space for the
     input `mov` file and the output `mp4` file.
-    If you're aren't sure how much to request, ask a helper in the room.
+    If you're aren't sure how much to request, ask a helper.
 
 1.  **Important** Don't list the name of the `.mov` in `transfer_input_files`. Our job will be interacting with the
     input `.mov` files solely from within the script we wrote above.
@@ -149,7 +149,7 @@ The final script should look like this:
 #!/bin/bash
 
 module load stashcache
-stashcp /osgconnect/public/osgvsp20/$1 ./
+stashcp /osgconnect/public/osgvs21/$1 ./
 ./ffmpeg -i $1 -b:v 400k -s 640x360 $2
 rm $1
 ```

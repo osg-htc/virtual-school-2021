@@ -1,5 +1,5 @@
 ---
-status: untested
+status: reviewed
 ---
 
 Data Exercise 1.1: Understanding Data Requirements
@@ -27,14 +27,14 @@ For our input file, we'll use an abbreviated fasta file with mouse genome inform
 1. Copy the BLAST executables:
 
         :::console
-        user@login04 $ wget http://stash.osgconnect.net/public/osgvsp20/ncbi-blast-2.7.1+-x64-linux.tar.gz
-        user@login04 $ tar -xzvf ncbi-blast-2.7.1+-x64-linux.tar.gz
+        user@login04 $ wget http://stash.osgconnect.net/public/osgvs21/ncbi-blast-2.12.0+-x64-linux.tar.gz
+        user@login04 $ tar -xzvf ncbi-blast-2.12.0+-x64-linux.tar.gz
 
 1.  Download these files to your current directory:
 
         :::console
-        user@login04 $ wget http://stash.osgconnect.net/public/osgvsp20/pdbaa.tar.gz
-        user@login04 $ wget http://stash.osgconnect.net/public/osgvsp20/mouse.fa
+        user@login04 $ wget http://stash.osgconnect.net/public/osgvs21/pdbaa.tar.gz
+        user@login04 $ wget http://stash.osgconnect.net/public/osgvs21/mouse.fa
 
 1.  Untar the `pdbaa` database:
 
@@ -52,7 +52,7 @@ user@login04 $ ./blastx -db <DATABASE ROOTNAME> -query <INPUT FILE> -out <RESULT
 
 In the above, the `<INPUT FILE>` is the name of a file containing a number of genetic sequences (e.g. `mouse.fa`), and
 the database that these are compared against is made up of several files that begin with the same `<DATABASE ROOTNAME>`,
-(e.g. `pdbaa`).
+(e.g. `pdbaa/pdbaa`).
 The output from this analysis will be printed to `<RESULTS FILE>` that is also indicated in the command.
 
 Calculating Data Needs
@@ -123,13 +123,13 @@ Answers
     - Total: ~36MB
 - Worker Node: Compressed files + uncompressed files
     - pdbaa: 97MB
-    - blastx: 41MB
+    - blastx: 39MB
     - mouse.fa: 389KB
     - results: 11MB
     - stdout: 0
     - stderr: 0
     - Compressed files: ~36MB
-    - Total: ~185MB
+    - Total: ~183MB
 - How many files are needed and created for each run?
     - files in pdbaa: 12
     - blastx: 1

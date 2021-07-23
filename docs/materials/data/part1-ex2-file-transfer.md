@@ -1,5 +1,5 @@
 ---
-status: untested
+status: reviewed
 ---
 
 Data Exercise 1.2: File Compression and Testing Resource Requirements
@@ -126,6 +126,14 @@ It should take a few minutes to complete, and then you can check to make sure th
 
 Run a **`du -sh`** on the directory with this job's input.
 How does it compare to the directory from Tuesday, and why?
+
+Conclusions
+-----------
+
+In this exercise, you:
+
+-   Used your data requirements knowledge from the [previous exercise](../part1-ex1-data-needs) to write a job.
+-   Execute the job on a remote worker node and took 
 
 When you've completed the above, continue with the [next exercise](../part1-ex3-blast-split).
 

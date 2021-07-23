@@ -1,5 +1,5 @@
 ---
-status: untested
+status: reviewed
 ---
 
 Data Exercise 1.3: Splitting Large Input for Better Throughput
@@ -30,10 +30,10 @@ you now need to blast a much larger dataset for your research.
 This dataset can be downloaded with the following command:
 
 ``` console
-user@login04 $ wget http://stash.osgconnect.net/public/osgvsp20/mouse_rna.tar.gz
+user@login04 $ wget http://stash.osgconnect.net/public/osgvs21/mouse_rna.tar.gz
 ```
 
-After un-tar'ing the file, you should be able to confirm that it's size is roughly 100 MB.
+After un-tar'ing (`tar xzf mouse_rna.tar.gz`) the file, you should be able to confirm that it's size is roughly 100 MB.
 Not only is this near the size cutoff for HTCondor file transfer, it would take hours to complete a single `blastx`
 analysis for it and the resulting output file would be huge.
 
@@ -50,7 +50,7 @@ One of these is called [genome tools](http://genometools.org/), and you can down
 (just like BLAST) using the following command:
 
 ``` console
-user@login04 $ wget http://stash.osgconnect.net/public/osgvsp20/gt-1.5.10-Linux_x86_64-64bit-complete.tar.gz
+user@login04 $ wget http://stash.osgconnect.net/public/osgvs21/gt-1.5.10-Linux_x86_64-64bit-complete.tar.gz
 ```
 
 Un-tar the gt package (`tar -xzvf ...`), then run its sequence file splitter as follows, with the target file size of 1MB:
