@@ -81,9 +81,9 @@ In order to use this code in a job, we will first need to statically compile the
 
 The Linux `file` command provides information about the *type* or *kind* of file that is given as an argument. In this case, you should get output like this:
 
-```console
+```hl_lines="2 3"
 username@host $ file pascal
-pascal: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), %BLUE%statically linked%ENDCOLOR%,
+pascal: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), statically linked,
 for GNU/Linux 2.6.18, not stripped
 ```
 
