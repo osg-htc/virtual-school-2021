@@ -22,10 +22,10 @@ computing research.  Topics include:
 * How to prepare software for use in HTC systems
 * Handling data (input and output) in HTC systems
 
-The public lectures are held daily, August 2-6, from 2:30-4:00 pm US
-Central Time.  
+The public lectures are held daily, August 2&ndash;6, from 2:30&ndash;4:00 pm US
+Central Time.
 
-The detailed [schedule](https://indico.fnal.gov/event/49686/timetable/) is available
+[The detailed schedule](https://indico.fnal.gov/event/49686/timetable/) is available
 on the Indico site.
 
 In addition, the lectures will be recorded and posted on the School website
@@ -34,7 +34,7 @@ participants also have priority access to experts, personalized learning
 plans, and small-group learning sessions, by opening lectures up to the
 public, a great deal of the School content will be available to everyone.
 
-### REGISTRATION
+### Registration
 
 Follow this link to register for free: [Register](https://indico.fnal.gov/event/49686/registrations/3094/)
 
