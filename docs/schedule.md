@@ -1,20 +1,21 @@
 # OSGVS21 Schedule
 
-This page contains schedule details for **full, invited participants** of the OSG Virtual School 2021.
+This page contains schedule details for **full, invited participants** of the OSG Virtual School 2021,
+who were selected following a Spring 2021 application process.
 
-For information about access to public lectures and demonstrations,
+SOME presentations will presented publicly. For information about access to public lectures and demonstrations,
 visit [the Indico scheduling site](https://indico.fnal.gov/event/49686/);
 note that public attendance requires free registration on that site.
 
 ## Week 1: August 2&ndash;6
 
 **Note:** Lectures and demonstrations this week are repeated each day.
-The first instance is for School participants only,
-and the second instance is for School participants and the general public who have registered in advance.
-Participants may attend one or both times.
+The first instance is for invited School participants only,
+and the second instance will also be open to the general public who have registered in advance.
+Invited participants may attend one or both times.
 
 During the times marked as &ldquo;Staff available&rdquo;,
-School staff will be monitoring email and Slack for questions.
+School staff will be monitoring email and the OSG School Slack for questions.
 So these are good times to work on School-related activities&nbsp;&mdash;
 such as exercises or applying things to your own work.
 
