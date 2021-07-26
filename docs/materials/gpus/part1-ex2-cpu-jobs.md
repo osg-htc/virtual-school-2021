@@ -84,5 +84,5 @@ Up next!
 --------
 
 Next you will try running TensorFlow jobs on GPUs:
-[Next Exercise](../part1-ex2-gpu-jobs)
+[Next Exercise](../part1-ex2-gpu-jobs.md)
 

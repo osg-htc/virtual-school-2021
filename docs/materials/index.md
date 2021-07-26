@@ -102,10 +102,10 @@ Slides will be posted here.
 ### GPUs and Containers
 
 View the slides
-([PDF](/materials/gpus/files/osgvsp21-gpus-containers.pdf),
-[PowerPoint](/materials/gpus/files/osgvsp21-gpus-containers.pptx))
+([PDF](gpus/files/osgvsp21-gpus-containers.pdf),
+[PowerPoint](gpus/files/osgvsp21-gpus-containers.pptx))
 
-- [Exercise 1.1: Containers Overview](gpus/art1-ex1-containers-overview.md)
+- [Exercise 1.1: Containers Overview](gpus/part1-ex1-containers-overview.md)
 - [Exercise 1.2: Running a CPU job](gpus/part1-ex2-cpu-jobs.md)
 - [Exercise 1.3: Running a GPU job](gpus/part1-ex3-gpu-jobs.md)
 

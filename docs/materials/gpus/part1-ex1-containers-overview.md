@@ -93,11 +93,6 @@ This is the image in its expanded form - something we can execute with Singulari
 Testing the container on the submit host
 ----------------------------------------
 
-First, download the files contained in this tutorial to the login node using the `tutorial` command and `cd` into the tutorial directory that is created:
-
-    tutorial tensorflow-containers
-    cd tutorial-tensorflow-containers
-
 Before submitting jobs to the OSG, it is always a good idea to test your code
 so that you understand runtime requirements. The containers can be tested
 on the OSGConnect submit hosts with `singularity shell`, which will drop you
@@ -158,5 +153,5 @@ Up next!
 --------
 
 Next you will try running TensorFlow jobs on CPUs:
-[Next Exercise](../part1-ex2-cpu-jobs)
+[Next Exercise](../part1-ex2-cpu-jobs.md)
 
