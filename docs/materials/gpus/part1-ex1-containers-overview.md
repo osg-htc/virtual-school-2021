@@ -149,9 +149,3 @@ Once you are done with testing, use `CTRL+D` or run `exit` to exit out of
 the container. Note that you can _not_ submit jobs from within the container.
 
 
-Up next!
---------
-
-Next you will try running TensorFlow jobs on CPUs:
-[Next Exercise](../part1-ex2-cpu-jobs.md)
-

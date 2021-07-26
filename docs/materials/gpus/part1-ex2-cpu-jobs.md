@@ -80,9 +80,3 @@ The job can now be submitted with `condor_submit cpu-job.submit`. Once the job
 is done, check the files named after the job id for the outputs.
 
 
-Up next!
---------
-
-Next you will try running TensorFlow jobs on GPUs:
-[Next Exercise](../part1-ex2-gpu-jobs.md)
-
