@@ -1,4 +1,4 @@
-# OSG Virtual School (pilot) Materials
+# OSG Virtual School Materials
 
 ## School Overview and Intro to HTC
 
