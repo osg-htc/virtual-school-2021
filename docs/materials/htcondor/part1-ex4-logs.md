@@ -126,5 +126,4 @@ Alternatively, delete any existing output, error, and log files from previous ru
 1.  Examine the output file: How many hostnames are there? Did HTCondor erase the previous contents for each job, or add new lines?
 1.  Examine the log file… carefully: What happened there? Pay close attention to the times and job IDs of the events.
 
-If you have questions about how HTCondor handles these files, you could try finding relevant sections of the manual (this is hard and not as useful as one would hope), discuss it with neighbors or instructors, or ask questions at the end of this session.
-
+If you would like further clarification about how HTCondor handles these files, discuss it with neighbors or instructors, or ask questions at the end of this session. 
