@@ -11,7 +11,7 @@ there are several different kinds of events during the School:
 *  Lectures and demonstrations: Every day during the first week.
    The ones starting at 10 a.m. CDT are for invited participants only,
    and the ones starting at 2:30 p.m. CDT are for invited participants
-   and registered guest from the public.
+   and registered guests from the public.
    Participants should attend at least one offering of each lecture
    (including demos, if any).
 
