@@ -130,43 +130,58 @@ Watch Your DAG
 
 Let’s follow the progress of the whole DAG:
 
-1.  Use the `watch` command to run `condor_q -nobatch -wide:80` every 10 seconds:
+1.  Use the `condor_watch_q` command to keep an eye on the running jobs. See more information about this tool [here](https://htcondor.readthedocs.io/en/latest/man-pages/condor_watch_q.html).
 
         :::console
-        username@learn $ watch -n 10 condor_q -nobatch -wide:80
+        username@learn $ condor_watch_q 
 
-    <span style="color:RED">**Here we see DAGMan running:**</span> 
+    <span style="color:RED">**If you're quick enough, you may have seen DAGMan running as the lone job, before it submitted additional job nodes:**</span> 
 
         :::console
-         ID  OWNER  SUBMITTED   RUN_TIME ST PRI SIZE CMD 
-        71.0 roy   6/22 17:39 0+00:00:03 R  0    0.3 condor_dagman
+        BATCH                IDLE  RUN  DONE  TOTAL  JOB_IDS
+        goatbrot.dag+222059     -    1     -      1  222059.0
+
+        [=============================================================================]
+
+        Total: 1 jobs; 1 running
+
+        Updated at 2021-07-28 13:52:57
 
     <span style="color:RED">**DAGMan has submitted the goatbrot jobs, but they haven't started running yet**</span>
     
         :::console
-         ID  OWNER SUBMITTED   RUN_TIME ST PRI SIZE CMD 
-        71.0 roy  6/22 17:39 0+00:00:17 R  0    0.3 condor_dagman 
-        72.0 roy  6/22 17:39 0+00:00:00 I  0    0.0 goatbrot -i 100000 
-        73.0 roy  6/22 17:39 0+00:00:00 I  0    0.0 goatbrot -i 100000 
-        74.0 roy  6/22 17:39 0+00:00:00 I  0    0.0 goatbrot -i 100000 
-        75.0 roy  6/22 17:39 0+00:00:00 I  0    0.0 goatbrot -i 100000
+        BATCH                IDLE  RUN  DONE  TOTAL  JOB_IDS
+        goatbrot.dag+222059     4    1     -      5  222059.0 ... 222063.0
+
+        [===============--------------------------------------------------------------]
+
+        Total: 5 jobs; 4 idle, 1 running
+
+        Updated at 2021-07-28 13:53:53
+
 
     <span style="color:RED">**They're running**</span> 
 
         :::console
-         ID  OWNER SUBMITTED   RUN_TIME ST PRI SIZE CMD
-        71.0 roy  6/22 17:39 0+00:07:15 R  0    0.3 condor_dagman 
-        72.0 roy  6/22 17:39 0+00:00:03 R  0    0.0 goatbrot -i 100000 
-        73.0 roy  6/22 17:39 0+00:00:03 R  0    0.0 goatbrot -i 100000 
-        74.0 roy  6/22 17:39 0+00:00:03 R  0    0.0 goatbrot -i 100000 
-        75.0 roy  6/22 17:39 0+00:00:03 R  0    0.0 goatbrot -i 100000
+        BATCH                IDLE  RUN  DONE  TOTAL  JOB_IDS
+        goatbrot.dag+222059     -    5     -      5  222059.0 ... 222063.0
+        [=============================================================================]
+
+        Total: 5 jobs; 5 running
+
+        Updated at 2021-07-28 13:54:33
 
     <span style="color:RED">**They finished, but DAGMan hasn't noticed yet. It only checks periodically:**</span>
 
         :::console
-         ID  OWNER SUBMITTED   RUN_TIME ST PRI SIZE CMD 
-        71.0 roy  6/22 17:39 0+00:08:46 R  0    0.3 condor_dagman
- 
+        BATCH                IDLE  RUN  DONE  TOTAL  JOB_IDS
+        goatbrot.dag+222059     -    1    4     -      5  222059.0 ... 222063.0
+
+        [##############################################################===============]
+
+        Total: 5 jobs; 4 completed, 1 running
+
+        Updated at 2021-07-28 13:55:13
 
     Eventually, you'll see the montage job submitted, then running, then leave the queue, and then DAGMan will leave the queue.
 
