@@ -95,7 +95,7 @@ Below is where DAGMan realizes that the montage node failed:
 06/22/12 18:08:42 **** condor_scheduniv_exec.77.0 (condor_DAGMAN) pid 26867 EXITING WITH STATUS 1
 ```
 
-DAGMan notices that one of the jobs failed because it's exit code was non-zero. DAGMan ran as much of the DAG as possible and logged enough information to continue the run when the situation is resolved. Do you see the part where it wrote the rescue DAG?
+DAGMan notices that one of the jobs failed because its exit code was non-zero. DAGMan ran as much of the DAG as possible and logged enough information to continue the run when the situation is resolved. Do you see the part where it wrote the rescue DAG?
 
 Look at the rescue DAG file. It's called a partial DAG because it indicates what part of the DAG has already been completed.
 
