@@ -25,30 +25,14 @@ which includes access to HTC experts and to HTC systems via the
 [Center for High Throughput Computing](https://chtc.cs.wisc.edu/approach.shtml) and
 [OSG Connect](https://www.osgconnect.net/) service
 (the latter otherwise available to researchers working on a U.S.-based academic, government, or non-profit research project).
+Also, the public is invited to register and attend the five lectures during the first week;
+for more information, see [the Public Lectures page](public-lectures.md).
 
 While no travel is involved and the schedule allows for some flexibility,
-accepted applicants will be asked to commit at least 20 hours each week.
-You can view [the high-level schedule for 2021](schedule.md), 
-and we expect the detailed schedule and materials to be similar to the 
-[OSG Virtual School Pilot 2020](https://opensciencegrid.org/virtual-school-pilot-2020/).
+invited participants will be asked to commit at least 20 hours each week.
+The [full schedule for 2021](schedule.md) is available to view.
 
 Note: We hope to return to an in-person OSG User School in 2022!
-
-## Applications
-
-Applications are now closed.
-We received a large number of applications this year,
-so thanks to everyone for your enthusiastic interest!
-
-If still needed, have someone email a letter of recommendation for you to user-school@opensciencegrid.org
-(any reasonable format is fine; we like PDF or plain text best).
-Ask someone who knows you professionally&nbsp;&mdash;
-ideally a faculty member or other supervisor.
-They should clearly identify your name and &ldquo;OSG Virtual School 2021&rdquo; in the email subject and letter.
-
-We plan to review applications in early June and send out our decisions by mid-June or so.
-We will contact all applicants once decisions have been made.
-Thank you for your patience!
 
 ## Contact Us
 
