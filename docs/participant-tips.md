@@ -19,11 +19,9 @@ there are several different kinds of events during the School:
    Meet with your mentor individually to set and track progress on goals,
    or with small groups to discuss common interests.
 
-*  Extra topics: On Monday and Tuesday of the first week,
-   there will be extra, optional learning modules for more specialized topics.
+*  Extra topics: On Monday and Tuesday of the second week,
+   there will be extra, optional lessons on more specialized topics.
    All participants are welcome to join, but use your time wisely.
-   We will schedule the topics during the first week,
-   so check your email for details.
    Not sure what topics to attend?  Work with your mentor to decide.
 
 *  Showcase: On Wednesday, August 11, there will be talks from three researchers who use HTC.
