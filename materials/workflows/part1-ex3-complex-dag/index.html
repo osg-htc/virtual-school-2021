@@ -1182,36 +1182,51 @@ PARENT g1 g2 g3 g4 CHILD montage
 <p>Let’s follow the progress of the whole DAG:</p>
 <ol>
 <li>
-<p>Use the <code>watch</code> command to run <code>condor_q -nobatch -wide:80</code> every 10 seconds:</p>
-<div class="codehilite"><pre><span></span><code><span class="gp">username@learn $ </span>watch -n <span class="m">10</span> condor_q -nobatch -wide:80
+<p>Use the <code>condor_watch_q</code> command to keep an eye on the running jobs. See more information about this tool <a href="https://htcondor.readthedocs.io/en/latest/man-pages/condor_watch_q.html">here</a>.</p>
+<div class="codehilite"><pre><span></span><code><span class="gp">username@learn $ </span>condor_watch_q
 </code></pre></div>
 
-<p><span style="color:RED"><strong>Here we see DAGMan running:</strong></span> </p>
-<div class="codehilite"><pre><span></span><code><span class="go"> ID  OWNER  SUBMITTED   RUN_TIME ST PRI SIZE CMD </span>
-<span class="go">71.0 roy   6/22 17:39 0+00:00:03 R  0    0.3 condor_dagman</span>
+<p><span style="color:RED"><strong>If you're quick enough, you may have seen DAGMan running as the lone job, before it submitted additional job nodes:</strong></span> </p>
+<div class="codehilite"><pre><span></span><code><span class="go">BATCH                IDLE  RUN  DONE  TOTAL  JOB_IDS</span>
+<span class="go">goatbrot.dag+222059     -    1     -      1  222059.0</span>
+
+<span class="go">[=============================================================================]</span>
+
+<span class="go">Total: 1 jobs; 1 running</span>
+
+<span class="go">Updated at 2021-07-28 13:52:57</span>
 </code></pre></div>
 
 <p><span style="color:RED"><strong>DAGMan has submitted the goatbrot jobs, but they haven't started running yet</strong></span></p>
-<div class="codehilite"><pre><span></span><code><span class="go"> ID  OWNER SUBMITTED   RUN_TIME ST PRI SIZE CMD </span>
-<span class="go">71.0 roy  6/22 17:39 0+00:00:17 R  0    0.3 condor_dagman </span>
-<span class="go">72.0 roy  6/22 17:39 0+00:00:00 I  0    0.0 goatbrot -i 100000 </span>
-<span class="go">73.0 roy  6/22 17:39 0+00:00:00 I  0    0.0 goatbrot -i 100000 </span>
-<span class="go">74.0 roy  6/22 17:39 0+00:00:00 I  0    0.0 goatbrot -i 100000 </span>
-<span class="go">75.0 roy  6/22 17:39 0+00:00:00 I  0    0.0 goatbrot -i 100000</span>
+<div class="codehilite"><pre><span></span><code><span class="go">BATCH                IDLE  RUN  DONE  TOTAL  JOB_IDS</span>
+<span class="go">goatbrot.dag+222059     4    1     -      5  222059.0 ... 222063.0</span>
+
+<span class="go">[===============--------------------------------------------------------------]</span>
+
+<span class="go">Total: 5 jobs; 4 idle, 1 running</span>
+
+<span class="go">Updated at 2021-07-28 13:53:53</span>
 </code></pre></div>
 
 <p><span style="color:RED"><strong>They're running</strong></span> </p>
-<div class="codehilite"><pre><span></span><code><span class="go"> ID  OWNER SUBMITTED   RUN_TIME ST PRI SIZE CMD</span>
-<span class="go">71.0 roy  6/22 17:39 0+00:07:15 R  0    0.3 condor_dagman </span>
-<span class="go">72.0 roy  6/22 17:39 0+00:00:03 R  0    0.0 goatbrot -i 100000 </span>
-<span class="go">73.0 roy  6/22 17:39 0+00:00:03 R  0    0.0 goatbrot -i 100000 </span>
-<span class="go">74.0 roy  6/22 17:39 0+00:00:03 R  0    0.0 goatbrot -i 100000 </span>
-<span class="go">75.0 roy  6/22 17:39 0+00:00:03 R  0    0.0 goatbrot -i 100000</span>
+<div class="codehilite"><pre><span></span><code><span class="go">BATCH                IDLE  RUN  DONE  TOTAL  JOB_IDS</span>
+<span class="go">goatbrot.dag+222059     -    5     -      5  222059.0 ... 222063.0</span>
+<span class="go">[=============================================================================]</span>
+
+<span class="go">Total: 5 jobs; 5 running</span>
+
+<span class="go">Updated at 2021-07-28 13:54:33</span>
 </code></pre></div>
 
 <p><span style="color:RED"><strong>They finished, but DAGMan hasn't noticed yet. It only checks periodically:</strong></span></p>
-<div class="codehilite"><pre><span></span><code><span class="go"> ID  OWNER SUBMITTED   RUN_TIME ST PRI SIZE CMD </span>
-<span class="go">71.0 roy  6/22 17:39 0+00:08:46 R  0    0.3 condor_dagman</span>
+<div class="codehilite"><pre><span></span><code><span class="go">BATCH                IDLE  RUN  DONE  TOTAL  JOB_IDS</span>
+<span class="go">goatbrot.dag+222059     -    1    4     -      5  222059.0 ... 222063.0</span>
+
+<span class="go">[##############################################################===============]</span>
+
+<span class="go">Total: 5 jobs; 4 completed, 1 running</span>
+
+<span class="go">Updated at 2021-07-28 13:55:13</span>
 </code></pre></div>
 
 <p>Eventually, you'll see the montage job submitted, then running, then leave the queue, and then DAGMan will leave the queue.</p>
