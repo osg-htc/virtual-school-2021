@@ -7,7 +7,7 @@ status: testing
   pre strong { font-style: normal; font-weight: bold; color: \#008; }
 </style>
 
-# Bonus Workflows Exercise 4.5: YOUR Jobs and More on Workflows
+# Bonus Workflows Exercise 1.5: YOUR Jobs and More on Workflows
 
 The objective of this exercise is to learn the very basics of running a set of jobs, where our set is just one job.
 
@@ -44,7 +44,7 @@ Links to more information:
 
 -   [Pegasus Website](https://pegasus.isi.edu)
 -   [Pegasus Documentation](https://pegasus.isi.edu/documentation)
--   [Pegasus on OSG Connect (covered Thursday)](https://support.opensciencegrid.org/support/solutions/articles/5000639789-pegasus)
+-   [Pegasus on OSG Connect](https://support.opensciencegrid.org/support/solutions/articles/5000639789-pegasus)
 
 If you have any questions or problems, please feel free to contact the Pegasus team by emailing <pegasus-support@isi.edu>
 
