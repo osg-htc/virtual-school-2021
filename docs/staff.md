@@ -1,4 +1,4 @@
-# OSGVSP20 – Staff
+# OSGVS21 Staff
 
 <style>
 img { margin: 5px 0; }
@@ -14,7 +14,8 @@ tr { vertical-align: top; }
           Tim founded the OSG School in 2010 and has led it since.
           When not involved in training, he mostly works for OSG in management,
           where he helps the project as a whole in a variety of capacities.
-          Tim started working with OSG in 2005, originally focusing on software integration.
+          Tim started working with OSG in 2005,
+          and has background in cognitive science, linguistics, training, and software.
         </p>
       </td>
     </tr>
