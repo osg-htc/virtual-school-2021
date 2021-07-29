@@ -78,16 +78,15 @@ The focus of this week is on applying what you have learned (and are learning!) 
 Plus, there are opportunities to learn more and a wrap-up session at the end.
 
 **Note:** The &ldquo;Extra Topic&rdquo; sessions will not repeat&nbsp;&mdash; each one is a separate topic.
-We will do our best to schedule the extra topics at times when interested participants can join.
 
 ### Monday, August 9
 
 | **Times<br>(US Central)** | **Activities** |
 | ---: | :--- |
 |  9:00&ndash;10:00 | Staff available; (scheduled separately:) mentor 1-1 meetings |
-| 10:00&ndash;11:00 | **Extra Topic 1** (details TBD) |
+| 10:00&ndash;11:00 | **Extra Topic 1:** Self-checkpointing for long-running jobs |
 | 11:00&ndash;15:00 | Staff available; (scheduled separately:) mentor 1-1 meetings |
-| 15:00&ndash;16:00 | **Extra Topic 2** (details TBD) |
+| 15:00&ndash;16:00 | **Extra Topic 2:** Containers and GPUs |
 | 16:00&ndash;17:00 | Staff available; (scheduled separately:) mentor 1-1 meetings |
 
 ### Tuesday, August 10
@@ -95,9 +94,9 @@ We will do our best to schedule the extra topics at times when interested partic
 | **Times<br>(US Central)** | **Activities** |
 | ---: | :--- |
 |  9:00&ndash;10:00 | Staff available |
-| 10:00&ndash;11:00 | **Extra Topic 3** (details TBD) |
+| 10:00&ndash;11:00 | **Extra Topic 3:** Introduction to Research Computing Facilitation |
 | 11:00&ndash;15:00 | Staff available |
-| 15:00&ndash;16:00 | **Extra Topic 4** (details TBD) |
+| 15:00&ndash;16:00 | **Extra Topic 4:** Workflows with DAGMan |
 | 16:00&ndash;17:00 | Staff available |
 
 ### Wednesday, August 11
