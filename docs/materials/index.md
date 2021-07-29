@@ -80,10 +80,7 @@ Slides will be posted here
 - [Exercise 3.1: Shared filesystems for large input](data/part3-ex1-input.md)
 - [Exercise 3.2: Shared filesystems for large output](data/part3-ex2-output.md)
 
-## Bonus Topics
-
-Bonus topics will be scheduled during the first week,
-based on interest and availability.
+## Extra Topics
 
 ### Self-checkpointing for long-running jobs
 
