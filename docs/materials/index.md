@@ -96,7 +96,7 @@ View the slides
 - [Exercise 1.2: Running a CPU job](gpus/part1-ex2-cpu-jobs.md)
 - [Exercise 1.3: Running a GPU job](gpus/part1-ex3-gpu-jobs.md)
 
-### Introduction to Research Computing Facilitation
+### Introduction to HTC Facilitation
 
 Slides will be posted here.
 
