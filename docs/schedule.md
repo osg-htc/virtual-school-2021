@@ -95,7 +95,7 @@ Plus, there are opportunities to learn more and a wrap-up session at the end.
 | **Times<br>(US Central)** | **Activities** |
 | ---: | :--- |
 |  9:00&ndash;10:00 | Staff available |
-| 10:00&ndash;11:00 | **Extra Topic 3:** Introduction to Research Computing Facilitation |
+| 10:00&ndash;11:00 | **Extra Topic 3:** Introduction to HTC Facilitation |
 | 11:00&ndash;15:00 | Staff available |
 | 15:00&ndash;16:00 | **Extra Topic 4:** Workflows with DAGMan |
 | 16:00&ndash;17:00 | Staff available |
