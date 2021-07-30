@@ -1,7 +1,7 @@
 # OSGVS21 Schedule
 
 This page contains schedule details for **full, invited participants** of the OSG Virtual School 2021,
-who were selected following a Spring 2021 application process.
+who were selected following a prior application process.
 
 SOME presentations will presented publicly. For information about access to public lectures and demonstrations,
 visit [the Indico scheduling site](https://indico.fnal.gov/event/49686/);
