@@ -1,4 +1,4 @@
-# OSG Virtual School (pilot) Materials
+# OSG Virtual School Materials
 
 ## School Overview and Intro to HTC
 
@@ -80,12 +80,23 @@ Slides will be posted here
 - [Exercise 3.1: Shared filesystems for large input](data/part3-ex1-input.md)
 - [Exercise 3.2: Shared filesystems for large output](data/part3-ex2-output.md)
 
-## Bonus Topics
-
-Bonus topics will be scheduled during the first week,
-based on interest and availability.
+## Extra Topics
 
 ### Self-checkpointing for long-running jobs
+
+Slides will be posted here.
+
+### Containers and GPUs
+
+View the slides
+([PDF](gpus/files/osgvsp21-gpus-containers.pdf),
+[PowerPoint](gpus/files/osgvsp21-gpus-containers.pptx))
+
+- [Exercise 1.1: Containers Overview](gpus/part1-ex1-containers-overview.md)
+- [Exercise 1.2: Running a CPU job](gpus/part1-ex2-cpu-jobs.md)
+- [Exercise 1.3: Running a GPU job](gpus/part1-ex3-gpu-jobs.md)
+
+### Introduction to Research Computing Facilitation
 
 Slides will be posted here.
 
@@ -98,14 +109,3 @@ Slides will be posted here.
 - [Exercise 1.3: A more complex DAG](workflows/part1-ex3-complex-dag.md)
 - [Exercise 1.4: Handling jobs that fail with DAGMan](workflows/part1-ex4-failed-dag.md)
 - [Bonus Exercise 4.5: HTCondor challenges](workflows/part1-ex5-challenges.md)
-
-### GPUs and Containers
-
-Slides will be posted here.
-
-### Introduction to Research Computing Facilitation
-
-Slides will be posted here.
-
-
-

@@ -30,7 +30,7 @@ Determining Resource Needs Before Running Any Jobs
     If you are running short on time, you can skip to "Determining Resource Needs By Running Test Jobs", below, but try to come back and read over this part at some point.
 
 It can be very difficult to predict the memory needs of your running program without running tests. Typically, the memory size of a job changes over time, making the task even trickier. 
-If you have knowledge ahead of time about your job’s maximum memory needs, use that, or a maybe a number that's just a bit higher, to be safe. Worst case scenario, you can request a fairly large amount of memory (as high as what's on your laptop or other server, if you know your program can run without crashing) for a first test job, OR you can run the program locally and 'watch' it:
+If you have knowledge ahead of time about your job’s maximum memory needs, use that, or maybe a number that's just a bit higher, to be safe. Worst case scenario, you can request a fairly large amount of memory (as high as what's on your laptop or other server, if you know your program can run without crashing) for a first test job, OR you can run the program locally and 'watch' it:
 ### Examining a Running Program on a Local Computer
 
 When working on a shared submit server, you should not run computationally-intensive work because it can use resources needed by HTCondor to manage the queue for all uses. 
