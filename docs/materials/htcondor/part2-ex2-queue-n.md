@@ -77,6 +77,7 @@ Let’s see how it works:
 
 1.  Write a normal submit file for this program
     -   Pass 1 million (`1000000`) as the command line argument to `circlepi`
+    -   Make sure to include `log`, `output`, and `error` (with filenames like `circlepi.log`), and `request_*` lines
     -   At the end of the file, write `queue 3` instead of just `queue` ("queue 3 jobs" vs. "queue a job").
 1.  Submit the file. Note the slightly different message from `condor_submit`:
 
@@ -129,7 +130,6 @@ For example, you can use the `$(Process)` variable to define a separate output f
 output = my-output-file-$(Process).out
 queue 10
 ```
-These variables are sometimes called "submit macros".
 
 Even though the `output` filename is defined only once, HTCondor will create separate output filenames for each job:
 
