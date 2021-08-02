@@ -1085,6 +1085,7 @@ Let’s see how it works:</p>
 <ol>
 <li>Write a normal submit file for this program<ul>
 <li>Pass 1 million (<code>1000000</code>) as the command line argument to <code>circlepi</code></li>
+<li>Make sure to include <code>log</code>, <code>output</code>, and <code>error</code> (with filenames like <code>circlepi.log</code>), and <code>request_*</code> lines</li>
 <li>At the end of the file, write <code>queue 3</code> instead of just <code>queue</code> ("queue 3 jobs" vs. "queue a job").</li>
 </ul>
 </li>
@@ -1132,7 +1133,6 @@ For example, you can use the <code>$(Process)</code> variable to define a separa
 queue 10
 </code></pre></div>
 
-<p>These variables are sometimes called "submit macros".</p>
 <p>Even though the <code>output</code> filename is defined only once, HTCondor will create separate output filenames for each job:</p>
 <table>
 <thead>
