@@ -2,7 +2,9 @@
 
 ## School Overview and Intro to HTC
 
-Slides will be posted here
+View the slides
+([PDF](/materials/files/osgvsp21-overview.pdf),
+[PowerPoint](/materials/files/osgvsp21-overview.pptx))
 
 ## Intro to HTCondor Job Execution
 
@@ -96,7 +98,7 @@ View the slides
 - [Exercise 1.2: Running a CPU job](gpus/part1-ex2-cpu-jobs.md)
 - [Exercise 1.3: Running a GPU job](gpus/part1-ex3-gpu-jobs.md)
 
-### Introduction to HTC Facilitation
+### Introduction to Research Computing Facilitation
 
 Slides will be posted here.
 
