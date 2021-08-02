@@ -2,7 +2,9 @@
 
 ## School Overview and Intro to HTC
 
-Slides will be posted here
+View the slides
+([PDF](/materials/files/osgvsp21-overview.pdf),
+[PowerPoint](/materials/files/osgvsp21-overview.pptx))
 
 ## Intro to HTCondor Job Execution
 
