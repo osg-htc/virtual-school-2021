@@ -56,7 +56,7 @@ This may be your first OSG job, ever!
     to get the unique set of location coordinates:
 
         :::console
-        user@login04 $ **cat location-*.out | sort | uniq**
+        user@login04 $ cat location-*.out | sort | uniq
 
 ## Mapping your jobs
 
