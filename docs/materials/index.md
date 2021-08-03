@@ -2,11 +2,15 @@
 
 ## School Overview and Intro to HTC
 
-Slides will be posted here
+View the slides
+([PDF](files/osgvsp21-overview.pdf),
+[PowerPoint](files/osgvsp21-overview.pptx))
 
 ## Intro to HTCondor Job Execution
 
-Slides will be posted here
+View the slides
+([PDF](/materials/htcondor/files/osgvsp21-htc-htcondor.pdf),
+[PowerPoint](/materials/htcondor/files/osgvsp21-htc-htcondor.pptx))
 
 ### Intro Exercises 1: Running and Viewing Simple Jobs (Strongly Recommended)
 
@@ -51,6 +55,7 @@ Slides will be posted here
 
 - [Exercise 1.1: Work With Downloaded Software](software/part1-ex1-download.md)
 - [Exercise 1.2: Use a Wrapper Script To Run Software](software/part1-ex2-wrapper.md)
+- [Exercise 1.3: Using Arguments With Wrapper Scripts](software/part1-ex3-arguments.md)
 
 ### Software Exercises 2: Specific Software Examples (Pick One)
 
@@ -58,18 +63,17 @@ Slides will be posted here
 - [Exercise 2.2: Compiling a Research Software](software/part2-ex2-prepackaged.md)
 - [Exercise 2.3: Compiling Python and Running Jobs](software/part2-ex3-python.md)
 - [Exercise 2.4: Compiling Matlab and Running Jobs](software/part2-ex4-matlab.md)
+- [Exercise 2.5: Using Conda Environments (Beta)](software/part2-ex5-conda.md)
 
 ### Software Exercises 3: Using Containers in Jobs (Strongly Recommended)
 
 - [Exercise 3.1: Using Software in a Singularity Container](software/part3-ex1-singularity.md)
 
-### Software Exercises 4: Bonus Exercises
+### Bonus Exercises: Python and Containers
 
-- [Exercise 4.1: Using Arguments With Wrapper Scripts](software/part4-ex1-arguments.md)
-- [Exercise 4.2: Additional Python ](software/part4-ex2-python-extras.md)
-- [Exercise 4.3: Using Software in a Docker Container](software/part4-ex3-docker.md)
-- [Exercise 4.4: Building Your Own Docker Container (Beta)](software/part4-ex4-docker-build.md)
-- [Exercise 4.5: Using Conda Environments (Beta)](software/part4-ex5-conda.md)
+- [Exercise 4.1: Additional Python ](software/part4-ex1-python-extras.md)
+- [Exercise 4.2: Using Software in a Docker Container](software/part4-ex2-docker.md)
+- [Exercise 4.3: Building Your Own Docker Container (Beta)](software/part4-ex3-docker-build.md)
 
 ## Data
 
