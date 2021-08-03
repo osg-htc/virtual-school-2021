@@ -51,6 +51,7 @@ Slides will be posted here
 - [Exercise 2.2: Compiling a Research Software](software/part2-ex2-prepackaged.md)
 - [Exercise 2.3: Compiling Python and Running Jobs](software/part2-ex3-python.md)
 - [Exercise 2.4: Compiling Matlab and Running Jobs](software/part2-ex4-matlab.md)
+- [Exercise 2.5: Using Conda Environments (Beta)](software/part2-ex5-conda.md)
 
 ### Software Exercises 3: Using Containers in Jobs (Strongly Recommended)
 
@@ -61,7 +62,6 @@ Slides will be posted here
 - [Exercise 4.1: Additional Python ](software/part4-ex1-python-extras.md)
 - [Exercise 4.2: Using Software in a Docker Container](software/part4-ex2-docker.md)
 - [Exercise 4.3: Building Your Own Docker Container (Beta)](software/part4-ex3-docker-build.md)
-- [Exercise 4.4: Using Conda Environments (Beta)](software/part4-ex4-conda.md)
 
 ## Data
 
