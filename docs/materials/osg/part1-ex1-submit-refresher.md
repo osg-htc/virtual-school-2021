@@ -18,7 +18,7 @@ Geolocation uses a registry to match a computer’s network address to an approx
 
 Now, let’s try to remember some basic HTCondor ideas from the HTC exercises:
 
-1.  Log in to `learn.chtc.wisc.edu`
+1.  Log in to `learn.chtc.wisc.edu` (yes, still at CHTC!)
 1.  Create and change into a new folder for this exercise, for example `osg-ex1`
 1.  Download the geolocation code:
 
