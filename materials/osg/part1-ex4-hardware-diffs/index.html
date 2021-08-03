@@ -1272,7 +1272,7 @@ Copy the file and rename it here, and make sure the argument to <code>sleep</cod
 <h3 id="monitoring-the-local-jobs">Monitoring the local jobs<a class="headerlink" href="#monitoring-the-local-jobs" title="Permanent link">&para;</a></h3>
 <p>Every few minutes, run <code>condor_q</code> and see how your sleep jobs are doing.
 To show a timestamp and how many jobs of each type are left, run the following command:</p>
-<div class="codehilite"><pre><span></span><code><span class="gp">user@learn $ </span>**condor_q &lt;Cluster ID&gt; -af RequestMemory <span class="p">|</span> sort -n <span class="p">|</span> uniq -c**
+<div class="codehilite"><pre><span></span><code><span class="gp">user@learn $ </span>condor_q &lt;Cluster ID&gt; -af RequestMemory <span class="p">|</span> sort -n <span class="p">|</span> uniq -c
 </code></pre></div>
 
 <p>The numbers in the left column are the number of jobs left of that type
