@@ -72,7 +72,7 @@ Which files were compressed the least?  Why?
 For many of the remaining exercises, you will be using an OSG Connect Access Point,
 which submits jobs into the Open Science Pool.
 For the School, the default server is named `login04.osgconnect.net`;
-however, if you had an OSG Connect from before the School (and you would know this in advance),
+however, if you had an OSG Connect account from before the School (you know who you are),
 you *may* be using `login05.osgconnect.net`, so just change the examples as needed.
 
 To log in to the OSG Connect Access Point,
@@ -80,11 +80,17 @@ use the username and SSH key that you made when you set up OSG Connect.
 If you have any issues logging in to `login04` (or `login05`, if that’s you),
 please ask for help right away!
 
-Once you have your account details, `ssh` in to the server and take a look around.
+So please `ssh` in to the server and take a look around:
+
+1.  Log in using `ssh login04.osgconnect.net` (or `login05`, if that’s you)
+1.  Try some Linux and HTCondor commands; for example:
+    *   Linux commands: `hostname`, `pwd`, `ls`, and so on
+    *   What is the operating system? `uname` and (in this case) `cat /etc/redhat-release`
+    *   HTCondor commands: `condor_version`, `condor_q`, `condor_status -total`
 
 ## Transferring files
 
-Later in this exercise, you will submit the same kind of job as in the previous exercise.
+In the next exercise, you will submit the same kind of job as in the previous exercise.
 Wouldn’t it be nice to copy the files instead of starting from scratch?
 And in general, being able to copy files between servers is helpful, so let’s explore a way to do that.
 
@@ -120,7 +126,7 @@ and in this case, the username (Net ID) for `learn` is specified:
 user@login04 $ scp net_id@learn.chtc.wisc.edu:bar .
 ```
 
-You can also copy folders between servers using the `-r` option.
+Also, you can copy folders between servers using the `-r` option.
 If you kept all your files from the HTCondor exercise 1.3 in a folder named `htc-1.3` on `learn.chtc.wisc.edu`,
 you could use the following command to copy them to your home directory on `login04.osgconnect.net`:
 
