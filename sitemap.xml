@@ -72,6 +72,26 @@
      <lastmod>2021-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://opensciencegrid.org/virtual-school-2021/materials/osg/part1-ex1-submit-refresher/</loc>
+     <lastmod>2021-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://opensciencegrid.org/virtual-school-2021/materials/osg/part1-ex2-login-scp/</loc>
+     <lastmod>2021-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://opensciencegrid.org/virtual-school-2021/materials/osg/part1-ex3-submit-osg/</loc>
+     <lastmod>2021-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://opensciencegrid.org/virtual-school-2021/materials/osg/part1-ex4-hardware-diffs/</loc>
+     <lastmod>2021-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://opensciencegrid.org/virtual-school-2021/materials/osg/part1-ex5-software-diffs/</loc>
+     <lastmod>2021-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://opensciencegrid.org/virtual-school-2021/materials/software/part1-ex1-download/</loc>
      <lastmod>2021-08-03</lastmod>
      <changefreq>daily</changefreq>
@@ -113,26 +133,6 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://opensciencegrid.org/virtual-school-2021/materials/software/part4-ex3-docker-build/</loc>
-     <lastmod>2021-08-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://opensciencegrid.org/virtual-school-2021/materials/osg/ex1-submit-refresher/</loc>
-     <lastmod>2021-08-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://opensciencegrid.org/virtual-school-2021/materials/osg/ex2-login-scp/</loc>
-     <lastmod>2021-08-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://opensciencegrid.org/virtual-school-2021/materials/osg/ex3-submit-osg/</loc>
-     <lastmod>2021-08-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://opensciencegrid.org/virtual-school-2021/materials/osg/ex4-hardware-diffs/</loc>
-     <lastmod>2021-08-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://opensciencegrid.org/virtual-school-2021/materials/osg/ex5-software-diffs/</loc>
      <lastmod>2021-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>

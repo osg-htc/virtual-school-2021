@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="https://opensciencegrid.org/virtual-school-2021/materials/osg/ex3-submit-osg/">
+        <link rel="canonical" href="https://opensciencegrid.org/virtual-school-2021/materials/osg/part1-ex4-hardware-diffs/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.0">
     
     
       
-        <title>Exercise 3 - OSG Virtual School 2021</title>
+        <title>Exercise 1.4 - OSG Virtual School 2021</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#osg-exercise-3-running-jobs-in-the-osg" class="md-skip">
+        <a href="#osg-exercise-4-hardware-differences-in-the-osg" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Exercise 3
+              Exercise 1.4
             
           </span>
         </div>
@@ -446,19 +446,200 @@
             
   
   
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" checked>
+      
+      <label class="md-nav__link" for="__nav_4_3">
+        OSG Exercises
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="OSG Exercises" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          OSG Exercises
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part1-ex1-submit-refresher/" class="md-nav__link">
+        Exercise 1.1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part1-ex2-login-scp/" class="md-nav__link">
+        Exercise 1.2
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part1-ex3-submit-osg/" class="md-nav__link">
+        Exercise 1.3
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Exercise 1.4
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Exercise 1.4
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#checking-chtc-memory-availability" class="md-nav__link">
+    Checking CHTC memory availability
+  </a>
+  
+    <nav class="md-nav" aria-label="Checking CHTC memory availability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#yet-another-queue-syntax" class="md-nav__link">
+    Yet another queue syntax
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-the-submit-files" class="md-nav__link">
+    Create the submit files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-the-local-jobs" class="md-nav__link">
+    Monitoring the local jobs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checking-osg-memory-availability" class="md-nav__link">
+    Checking OSG memory availability
+  </a>
+  
+    <nav class="md-nav" aria-label="Checking OSG memory availability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-the-remote-jobs" class="md-nav__link">
+    Monitoring the remote jobs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analyzing-the-results" class="md-nav__link">
+    Analyzing the results
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part1-ex5-software-diffs/" class="md-nav__link">
+        Exercise 1.5
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
   
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
       
-      <label class="md-nav__link" for="__nav_4_3">
+      <label class="md-nav__link" for="__nav_4_4">
         Software Exercises
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Software Exercises" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_3">
+        <label class="md-nav__title" for="__nav_4_4">
           <span class="md-nav__icon md-icon"></span>
           Software Exercises
         </label>
@@ -603,167 +784,6 @@
     <li class="md-nav__item">
       <a href="../../software/part4-ex4-conda.md" class="md-nav__link">
         Exercise 4.4
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" checked>
-      
-      <label class="md-nav__link" for="__nav_4_4">
-        OSG Exercises
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="OSG Exercises" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_4">
-          <span class="md-nav__icon md-icon"></span>
-          OSG Exercises
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ex1-submit-refresher/" class="md-nav__link">
-        Exercise 1
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ex2-login-scp/" class="md-nav__link">
-        Exercise 2
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Exercise 3
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        Exercise 3
-      </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#where-in-the-world-are-my-jobs-part-2" class="md-nav__link">
-    Where in the world are my jobs? (Part 2)
-  </a>
-  
-    <nav class="md-nav" aria-label="Where in the world are my jobs? (Part 2)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#gathering-network-information-from-the-osg" class="md-nav__link">
-    Gathering network information from the OSG
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mapping-your-jobs" class="md-nav__link">
-    Mapping your jobs
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-exercise" class="md-nav__link">
-    Next exercise
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#extra-challenge-cleaning-up-your-submit-directory" class="md-nav__link">
-    Extra Challenge: Cleaning up your submit directory
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ex4-hardware-diffs/" class="md-nav__link">
-        Exercise 4
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ex5-software-diffs/" class="md-nav__link">
-        Exercise 5
       </a>
     </li>
   
@@ -1109,16 +1129,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#where-in-the-world-are-my-jobs-part-2" class="md-nav__link">
-    Where in the world are my jobs? (Part 2)
+  <a href="#checking-chtc-memory-availability" class="md-nav__link">
+    Checking CHTC memory availability
   </a>
   
-    <nav class="md-nav" aria-label="Where in the world are my jobs? (Part 2)">
+    <nav class="md-nav" aria-label="Checking CHTC memory availability">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#gathering-network-information-from-the-osg" class="md-nav__link">
-    Gathering network information from the OSG
+  <a href="#yet-another-queue-syntax" class="md-nav__link">
+    Yet another queue syntax
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-the-submit-files" class="md-nav__link">
+    Create the submit files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-the-local-jobs" class="md-nav__link">
+    Monitoring the local jobs
   </a>
   
 </li>
@@ -1129,22 +1163,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mapping-your-jobs" class="md-nav__link">
-    Mapping your jobs
+  <a href="#checking-osg-memory-availability" class="md-nav__link">
+    Checking OSG memory availability
   </a>
+  
+    <nav class="md-nav" aria-label="Checking OSG memory availability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-the-remote-jobs" class="md-nav__link">
+    Monitoring the remote jobs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#next-exercise" class="md-nav__link">
-    Next exercise
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#extra-challenge-cleaning-up-your-submit-directory" class="md-nav__link">
-    Extra Challenge: Cleaning up your submit directory
+  <a href="#analyzing-the-results" class="md-nav__link">
+    Analyzing the results
   </a>
   
 </li>
@@ -1162,60 +1202,134 @@
               
                 
                 
-                <h1 id="osg-exercise-3-running-jobs-in-the-osg">OSG Exercise 3: Running jobs in the OSG<a class="headerlink" href="#osg-exercise-3-running-jobs-in-the-osg" title="Permanent link">&para;</a></h1>
-<p>The goal of this exercise is to have your jobs running on the OSG and map their geographical locations.</p>
-<h2 id="where-in-the-world-are-my-jobs-part-2">Where in the world are my jobs? (Part 2)<a class="headerlink" href="#where-in-the-world-are-my-jobs-part-2" title="Permanent link">&para;</a></h2>
-<p>In this version of the geolocating exercise, you will submit jobs to the OSG from <code>login04.osgconnect.net</code> and
-hopefully getting back much more interesting results!
-You will be using the same exact payload as you did in <a href="../ex1-submit-refresher/">OSG exercise 1</a>.</p>
-<h3 id="gathering-network-information-from-the-osg">Gathering network information from the OSG<a class="headerlink" href="#gathering-network-information-from-the-osg" title="Permanent link">&para;</a></h3>
-<p>Now to create submit files that will run in the OSG!</p>
-<ol>
-<li>If not already logged in, <code>ssh</code> into <code>login04.osgconnect.net</code></li>
-<li>
-<p>Set the default project associated with your account by running the following command:</p>
-<div class="codehilite"><pre><span></span><code><span class="go">connect project</span>
+                <h1 id="osg-exercise-4-hardware-differences-in-the-osg">OSG Exercise 4: Hardware Differences in the OSG<a class="headerlink" href="#osg-exercise-4-hardware-differences-in-the-osg" title="Permanent link">&para;</a></h1>
+<p>The goal of this exercise is to compare hardware differences between our local cluster (CHTC here at UW–Madison) and an
+OSG glidein pool.
+Specifically, we will look at how easy it is to get access to resources in terms of the amount of memory that is
+requested.
+This will not be a very careful study, but should give you some idea of one way in which the pools are different.</p>
+<p>In the first two parts of the exercise, you will submit a bunch of jobs that differ only in how much memory each one
+requests;
+we call this a <em>parameter sweep</em>, in that we are testing many possible values of a parameter.
+We will request memory from 8–64GB, doubling the memory each time.
+One set of jobs will be submitted locally, and the other, identical set of jobs will be submitted to OSG.
+You will check the queue periodically to see how many jobs have completed and how many are still waiting to run.</p>
+<h2 id="checking-chtc-memory-availability">Checking CHTC memory availability<a class="headerlink" href="#checking-chtc-memory-availability" title="Permanent link">&para;</a></h2>
+<p>In this first part, you will create the submit file for both the local and OSG jobs, then submit the local set.</p>
+<h3 id="yet-another-queue-syntax">Yet another queue syntax<a class="headerlink" href="#yet-another-queue-syntax" title="Permanent link">&para;</a></h3>
+<p>Earlier, you learned about the <code>queue</code> statement and some of the different ways it can be invoked to submit
+multiple jobs.
+Similar to the <code>queue from</code> statement to submit jobs based on lines from a specific file, you can use <code>queue in</code> to
+submit jobs based on a list directly from your submit file:</p>
+<div class="codehilite"><pre><span></span><code>queue &lt;# of jobs&gt; &lt;variable&gt; in (
+&lt;item 1&gt;
+&lt;item 2&gt;
+&lt;item 3&gt;
+...
+)
 </code></pre></div>
 
-<p>If you are given a choice and don't know which project to select, reach out to OSG staff.
-The default project will stay in effect until changed at a later time.</p>
-</li>
-<li>
-<p>Make a new directory for this exercise, <code>osg-ex3</code> and change into it</p>
-</li>
-<li>Use <code>scp</code> or <code>rsync</code> from <a href="../ex2-login-scp/">OSG exercise 2</a> to copy over the executable and input
-   file from the <code>osg-ex1</code> directory from <code>learn</code>.</li>
-<li>Re-create the submit file from OSG exercise 1 except this time around change your submit file so that it submits
-   <strong>five hundred</strong> jobs!</li>
-<li>Submit your file and wait for the results</li>
-</ol>
-<h2 id="mapping-your-jobs">Mapping your jobs<a class="headerlink" href="#mapping-your-jobs" title="Permanent link">&para;</a></h2>
-<p>As before, you will be using <a href="http://www.mapcustomizer.com/">http://www.mapcustomizer.com/</a> to visualize where your jobs have landed in the OSG.
-Copy and paste the collated results from your job output into the bulk creation text box at the bottom of the screen.
-Where did your jobs end up?</p>
-<h2 id="next-exercise">Next exercise<a class="headerlink" href="#next-exercise" title="Permanent link">&para;</a></h2>
-<p>Once completed, move onto the next exercise: <a href="../ex4-hardware-diffs/">Hardware Differences in the OSG</a></p>
-<h2 id="extra-challenge-cleaning-up-your-submit-directory">Extra Challenge: Cleaning up your submit directory<a class="headerlink" href="#extra-challenge-cleaning-up-your-submit-directory" title="Permanent link">&para;</a></h2>
-<p>If you run <code>ls</code> in the directory from which you submitted your job, you may see that you now have thousands of files!
-Proper data management starts to become a requirement as you start to develop truly HTC workflows;
-you'll want organize your submit files, code, and input data separate from your output data.</p>
+<p>For example, to submit 6 total jobs that sleep for <code>5</code>, <code>5</code>, <code>10</code>, <code>10</code>, <code>15</code>, and <code>15</code> seconds, you could write the
+following submit file:</p>
+<div class="codehilite"><pre><span></span><code>executable = /bin/sleep
+
+request_cpus = 1
+request_memory = 1MB
+request_disk = 1MB
+
+queue 2 arguments in (
+5
+10
+15
+)
+</code></pre></div>
+
+<p>Try submitting this yourself and check the jobs that end up in the queue with <code>condor_q -nobatch</code>.</p>
+<h3 id="create-the-submit-files">Create the submit files<a class="headerlink" href="#create-the-submit-files" title="Permanent link">&para;</a></h3>
+<p>To create our parameter sweep, we will create a <strong>new</strong> submit file with multiple queue statements and change the value
+of our parameter (<code>request_memory</code>) for each batch of jobs.</p>
 <ol>
+<li>If not already, log in to <code>learn.chtc.wisc.edu</code></li>
+<li>Create and change into a new subdirectory called <code>osg-ex4</code></li>
 <li>
-<p>Try editing your submit file so that all your output and error files are saved to separate directories within your
-   submit directory.</p>
+<p>Create a submit file that is named <code>sleep.sub</code> that executes the command <code>/bin/sleep 300</code>.</p>
 <div class="admonition note">
-<p class="admonition-title">Tip</p>
-<p>Experiment with fewer job submissions until you're confident you have it right, then go back to submitting 500
-jobs!</p>
+<p class="admonition-title">Note</p>
+<p>If you do not remember all of the submit statements to write this file, or just to go faster, find a similar
+submit file from a previous exercise.
+Copy the file and rename it here, and make sure the argument to <code>sleep</code> is <code>300</code>.</p>
 </div>
 </li>
 <li>
-<p>Submit your file and track the status of your jobs.</p>
+<p>Use the <code>queue in</code> syntax to submit 10 jobs each for the following memory requests: 8, 16, 32, and 64GB.
+    You should have 10 jobs requesting 8GB, 10 jobs requesting 16GB, etc.</p>
 </li>
+<li>Save the submit file and exit your editor</li>
+<li>Submit your jobs</li>
 </ol>
-<p>Did your jobs complete successfully with output and error files saved in separate directories?
-If not, can you find any useful information in the job logs or hold messages?
-If you get stuck, review the <a href="../files/osgus20-day1-part2-many-HTCondor-jobs.pdf">slides for submitting many jobs</a>.</p>
+<h3 id="monitoring-the-local-jobs">Monitoring the local jobs<a class="headerlink" href="#monitoring-the-local-jobs" title="Permanent link">&para;</a></h3>
+<p>Every few minutes, run <code>condor_q</code> and see how your sleep jobs are doing.
+To easily see how many jobs of each type you have left, run the following command:</p>
+<div class="codehilite"><pre><span></span><code><span class="gp">user@learn $ </span>condor_q &lt;Cluster ID&gt; -af RequestMemory <span class="p">|</span> sort -n <span class="p">|</span> uniq -c
+</code></pre></div>
+
+<p>The numbers in the left column are the number of jobs left of that type and the number on the right is the amount of
+memory you requested in MB.
+Consider making a little table like the one below to track progress.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Memory</th>
+<th align="left">Remaining #1</th>
+<th align="left">Remaining #2</th>
+<th align="left">Remaining #3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">8 GB</td>
+<td align="left">10</td>
+<td align="left">6</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">16 GB</td>
+<td align="left">10</td>
+<td align="left">7</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">32 GB</td>
+<td align="left">10</td>
+<td align="left">8</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">64 GB</td>
+<td align="left">10</td>
+<td align="left">9</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<p>In the meantime, between checking on your local jobs, start the next section – taking a break every few minutes to
+record progress on your local jobs.</p>
+<h2 id="checking-osg-memory-availability">Checking OSG memory availability<a class="headerlink" href="#checking-osg-memory-availability" title="Permanent link">&para;</a></h2>
+<p>For the second part of the exercise, you will just copy over the directory from the <a href="#checking-chtc-memory-availability">above section</a>
+on <code>learn.chtc.wisc.edu</code> to <code>login04.osgconnect.net</code> and resubmit your jobs to the OSG.
+If you get stuck during the copying process, refer to <a href="ex2-login-scp.md">OSG exercise 2</a>.</p>
+<h3 id="monitoring-the-remote-jobs">Monitoring the remote jobs<a class="headerlink" href="#monitoring-the-remote-jobs" title="Permanent link">&para;</a></h3>
+<p>As you did in the first part, use <code>condor_q</code> to track how your sleep jobs are doing.
+You can move onto the next exercise but keep tracking the status of your jobs.
+After you are done with the <a href="ex5-software-diffs.md">next exercise</a>, come back to this exercise,
+and move onto analyzing the results.</p>
+<h2 id="analyzing-the-results">Analyzing the results<a class="headerlink" href="#analyzing-the-results" title="Permanent link">&para;</a></h2>
+<p>Now that you've finished the other exercise, how many jobs have completed locally? How many have completed remotely?</p>
+<p>Due to the dynamic nature of the remote pool, the OSG may have noticed the demand for higher memory jobs and leased more
+high memory slots for our pool.
+That being said, 64GB+ slots are a high-demand, low-availability resource in the OSG so it's unlikely that all of your
+64GB+ jobs matched and ran to completion, if any.
+On the other hand, the local cluster has a fair number of 64GB+ slots so all your jobs have a high chance of running.</p>
                 
                   
                 
@@ -1236,7 +1350,7 @@ If you get stuck, review the <a href="../files/osgus20-day1-part2-many-HTCondor-
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../ex2-login-scp/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../part1-ex3-submit-osg/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1245,19 +1359,19 @@ If you get stuck, review the <a href="../files/osgus20-day1-part2-many-HTCondor-
               <span class="md-footer__direction">
                 Previous
               </span>
-              Exercise 2
+              Exercise 1.3
             </div>
           </div>
         </a>
       
       
-        <a href="../ex4-hardware-diffs/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../part1-ex5-software-diffs/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Exercise 4
+              Exercise 1.5
             </div>
           </div>
           <div class="md-footer__button md-icon">
