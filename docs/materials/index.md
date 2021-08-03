@@ -6,6 +6,9 @@ View the slides
 ([PDF](files/osgvsp21-overview.pdf),
 [PowerPoint](files/osgvsp21-overview.pptx))
 
+Watch the lecture recording
+([Intro to the Virtual School, HTC, and OSG](https://www.youtube.com/watch?v=vpJPPjoQ3QU))
+
 ## Intro to HTCondor Job Execution
 
 View the slides
@@ -35,6 +38,18 @@ View the slides
 - [Bonus Exercise 3.2: Explore `condor_status`](htcondor/part3-ex2-status.md)
 - [Bonus Exercise 3.3: A job that needs retries](htcondor/part3-ex3-job-retry.md)
 
+## OSG
+
+Slides will be posted here
+
+All exercises strongly recommended!
+
+- [Exercise 1: Refresher – Submitting Multiple Jobs](osg/ex1-submit-refresher.md)
+- [Exercise 2: Log in to the OSG Submit Server](osg/ex2-login-scp.md)
+- [Exercise 3: Running jobs in the OSG](osg/ex3-submit-osg.md)
+- [Exercise 4: Hardware Differences in the OSG](osg/ex4-hardware-diffs.md)
+- [Exercise 5: Software Differences in the OSG](osg/ex5-software-diffs.md)
+
 ## Software
 
 Slides will be posted here
@@ -51,6 +66,7 @@ Slides will be posted here
 - [Exercise 2.2: Compiling a Research Software](software/part2-ex2-prepackaged.md)
 - [Exercise 2.3: Compiling Python and Running Jobs](software/part2-ex3-python.md)
 - [Exercise 2.4: Compiling Matlab and Running Jobs](software/part2-ex4-matlab.md)
+- [Exercise 2.5: Using Conda Environments (Beta)](software/part2-ex5-conda.md)
 
 ### Software Exercises 3: Using Containers in Jobs (Strongly Recommended)
 
@@ -61,7 +77,6 @@ Slides will be posted here
 - [Exercise 4.1: Singularity Examples on OSG Connect](software/part4-ex1-singularity-options.md)
 - [Exercise 4.2: Using Software in a Docker Container](software/part4-ex2-docker.md)
 - [Exercise 4.3: Building Your Own Docker Container (Beta)](software/part4-ex3-docker-build.md)
-- [Exercise 4.4: Using Conda Environments (Beta)](software/part4-ex4-conda.md)
 
 ## Data
 
