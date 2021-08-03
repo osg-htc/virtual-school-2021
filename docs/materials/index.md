@@ -3,8 +3,8 @@
 ## School Overview and Intro to HTC
 
 View the slides
-([PDF](/materials/files/osgvsp21-overview.pdf),
-[PowerPoint](/materials/files/osgvsp21-overview.pptx))
+([PDF](files/osgvsp21-overview.pdf),
+[PowerPoint](files/osgvsp21-overview.pptx))
 
 ## Intro to HTCondor Job Execution
 
@@ -43,6 +43,7 @@ Slides will be posted here
 
 - [Exercise 1.1: Work With Downloaded Software](software/part1-ex1-download.md)
 - [Exercise 1.2: Use a Wrapper Script To Run Software](software/part1-ex2-wrapper.md)
+- [Exercise 1.3: Using Arguments With Wrapper Scripts](software/part1-ex3-arguments.md)
 
 ### Software Exercises 2: Specific Software Examples (Pick One)
 
@@ -57,10 +58,9 @@ Slides will be posted here
 
 ### Software Exercises 4: Bonus Exercises
 
-- [Exercise 4.1: Using Arguments With Wrapper Scripts](software/part4-ex1-arguments.md)
-- [Exercise 4.2: Additional Python ](software/part4-ex2-python-extras.md)
-- [Exercise 4.3: Using Software in a Docker Container](software/part4-ex3-docker.md)
-- [Exercise 4.4: Building Your Own Docker Container (Beta)](software/part4-ex4-docker-build.md)
+- [Exercise 4.1: Additional Python ](software/part4-ex2-python-extras.md)
+- [Exercise 4.2: Using Software in a Docker Container](software/part4-ex3-docker.md)
+- [Exercise 4.3: Building Your Own Docker Container (Beta)](software/part4-ex4-docker-build.md)
 - [Exercise 4.5: Using Conda Environments (Beta)](software/part4-ex5-conda.md)
 
 ## Data
