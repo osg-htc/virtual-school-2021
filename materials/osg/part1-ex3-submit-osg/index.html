@@ -534,8 +534,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#gathering-network-information-from-the-osg" class="md-nav__link">
-    Gathering network information from the OSG
+  <a href="#gathering-network-information-from-os-pool-jobs" class="md-nav__link">
+    Gathering network information from OS Pool jobs
   </a>
   
 </li>
@@ -1117,8 +1117,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#gathering-network-information-from-the-osg" class="md-nav__link">
-    Gathering network information from the OSG
+  <a href="#gathering-network-information-from-os-pool-jobs" class="md-nav__link">
+    Gathering network information from OS Pool jobs
   </a>
   
 </li>
@@ -1171,8 +1171,8 @@ and map their geographical locations.</p>
 you will submit jobs to the OS Pool from <code>login04.osgconnect.net</code>
 and hopefully get back interesting results!
 You will use the same job (software) as you did in <a href="../part1-ex1-submit-refresher/">OSG exercise 1.1</a>.</p>
-<h3 id="gathering-network-information-from-the-osg">Gathering network information from the OSG<a class="headerlink" href="#gathering-network-information-from-the-osg" title="Permanent link">&para;</a></h3>
-<p>As a preliminary step, you will create a submit file that will run in the OS Pool!</p>
+<h3 id="gathering-network-information-from-os-pool-jobs">Gathering network information from OS Pool jobs<a class="headerlink" href="#gathering-network-information-from-os-pool-jobs" title="Permanent link">&para;</a></h3>
+<p>This may be your first OSG job, ever!</p>
 <ol>
 <li>
 <p>If not already logged in, <code>ssh</code> into <code>login04.osgconnect.net</code></p>
@@ -1186,28 +1186,47 @@ You will use the same job (software) as you did in <a href="../part1-ex1-submit-
 The default project will stay in effect until changed at a later time.</p>
 </li>
 <li>
-<p>Make a new directory for this exercise, <code>osg-ex3</code> and change into it</p>
+<p>Make a new directory for this exercise, <code>osg-ex13</code> and change into it</p>
 </li>
 <li>
-<p>Copy files from <code>learn</code> (if not done already)</p>
-<p>Use <code>scp</code> or <code>rsync</code> from <a href="../part1-ex2-login-scp/">OSG exercise 1.2</a> to copy the executable and input
-file from the <code>osg-ex1</code> directory from <code>learn</code>;
-or, if you copied the OSG exercise 1.1 tarball earlier, extract the files from it.</p>
+<p>If you did not copy the tarball for <a href="../part1-ex1-submit-refresher/">OSG exercise 1.1</a>
+    from <code>learn</code> to <code>login04</code> in the previous exercise,
+    return to <a href="../part1-ex2-login-scp/">OSG exercise 1.2</a> and do that now.</p>
 </li>
 <li>
-<p>Copy or re-create the submit file from OSG exercise 1.1,
-    except this time around change your submit file so that it submits
-    <strong>five hundred</strong> jobs!</p>
-<p>Do you think you should test a smaller number of jobs first and scale up?</p>
+<p>Unpack the tarball containing the OSG exercise 1.1 files</p>
+<p>Not sure how to do this step?  Revisit <a href="../part1-ex2-login-scp/">OSG exercise 1.2</a>!</p>
 </li>
 <li>
-<p>Submit your file and wait for the results</p>
+<p>Copy the submit file, wrapper script, and input file (<code>wn-geoip.tar.gz</code>)
+    from the OSG exercise 1.1 directory into the new OSG exercise 1.3 directory (created above)</p>
+</li>
+<li>
+<p>Check the submit file&nbsp;— does anything need to change?</p>
+</li>
+<li>
+<p>For your final run, you will want to run a lot of jobs.
+    But remember the idea of testing a small number of jobs first and then scaling up?
+    Pick a number of jobs to run as a test and try that.
+    Fix any issues and repeat until solid.</p>
+</li>
+<li>
+<p>When you think the submit file is ready, scale up to 500 jobs and run!</p>
+</li>
+<li>
+<p>When your “final” run is done (or nearly done),
+    use the command from <a href="../part1-ex1-submit-refresher/">OSG exercise 1.1</a>
+    to get the unique set of location coordinates:</p>
+<div class="codehilite"><pre><span></span><code><span class="gp">user@login04 $ </span>cat location-*.out <span class="p">|</span> sort <span class="p">|</span> uniq
+</code></pre></div>
+
 </li>
 </ol>
 <h2 id="mapping-your-jobs">Mapping your jobs<a class="headerlink" href="#mapping-your-jobs" title="Permanent link">&para;</a></h2>
 <p>As before, you will be using <a href="https://www.mapcustomizer.com/">https://www.mapcustomizer.com/</a> to visualize where your jobs have landed in the OSG.
 Copy and paste the collated results from your job output into the Bulk Entry area.
-Where did your jobs end up?</p>
+Where did your jobs end up?
+This exercise gives you a small sense of the scope of the OSG’s Open Science Pool!</p>
 <h2 id="next-exercise">Next exercise<a class="headerlink" href="#next-exercise" title="Permanent link">&para;</a></h2>
 <p>Once completed, move onto the next exercise: <a href="../part1-ex4-hardware-diffs/">Hardware Differences in the OSG</a></p>
 <h2 id="extra-challenge-cleaning-up-your-submit-directory">Extra Challenge: Cleaning up your submit directory<a class="headerlink" href="#extra-challenge-cleaning-up-your-submit-directory" title="Permanent link">&para;</a></h2>
