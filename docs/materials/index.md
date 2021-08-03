@@ -6,6 +6,9 @@ View the slides
 ([PDF](files/osgvsp21-overview.pdf),
 [PowerPoint](files/osgvsp21-overview.pptx))
 
+Watch the lecture recording
+([Intro to the Virtual School, HTC, and OSG](https://www.youtube.com/watch?v=vpJPPjoQ3QU))
+
 ## Intro to HTCondor Job Execution
 
 View the slides
