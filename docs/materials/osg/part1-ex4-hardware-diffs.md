@@ -20,7 +20,8 @@ You will check the queue periodically to see how many jobs have completed and ho
 
 ## Checking CHTC memory availability
 
-In this first part, you will create the submit file for both the CHTC and OSG jobs, then submit the local set.
+In this first part, you will create the submit file that will be used for both the CHTC and OSG jobs,
+then submit the CHTC set.
 
 ### Yet another queue syntax
 
@@ -58,7 +59,7 @@ queue 2 arguments in (
 Try submitting this yourself and verify that all six jobs are in the queue,
 using the `condor_q -nobatch` command.
 
-### Create the submit files
+### Create the submit file
 
 To create our parameter sweep,
 we will create a **new** submit file with the queue…in syntax
