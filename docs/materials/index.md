@@ -56,9 +56,9 @@ Slides will be posted here
 
 - [Exercise 3.1: Using Software in a Singularity Container](software/part3-ex1-singularity.md)
 
-### Bonus Exercises: Python and Containers
+### Bonus Exercises: Container Examples
 
-- [Exercise 4.1: Additional Python ](software/part4-ex1-python-extras.md)
+- [Exercise 4.1: Singularity Examples on OSG Connect](software/part4-ex1-singularity-options.md)
 - [Exercise 4.2: Using Software in a Docker Container](software/part4-ex2-docker.md)
 - [Exercise 4.3: Building Your Own Docker Container (Beta)](software/part4-ex3-docker-build.md)
 - [Exercise 4.4: Using Conda Environments (Beta)](software/part4-ex4-conda.md)
