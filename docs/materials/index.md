@@ -8,7 +8,9 @@ View the slides
 
 ## Intro to HTCondor Job Execution
 
-Slides will be posted here
+View the slides
+([PDF](/materials/htcondor/files/osgvsp21-htc-htcondor.pdf),
+[PowerPoint](/materials/htcondor/files/osgvsp21-htc-htcondor.pptx))
 
 ### Intro Exercises 1: Running and Viewing Simple Jobs (Strongly Recommended)
 
@@ -56,10 +58,10 @@ Slides will be posted here
 
 ### Software Exercises 4: Bonus Exercises
 
-- [Exercise 4.1: Additional Python ](software/part4-ex2-python-extras.md)
-- [Exercise 4.2: Using Software in a Docker Container](software/part4-ex3-docker.md)
-- [Exercise 4.3: Building Your Own Docker Container (Beta)](software/part4-ex4-docker-build.md)
-- [Exercise 4.5: Using Conda Environments (Beta)](software/part4-ex5-conda.md)
+- [Exercise 4.1: Additional Python ](software/part4-ex1-python-extras.md)
+- [Exercise 4.2: Using Software in a Docker Container](software/part4-ex2-docker.md)
+- [Exercise 4.3: Building Your Own Docker Container (Beta)](software/part4-ex3-docker-build.md)
+- [Exercise 4.4: Using Conda Environments (Beta)](software/part4-ex4-conda.md)
 
 ## Data
 
