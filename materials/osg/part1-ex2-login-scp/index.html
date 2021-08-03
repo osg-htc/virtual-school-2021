@@ -1319,15 +1319,24 @@ compression is between <code>best</code> and <code>fast</code>).</p>
 <p>For many of the remaining exercises, you will be using an OSG Connect Access Point,
 which submits jobs into the Open Science Pool.
 For the School, the default server is named <code>login04.osgconnect.net</code>;
-however, if you had an OSG Connect from before the School (and you would know this in advance),
+however, if you had an OSG Connect account from before the School (you know who you are),
 you <em>may</em> be using <code>login05.osgconnect.net</code>, so just change the examples as needed.</p>
 <p>To log in to the OSG Connect Access Point,
 use the username and SSH key that you made when you set up OSG Connect.
 If you have any issues logging in to <code>login04</code> (or <code>login05</code>, if that’s you),
 please ask for help right away!</p>
-<p>Once you have your account details, <code>ssh</code> in to the server and take a look around.</p>
+<p>So please <code>ssh</code> in to the server and take a look around:</p>
+<ol>
+<li>Log in using <code>ssh login04.osgconnect.net</code> (or <code>login05</code>, if that’s you)</li>
+<li>Try some Linux and HTCondor commands; for example:<ul>
+<li>Linux commands: <code>hostname</code>, <code>pwd</code>, <code>ls</code>, and so on</li>
+<li>What is the operating system? <code>uname</code> and (in this case) <code>cat /etc/redhat-release</code></li>
+<li>HTCondor commands: <code>condor_version</code>, <code>condor_q</code>, <code>condor_status -total</code></li>
+</ul>
+</li>
+</ol>
 <h2 id="transferring-files">Transferring files<a class="headerlink" href="#transferring-files" title="Permanent link">&para;</a></h2>
-<p>Later in this exercise, you will submit the same kind of job as in the previous exercise.
+<p>In the next exercise, you will submit the same kind of job as in the previous exercise.
 Wouldn’t it be nice to copy the files instead of starting from scratch?
 And in general, being able to copy files between servers is helpful, so let’s explore a way to do that.</p>
 <h3 id="using-secure-copy">Using secure copy<a class="headerlink" href="#using-secure-copy" title="Permanent link">&para;</a></h3>
@@ -1355,7 +1364,7 @@ and in this case, the username (Net ID) for <code>learn</code> is specified:</p>
 <div class="codehilite"><pre><span></span><code><span class="gp">user@login04 $ </span>scp net_id@learn.chtc.wisc.edu:bar .
 </code></pre></div>
 
-<p>You can also copy folders between servers using the <code>-r</code> option.
+<p>Also, you can copy folders between servers using the <code>-r</code> option.
 If you kept all your files from the HTCondor exercise 1.3 in a folder named <code>htc-1.3</code> on <code>learn.chtc.wisc.edu</code>,
 you could use the following command to copy them to your home directory on <code>login04.osgconnect.net</code>:</p>
 <div class="codehilite"><pre><span></span><code><span class="gp">user@login04 $ </span>scp -r net_id@learn.chtc.wisc.edu:htc-1.3 .
