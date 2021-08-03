@@ -15,9 +15,9 @@ you will submit jobs to the OS Pool from `login04.osgconnect.net`
 and hopefully get back interesting results!
 You will use the same job (software) as you did in [OSG exercise 1.1](part1-ex1-submit-refresher.md).
 
-### Gathering network information from the OSG
+### Gathering network information from OS Pool jobs
 
-As a preliminary step, you will create a submit file that will run in the OS Pool!
+This may be your first OSG job, ever!
 
 1.  If not already logged in, `ssh` into `login04.osgconnect.net`
 
@@ -29,27 +29,41 @@ As a preliminary step, you will create a submit file that will run in the OS Poo
     If you are given a choice and do not know which project to select, reach out to OSG staff.
     The default project will stay in effect until changed at a later time.
 
-1.  Make a new directory for this exercise, `osg-ex3` and change into it
+1.  Make a new directory for this exercise, `osg-ex13` and change into it
 
-1.  Copy files from `learn` (if not done already)
+1.  If you did not copy the tarball for [OSG exercise 1.1](part1-ex1-submit-refresher.md)
+    from `learn` to `login04` in the previous exercise,
+    return to [OSG exercise 1.2](part1-ex2-login-scp.md) and do that now.
 
-    Use `scp` or `rsync` from [OSG exercise 1.2](part1-ex2-login-scp.md) to copy the executable and input
-    file from the `osg-ex1` directory from `learn`;
-    or, if you copied the OSG exercise 1.1 tarball earlier, extract the files from it.
+1.  Unpack the tarball containing the OSG exercise 1.1 files
 
-1.  Copy or re-create the submit file from OSG exercise 1.1,
-    except this time around change your submit file so that it submits
-    **five hundred** jobs!
+    Not sure how to do this step?  Revisit [OSG exercise 1.2](part1-ex2-login-scp.md)!
 
-    Do you think you should test a smaller number of jobs first and scale up?
+1.  Copy the submit file, wrapper script, and input file (`wn-geoip.tar.gz`)
+    from the OSG exercise 1.1 directory into the new OSG exercise 1.3 directory (created above)
 
-1.  Submit your file and wait for the results
+1.  Check the submit file&nbsp;— does anything need to change?
+
+1.  For your final run, you will want to run a lot of jobs.
+    But remember the idea of testing a small number of jobs first and then scaling up?
+    Pick a number of jobs to run as a test and try that.
+    Fix any issues and repeat until solid.
+
+1.  When you think the submit file is ready, scale up to 500 jobs and run!
+
+1.  When your “final” run is done (or nearly done),
+    use the command from [OSG exercise 1.1](part1-ex1-submit-refresher.md)
+    to get the unique set of location coordinates:
+
+        :::console
+        user@login04 $ cat location-*.out | sort | uniq
 
 ## Mapping your jobs
 
 As before, you will be using <https://www.mapcustomizer.com/> to visualize where your jobs have landed in the OSG.
 Copy and paste the collated results from your job output into the Bulk Entry area.
 Where did your jobs end up?
+This exercise gives you a small sense of the scope of the OSG’s Open Science Pool!
 
 ## Next exercise
 

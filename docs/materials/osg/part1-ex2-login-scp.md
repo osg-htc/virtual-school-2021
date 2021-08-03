@@ -58,7 +58,7 @@ compression is between `best` and `fast`).
 
 While still logged in to `learn.chtc.wisc.edu`:
 
-1.  Create and change into a new folder for this exercise, for example `osg-ex2`
+1.  Create and change into a new folder for this exercise, for example `osg-ex12`
 1.  Use `wget` to download the following files from our web server:
     1.  Text file: <http://proxy.chtc.wisc.edu/SQUID/osgschool21/random_text>
     1.  Archive: <http://proxy.chtc.wisc.edu/SQUID/osgschool21/pdbaa.tar.gz>
