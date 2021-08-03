@@ -35,6 +35,18 @@ View the slides
 - [Bonus Exercise 3.2: Explore `condor_status`](htcondor/part3-ex2-status.md)
 - [Bonus Exercise 3.3: A job that needs retries](htcondor/part3-ex3-job-retry.md)
 
+## OSG
+
+Slides will be posted here
+
+All exercises strongly recommended!
+
+- [Exercise 1: Refresher – Submitting Multiple Jobs](osg/ex1-submit-refresher.md)
+- [Exercise 2: Log in to the OSG Submit Server](osg/ex2-login-scp.md)
+- [Exercise 3: Running jobs in the OSG](osg/ex3-submit-osg.md)
+- [Exercise 4: Hardware Differences in the OSG](osg/ex4-hardware-diffs.md)
+- [Exercise 5: Software Differences in the OSG](osg/ex5-software-diffs.md)
+
 ## Software
 
 Slides will be posted here
