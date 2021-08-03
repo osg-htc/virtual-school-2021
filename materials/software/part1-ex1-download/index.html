@@ -1181,11 +1181,10 @@ systems. </p>
 this exercise. Then download the appropriate <code>tar.gz</code> file and un-tar/decompress it
 it. If you want to do this all from the command line, the sequence will 
 look like this (using <code>wget</code> as the download command.) </p>
-<div class="codehilite"><pre><span></span><code><span class="gp">user@login $ </span>wget
+<div class="codehilite"><pre><span></span><code><span class="gp">user@login $ </span>wget https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.12.0+-x64-linux.tar.gz
+<span class="gp">user@login $ </span>tar -xzf ncbi-blast-2.12.0+-x64-linux.tar.gz
 </code></pre></div>
 
-<p>https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.12.0+-x64-linux.tar.gz
-    user@login $ tar -xzf ncbi-blast-2.12.0+-x64-linux.tar.gz</p>
 </li>
 <li>
 <p>We're going to be using the <code>blastx</code> binary in our job. Where is it
@@ -1200,12 +1199,10 @@ we'll use an abbreviated fasta file with mouse genome information.</p>
 <ol>
 <li>
 <p>Download these files to your current directory: </p>
-<div class="codehilite"><pre><span></span><code><span class="gp">username@login $ </span>wget
+<div class="codehilite"><pre><span></span><code><span class="gp">username@login $ </span>wget http://proxy.chtc.wisc.edu/SQUID/osgschool21/pdbaa.tar.gz
+<span class="gp">username@login $ </span>wget http://proxy.chtc.wisc.edu/SQUID/osgschool21/mouse.fa
 </code></pre></div>
 
-<p>http://proxy.chtc.wisc.edu/SQUID/osgschool21/pdbaa.tar.gz
-    username@login $ wget
-http://proxy.chtc.wisc.edu/SQUID/osgschool21/mouse.fa</p>
 </li>
 <li>
 <p>Untar the <code>pdbaa</code> database: </p>
