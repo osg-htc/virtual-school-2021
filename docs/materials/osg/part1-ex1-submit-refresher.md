@@ -33,7 +33,7 @@ Now, let’s try to remember some basic HTCondor ideas from the HTC exercises:
     and uses the `$(Process)` macro to write different `output` and `error` files.
     Also, add the following requirement to the submit file (it’s not important to know what it does):
 
-        requirements = (HAS_CVMFS_oasis_opensciencegrid_org =?= TRUE)
+        requirements = (HAS_CVMFS_oasis_opensciencegrid_org == TRUE) && (IsOsgVoContainer != True)
 
     Try to do this step without looking at materials from the earlier exercises.
     But if you are stuck, see [HTC Exercise 2.2](../htcondor/part2-ex2-queue-n.md).
