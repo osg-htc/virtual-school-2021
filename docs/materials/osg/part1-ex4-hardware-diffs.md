@@ -83,7 +83,7 @@ Every few minutes, run `condor_q` and see how your sleep jobs are doing.
 To show a timestamp and how many jobs of each type are left, run the following command:
 
 ``` console
-user@learn $ **condor_q <Cluster ID> -af RequestMemory | sort -n | uniq -c**
+user@learn $ condor_q <Cluster ID> -af RequestMemory | sort -n | uniq -c
 ```
 
 The numbers in the left column are the number of jobs left of that type
