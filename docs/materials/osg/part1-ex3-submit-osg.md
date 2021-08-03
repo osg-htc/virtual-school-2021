@@ -56,12 +56,13 @@ This may be your first OSG job, ever!
     to get the unique set of location coordinates:
 
         :::console
-        user@login04 $ cat location-*.out | sort | uniq
+        user@login04 $ **cat location-*.out | sort | uniq**
 
 ## Mapping your jobs
 
 As before, you will be using <https://www.mapcustomizer.com/> to visualize where your jobs have landed in the OSG.
 Copy and paste the collated results from your job output into the Bulk Entry area.
+You can omit the `0, 0` line, because it will not be mapped.
 Where did your jobs end up?
 This exercise gives you a small sense of the scope of the OSG’s Open Science Pool!
 
