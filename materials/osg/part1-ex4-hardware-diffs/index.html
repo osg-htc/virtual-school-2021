@@ -553,8 +553,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-the-submit-files" class="md-nav__link">
-    Create the submit files
+  <a href="#create-the-submit-file" class="md-nav__link">
+    Create the submit file
   </a>
   
 </li>
@@ -1144,8 +1144,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-the-submit-files" class="md-nav__link">
-    Create the submit files
+  <a href="#create-the-submit-file" class="md-nav__link">
+    Create the submit file
   </a>
   
 </li>
@@ -1216,7 +1216,8 @@ We will request memory from 8–64 GB, doubling the memory each time.
 One set of jobs will be submitted to CHTC, and the other, identical set of jobs will be submitted to the OS Pool.
 You will check the queue periodically to see how many jobs have completed and how many are still waiting to run.</p>
 <h2 id="checking-chtc-memory-availability">Checking CHTC memory availability<a class="headerlink" href="#checking-chtc-memory-availability" title="Permanent link">&para;</a></h2>
-<p>In this first part, you will create the submit file for both the CHTC and OSG jobs, then submit the local set.</p>
+<p>In this first part, you will create the submit file that will be used for both the CHTC and OSG jobs,
+then submit the CHTC set.</p>
 <h3 id="yet-another-queue-syntax">Yet another queue syntax<a class="headerlink" href="#yet-another-queue-syntax" title="Permanent link">&para;</a></h3>
 <p>Earlier, you learned about the <code>queue</code> statement
 and some of the different ways it can be invoked to submit multiple jobs.
@@ -1247,7 +1248,7 @@ queue 2 arguments in (
 
 <p>Try submitting this yourself and verify that all six jobs are in the queue,
 using the <code>condor_q -nobatch</code> command.</p>
-<h3 id="create-the-submit-files">Create the submit files<a class="headerlink" href="#create-the-submit-files" title="Permanent link">&para;</a></h3>
+<h3 id="create-the-submit-file">Create the submit file<a class="headerlink" href="#create-the-submit-file" title="Permanent link">&para;</a></h3>
 <p>To create our parameter sweep,
 we will create a <strong>new</strong> submit file with the queue…in syntax
 and change the value of our parameter (<code>request_memory</code>) for each batch of jobs.</p>

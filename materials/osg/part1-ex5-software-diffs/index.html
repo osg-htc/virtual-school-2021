@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#osg-exercise-5-software-differences-in-the-osg" class="md-skip">
+        <a href="#osg-exercise-5-software-differences-in-osg" class="md-skip">
           Skip to content
         </a>
       
@@ -548,13 +548,6 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#refresher-condor_status" class="md-nav__link">
-    Refresher - condor_status
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#comparing-operating-systems" class="md-nav__link">
@@ -1109,13 +1102,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#refresher-condor_status" class="md-nav__link">
-    Refresher - condor_status
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#comparing-operating-systems" class="md-nav__link">
     Comparing operating systems
   </a>
@@ -1162,55 +1148,52 @@
               
                 
                 
-                <h1 id="osg-exercise-5-software-differences-in-the-osg">OSG Exercise 5: Software Differences in the OSG<a class="headerlink" href="#osg-exercise-5-software-differences-in-the-osg" title="Permanent link">&para;</a></h1>
-<p>The goal of this exercise is to see the differences in availability of software in the OSG.
-At your local cluster, you may be used to having certain versions of software but out on the OSG, it's possible that the
-software you need won't even be installed.</p>
-<h2 id="refresher-condor_status">Refresher - condor_status<a class="headerlink" href="#refresher-condor_status" title="Permanent link">&para;</a></h2>
-<p>The OSG pool, like the local pool you used earlier, is just another HTCondor pool.
-This means that the commands you use will be the same and the jobs you submit can have similar payloads but there is one
-major difference: the slots are different!
-As before, you can use the <code>condor_status</code> command to inspect these differences.</p>
-<ol>
-<li>Open two terminal windows side-by-side</li>
-<li>Log in to <code>learn.chtc.wisc.edu</code> in one window and <code>login04.osgconnect.net</code> in the other</li>
-<li>Run <code>condor_status</code> in both windows</li>
-</ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>For <code>login04.osgconnect.net</code> you will need to add <code>-pool flock.opensciencegrid.org</code> to your <code>condor_status</code> command.</p>
-</div>
-<p>Notice any differences?</p>
+                <h1 id="osg-exercise-5-software-differences-in-osg">OSG Exercise 5: Software Differences in OSG<a class="headerlink" href="#osg-exercise-5-software-differences-in-osg" title="Permanent link">&para;</a></h1>
+<p>The goal of this exercise is to see some differences in the availability of software in the OSG.
+At your local cluster, you may be used to having certain versions of software.
+But in the OS Pool,
+it is possible&nbsp;— even likely&nbsp;— that the software you need will not be available at all.</p>
 <h2 id="comparing-operating-systems">Comparing operating systems<a class="headerlink" href="#comparing-operating-systems" title="Permanent link">&para;</a></h2>
-<p>To really see differences between slots in the local cluster vs the OSG, you will want to compare the slot ClassAds
-between the two pools.
-Rather than inspecting the very long ClassAd for each slot, you will look at a specific attribute called <code>OpSysAndVer</code>,
+<p>To really see differences between slots in the local cluster vs the OSG,
+you will want to compare the slot ClassAds between the two pools.
+Rather than inspecting the very long ClassAd for each slot,
+you will look at a specific attribute called <code>OpSysAndVer</code>,
 which tells us the operating system version of the server where a slot resides.
-An easy way to show this attribute for all slots is by using <code>condor_status</code> in conjunction with the <code>-autoformat</code> (or
-<code>-af</code> for short) option.
-<code>-autoformat</code> like the <code>-format</code> option you learned about earlier will print out the attributes you're interested
-in for each slot but as you probably guessed, it does some automatic formatting for you.
-So to show the operating system and version of each slot, run the following command in both of your terminal windows:</p>
-<div class="codehilite"><pre><span></span><code><span class="gp">user@submit-server $ </span>condor_status -autoformat OpSysAndVer
+An easy way to show this attribute for all slots is by using <code>condor_status</code>
+in conjunction with the <code>-autoformat</code> (or <code>-af</code>, for short) option.
+The <code>-autoformat</code> option is like the <code>-format</code> option you learned about earlier,
+and outputs the attributes you choose for each slot;
+but as you may have guessed, it does some automatic formatting for you.</p>
+<p>So, let’s examine the operating system and (major) version of slots on CHTC and the OS Pool.</p>
+<ol>
+<li>
+<p>Log in or switch to <code>learn.chtc.wisc.edu</code> and run the following command:</p>
+<div class="codehilite"><pre><span></span><code><span class="gp">user@server $ </span>condor_status -autoformat OpSysAndVer
 </code></pre></div>
 
-<p>You will see many values with the type of operating system at the front and the version number at the end (i.e. SL6
-stands for Scientific Linux 6).
-The only problem is that with hundreds or thousands of slots, it's difficult to get a feel for the composition of each
-pool from this output.
-You can find a count for each operating system by passing the <code>condor_status</code> output into the <code>sort</code> and <code>uniq</code>
-commands.
+</li>
+<li>
+<p>Log in or switch to <code>login04.osgconnect.net</code> (parallel windows are handy!)
+    and run the same command</p>
+</li>
+</ol>
+<p>You will see many values for the operating system and major version.
+Some are abbreviated&nbsp;— for example,
+<code>RedHat</code> stands for “Red Hat Enterprise Linux” and
+<code>SL</code> stands for “Scientific Linux” (a Red Hat variant).</p>
+<p>The only problem is that with hundreds or thousands of slots,
+it's difficult to get a feel for the composition of each pool from this output.
+You can use the <code>sort</code> and <code>uniq</code> commands, in sequence, on the <code>condor_status</code> output
+to get counts of each unique operating system and version string.
 Your command line should look something like this:</p>
 <div class="codehilite"><pre><span></span><code><span class="gp">user@learn $ </span>condor_status -autoformat OpSysAndVer <span class="p">|</span> sort <span class="p">|</span> uniq -c
 </code></pre></div>
 
-<p>Can you spot the differences between the two pools now?</p>
+<p>How would you describe the difference between CHTC and OS Pools?</p>
 <h2 id="submitting-probe-jobs">Submitting probe jobs<a class="headerlink" href="#submitting-probe-jobs" title="Permanent link">&para;</a></h2>
-<p>Knowing the type and version of the operating systems is a step in the right direction to knowing what kind of software
-will be available on the servers that your jobs land on.
-However it still only serves as a proxy to the information that you really want: does the server have the software that
-you want?
-Does it have the correct version?</p>
+<p>Now you have some idea of the diversity of operating systems on the OS Pool.
+This is a step in the right direction to knowing what software is available in general.
+But what you really want to know is whether your specific software tool (and version) is available.</p>
 <h3 id="software-probe-code">Software probe code<a class="headerlink" href="#software-probe-code" title="Permanent link">&para;</a></h3>
 <p>The following shell script probes for software and returns the version if it is installed:</p>
 <div class="codehilite"><pre><span></span><code><span class="ch">#!/bin/sh</span>
@@ -1249,16 +1232,18 @@ of the script:</p>
 <h3 id="probing-several-servers">Probing several servers<a class="headerlink" href="#probing-several-servers" title="Permanent link">&para;</a></h3>
 <p>For this part of the exercise, try creating a submit file without referring to previous exercises!</p>
 <ol>
-<li>Log in to <code>login04.osgconnect.net</code></li>
-<li>Create and change into a new folder for this exercise, e.g. <code>osg-ex5</code></li>
+<li>Log in or switch to <code>login04.osgconnect.net</code></li>
+<li>Create and change into a new folder for this exercise, e.g. <code>osg-ex15</code></li>
 <li>Save the above script as a file named <code>sw_probe.sh</code></li>
-<li>Create a submit file that runs <code>sw_probe.sh</code> 100 times and uses macros to write different <code>output</code>, <code>error</code>, and
-    <code>log</code> files</li>
+<li>Make sure the script can be run: <code>chmod a+x sw_probe.sh</code></li>
+<li>Try running the script in place to make sure it works: <code>./sw_probe.sh</code></li>
+<li>Create a submit file that runs <code>sw_probe.sh</code> 100 times
+    and uses macros to write different <code>output</code>, <code>error</code>, and <code>log</code> files</li>
 <li>Submit your job and wait for the results</li>
 </ol>
 <p>Will you be able to do your research on the OSG with what's available?
-Don't fret if it doesn't look like you can: over the next few days, you'll learn how to make your jobs portable enough
-so that they can run anywhere!</p>
+Do not worry if it does not seem like you can:
+Tomorrow, you will learn how to make your jobs portable enough so that they can run anywhere!</p>
                 
                   
                 
