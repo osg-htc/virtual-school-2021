@@ -48,13 +48,13 @@ Option 1: R
 
 	We can use the R script directly (without another wrapper script) because 
 	we included the header `#!/usr/bin/env Rscript` at the top of our script 
-	file. This is like a special indicator that the script should be run using 
-	the Rscript program. 
+	file. This is a special indicator that the script should be run using 
+	the `Rscript` program. 
 
-1. Choose one of the R containers to run the job: 
+1. Choose one of the existing R containers to run the job: 
 
 		:::file
-		+SingularityImage = "/cvmfs/singularity.opensciencegrid.org/osgvo-r:4.0.2"
+		+SingularityImage = "/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-r:4.0.2"
 
 1. Submit the job and check the standard output file when it completes. 
 
@@ -62,22 +62,21 @@ Option 1: R
 Option 2: GROMACS
 ---------------------
 
-> Example taken from [alchemistry.org](http://www.alchemistry.org/wiki/GROMACS_4.6_example:_Ethanol_solvation_with_expanded_ensemble)
+> Example taken from [alchemistry.org](http://www.alchemistry.org/wiki/GROMACS_4.6_example:_Direct_ethanol_solvation_free_energy)
 
 1. Create the following bash script, called `run_gromacs.sh`:
 
 		:::file
 		#!/bin/bash
 		
-		grompp -f expanded.mdp -c ethanol.gro -p ethanol.top -o ethanol.tpr -maxwarn 4
-		mdrun -deffnm ethanol -dhdl ethanol.dhdl.xvg
+		gmx grompp -f ethanol.0.mdp -c ethanol.gro -p ethanol.top -o ethanol.0.tpr -max$
+		gmx mdrun -deffnm ethanol.0 -dhdl ethanol.0.dhdl.xvg
 		
-1. Copy and unzip the input files, and move them to the current directory: 
+1. Unzip the input files, and move them to the current directory: 
 
 		:::console
-		username@login $ cp /public/osgvs21/gromacs_input.tgz ./
-		username@login $ tar -xzf gromacs_input.tgz	
-		username@login $ mv gromacs_input/* ./
+		username@login $ tar -xzf /public/osgvs21/gromacs_input.tgz
+		username@login $ cp gromacs_input/* ./
 
 1. In your submit file, set the `run_gromacs.sh` script as the executable: 
 
@@ -86,10 +85,14 @@ Option 2: GROMACS
 1. Choose the GROMACS container to run the job: 
 
 		:::file
-		+SingularityImage = "/cvmfs/singularity.opensciencegrid.org/osgvo-gromacs:latest"
+		+SingularityImage = "/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-gromacs:latest"
 
 1. Submit the job and check the standard output file when it completes. 
 
+> Those who want a little extra challenge - this example is meant to be run 9 times, 
+> per the tutorial link above. Read through the first paragraph of the tutorial and 
+> try to modify this submit file (and input files) so that it runs 9 jobs, each 
+> with a different `init-lambda-state` value in the `ethanol.X.mdp` file. 
 
 Option 3: Cowsay
 ---------------------
@@ -108,7 +111,7 @@ One final (fun) example - running the program "cowsay" from a container.
 1. Choose the `lolcow` container to run the job: 
 
 		:::file
-		+SingularityImage = "/cvmfs/singularity.opensciencegrid.org/sylabsio/lolcow:latest/"
+		+SingularityImage = "/cvmfs/singularity.opensciencegrid.org/sylabsio/lolcow:latest"
 
 1. Submit the job and check out the output when it completes! 
 
