@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#osg-exercise-3-running-jobs-in-the-osg" class="md-skip">
+        <a href="#osg-exercise-3-running-jobs-in-osg" class="md-skip">
           Skip to content
         </a>
       
@@ -1162,51 +1162,67 @@
               
                 
                 
-                <h1 id="osg-exercise-3-running-jobs-in-the-osg">OSG Exercise 3: Running jobs in the OSG<a class="headerlink" href="#osg-exercise-3-running-jobs-in-the-osg" title="Permanent link">&para;</a></h1>
-<p>The goal of this exercise is to have your jobs running on the OSG and map their geographical locations.</p>
+                <h1 id="osg-exercise-3-running-jobs-in-osg">OSG Exercise 3: Running Jobs in OSG<a class="headerlink" href="#osg-exercise-3-running-jobs-in-osg" title="Permanent link">&para;</a></h1>
+<p>The goal of this exercise is for you to run jobs in OSG,
+specifically the Open Science Pool,
+and map their geographical locations.</p>
 <h2 id="where-in-the-world-are-my-jobs-part-2">Where in the world are my jobs? (Part 2)<a class="headerlink" href="#where-in-the-world-are-my-jobs-part-2" title="Permanent link">&para;</a></h2>
-<p>In this version of the geolocating exercise, you will submit jobs to the OSG from <code>login04.osgconnect.net</code> and
-hopefully getting back much more interesting results!
-You will be using the same exact payload as you did in <a href="ex1-submit-refresher.md">OSG exercise 1</a>.</p>
+<p>In this version of the geolocating exercise,
+you will submit jobs to the OS Pool from <code>login04.osgconnect.net</code>
+and hopefully get back interesting results!
+You will use the same job (software) as you did in <a href="../part1-ex1-submit-refresher/">OSG exercise 1.1</a>.</p>
 <h3 id="gathering-network-information-from-the-osg">Gathering network information from the OSG<a class="headerlink" href="#gathering-network-information-from-the-osg" title="Permanent link">&para;</a></h3>
-<p>Now to create submit files that will run in the OSG!</p>
+<p>As a preliminary step, you will create a submit file that will run in the OS Pool!</p>
 <ol>
-<li>If not already logged in, <code>ssh</code> into <code>login04.osgconnect.net</code></li>
+<li>
+<p>If not already logged in, <code>ssh</code> into <code>login04.osgconnect.net</code></p>
+</li>
 <li>
 <p>Set the default project associated with your account by running the following command:</p>
 <div class="codehilite"><pre><span></span><code><span class="go">connect project</span>
 </code></pre></div>
 
-<p>If you are given a choice and don't know which project to select, reach out to OSG staff.
+<p>If you are given a choice and do not know which project to select, reach out to OSG staff.
 The default project will stay in effect until changed at a later time.</p>
 </li>
 <li>
 <p>Make a new directory for this exercise, <code>osg-ex3</code> and change into it</p>
 </li>
-<li>Use <code>scp</code> or <code>rsync</code> from <a href="ex2-login-scp.md">OSG exercise 2</a> to copy over the executable and input
-   file from the <code>osg-ex1</code> directory from <code>learn</code>.</li>
-<li>Re-create the submit file from OSG exercise 1 except this time around change your submit file so that it submits
-   <strong>five hundred</strong> jobs!</li>
-<li>Submit your file and wait for the results</li>
+<li>
+<p>Copy files from <code>learn</code> (if not done already)</p>
+<p>Use <code>scp</code> or <code>rsync</code> from <a href="../part1-ex2-login-scp/">OSG exercise 1.2</a> to copy the executable and input
+file from the <code>osg-ex1</code> directory from <code>learn</code>;
+or, if you copied the OSG exercise 1.1 tarball earlier, extract the files from it.</p>
+</li>
+<li>
+<p>Copy or re-create the submit file from OSG exercise 1.1,
+    except this time around change your submit file so that it submits
+    <strong>five hundred</strong> jobs!</p>
+<p>Do you think you should test a smaller number of jobs first and scale up?</p>
+</li>
+<li>
+<p>Submit your file and wait for the results</p>
+</li>
 </ol>
 <h2 id="mapping-your-jobs">Mapping your jobs<a class="headerlink" href="#mapping-your-jobs" title="Permanent link">&para;</a></h2>
-<p>As before, you will be using <a href="http://www.mapcustomizer.com/">http://www.mapcustomizer.com/</a> to visualize where your jobs have landed in the OSG.
-Copy and paste the collated results from your job output into the bulk creation text box at the bottom of the screen.
+<p>As before, you will be using <a href="https://www.mapcustomizer.com/">https://www.mapcustomizer.com/</a> to visualize where your jobs have landed in the OSG.
+Copy and paste the collated results from your job output into the Bulk Entry area.
 Where did your jobs end up?</p>
 <h2 id="next-exercise">Next exercise<a class="headerlink" href="#next-exercise" title="Permanent link">&para;</a></h2>
-<p>Once completed, move onto the next exercise: <a href="ex4-hardware-diffs.md">Hardware Differences in the OSG</a></p>
+<p>Once completed, move onto the next exercise: <a href="../part1-ex4-hardware-diffs/">Hardware Differences in the OSG</a></p>
 <h2 id="extra-challenge-cleaning-up-your-submit-directory">Extra Challenge: Cleaning up your submit directory<a class="headerlink" href="#extra-challenge-cleaning-up-your-submit-directory" title="Permanent link">&para;</a></h2>
 <p>If you run <code>ls</code> in the directory from which you submitted your job, you may see that you now have thousands of files!
 Proper data management starts to become a requirement as you start to develop truly HTC workflows;
-you'll want organize your submit files, code, and input data separate from your output data.</p>
+it may be helpful to separate your submit files, code, and input data from your output data.</p>
 <ol>
 <li>
 <p>Try editing your submit file so that all your output and error files are saved to separate directories within your
-   submit directory.</p>
+    submit directory.</p>
 <div class="admonition note">
 <p class="admonition-title">Tip</p>
-<p>Experiment with fewer job submissions until you're confident you have it right, then go back to submitting 500
-jobs!</p>
+<p>Experiment with fewer job submissions until you’re confident you have it right,
+then go back to submitting 500 jobs.
+Remember: Test small and scale up!</p>
 </div>
 </li>
 <li>
@@ -1215,7 +1231,7 @@ jobs!</p>
 </ol>
 <p>Did your jobs complete successfully with output and error files saved in separate directories?
 If not, can you find any useful information in the job logs or hold messages?
-If you get stuck, review the <a href="../files/osgus20-day1-part2-many-HTCondor-jobs.pdf">slides for submitting many jobs</a>.</p>
+If you get stuck, review the <a href="../../">slides from Tuesday</a>.</p>
                 
                   
                 
