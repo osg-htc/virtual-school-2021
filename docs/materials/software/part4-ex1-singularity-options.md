@@ -1,5 +1,5 @@
 ---
-status: in progress
+status: testing
 ---
 
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: \#008; } </style>
@@ -10,9 +10,9 @@ Software Exercise 4.1: Singularity Examples on OSG Connect
 Background
 ----------
 
-Containers are another way to manage software installations. This guide shows how to use pre-existing containers to run jobs on the OSG.
-
-One caveat for using containers: not all systems will support them. HTCondor has built-in features for using Docker and many OSG resources have Singularity installed, but they are not always available everywhere. 
+The previous exercise (3.1) illustrated the idea of using containers, but 
+didn't run a specific software program. In this exercise, you can choose one 
+or more sample programs to run using a container. 
 
 Setup
 -----
@@ -22,17 +22,107 @@ Setup
 1. To get an idea on what container images are available on the OSG, 
 take a look at the directory path `/cvmfs/singularity.opensciencegrid.org/opensciencegrid`.  
 
+> If you want to use your own container on the OSG, message your mentor or the 
+> general slack channel about how to do so. 
+
+1. For all three examples, make sure you have the Singularity `requirement` from the 
+[previous exercise](../part3-ex1-singularity)) in your submit file, and you'll 
+still be using the `+SingularityImage` flag. 
 
 Option 1: R
 ---------------------
+
+1. Create the following R script, called `simple.R`:
+
+		:::file
+		#!/usr/bin/env Rscript
+		
+		inputs = c(5, 19, 108, 42, 77)
+		results = sum(inputs)
+		print(results)
+
+1. In your submit file, set the R script as the executable: 
+
+		:::file
+		executable = simple.R
+
+	We can use the R script directly (without another wrapper script) because 
+	we included the header `#!/usr/bin/env Rscript` at the top of our script 
+	file. This is like a special indicator that the script should be run using 
+	the Rscript program. 
+
+1. Choose one of the R containers to run the job: 
+
+		:::file
+		+SingularityImage = "/cvmfs/singularity.opensciencegrid.org/osgvo-r:4.0.2"
+
+1. Submit the job and check the standard output file when it completes. 
 
 
 Option 2: GROMACS
 ---------------------
 
+> Example taken from [alchemistry.org](http://www.alchemistry.org/wiki/GROMACS_4.6_example:_Ethanol_solvation_with_expanded_ensemble)
 
+1. Create the following bash script, called `run_gromacs.sh`:
+
+		:::file
+		#!/bin/bash
+		
+		grompp -f expanded.mdp -c ethanol.gro -p ethanol.top -o ethanol.tpr -maxwarn 4
+		mdrun -deffnm ethanol -dhdl ethanol.dhdl.xvg
+		
+1. Copy and unzip the input files, and move them to the current directory: 
+
+		:::console
+		username@login $ cp /public/osgvs21/gromacs_input.tgz ./
+		username@login $ tar -xzf gromacs_input.tgz	
+		username@login $ mv gromacs_input/* ./
+
+1. In your submit file, set the `run_gromacs.sh` script as the executable: 
+
+1. Add the input files to the appropriate line in the submit file. 
+
+1. Choose the GROMACS container to run the job: 
+
+		:::file
+		+SingularityImage = "/cvmfs/singularity.opensciencegrid.org/osgvo-gromacs:latest"
+
+1. Submit the job and check the standard output file when it completes. 
 
 
 Option 3: Cowsay
 ---------------------
 
+One final (fun) example - running the program "cowsay" from a container. 
+
+1. Create the following R script, called `cowsay.sh`:
+
+		:::file
+		#!/bin/bash
+		
+		cowsay "Computing is Fun"
+
+1. Make `cowsay.sh` your executable. 
+
+1. Choose the `lolcow` container to run the job: 
+
+		:::file
+		+SingularityImage = "/cvmfs/singularity.opensciencegrid.org/sylabsio/lolcow:latest/"
+
+1. Submit the job and check out the output when it completes! 
+
+> Note: it's possible to run jobs using containers (like this one) *without* using 
+> a wrapper script. If we wanted to run the `cowsay` program, directly as the executable, 
+> it would look like this: 
+> 
+> 	:::file
+> 	executable = /usr/games/cowsay
+>	arguments = "Computing is Fun"
+>	transfer_executable = false
+>		
+>	+SingularityImage = "/cvmfs/singularity.opensciencegrid.org/sylabsio/lolcow:latest/"
+>
+> Note that this example is slightly different than our previous scripts; here 
+> we're using cowsay directly from the container. Since it's not a separate executable, 
+> we need to add the `transfer_exectuable = false` option 
