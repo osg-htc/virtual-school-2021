@@ -4,7 +4,7 @@ status: in progress
 
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: #008; } </style>
 
-Software Exercise 4.3: Using Docker
+Software Exercise 4.2: Using Docker
 ====================================
 
 In this exercise, you will run the same Python script as the other Python exercises, but using a Docker container.
