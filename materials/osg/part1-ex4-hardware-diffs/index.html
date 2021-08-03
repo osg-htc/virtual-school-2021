@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#osg-exercise-4-hardware-differences-in-the-osg" class="md-skip">
+        <a href="#osg-exercise-4-hardware-differences-between-chtc-and-osg" class="md-skip">
           Skip to content
         </a>
       
@@ -572,11 +572,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#checking-osg-memory-availability" class="md-nav__link">
-    Checking OSG memory availability
+  <a href="#checking-os-pool-memory-availability" class="md-nav__link">
+    Checking OS Pool memory availability
   </a>
   
-    <nav class="md-nav" aria-label="Checking OSG memory availability">
+    <nav class="md-nav" aria-label="Checking OS Pool memory availability">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1163,11 +1163,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#checking-osg-memory-availability" class="md-nav__link">
-    Checking OSG memory availability
+  <a href="#checking-os-pool-memory-availability" class="md-nav__link">
+    Checking OS Pool memory availability
   </a>
   
-    <nav class="md-nav" aria-label="Checking OSG memory availability">
+    <nav class="md-nav" aria-label="Checking OS Pool memory availability">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1202,25 +1202,26 @@
               
                 
                 
-                <h1 id="osg-exercise-4-hardware-differences-in-the-osg">OSG Exercise 4: Hardware Differences in the OSG<a class="headerlink" href="#osg-exercise-4-hardware-differences-in-the-osg" title="Permanent link">&para;</a></h1>
-<p>The goal of this exercise is to compare hardware differences between our local cluster (CHTC here at UW–Madison) and an
-OSG glidein pool.
-Specifically, we will look at how easy it is to get access to resources in terms of the amount of memory that is
-requested.
-This will not be a very careful study, but should give you some idea of one way in which the pools are different.</p>
-<p>In the first two parts of the exercise, you will submit a bunch of jobs that differ only in how much memory each one
-requests;
-we call this a <em>parameter sweep</em>, in that we are testing many possible values of a parameter.
-We will request memory from 8–64GB, doubling the memory each time.
-One set of jobs will be submitted locally, and the other, identical set of jobs will be submitted to OSG.
+                <h1 id="osg-exercise-4-hardware-differences-between-chtc-and-osg">OSG Exercise 4: Hardware Differences Between CHTC and OSG<a class="headerlink" href="#osg-exercise-4-hardware-differences-between-chtc-and-osg" title="Permanent link">&para;</a></h1>
+<p>The goal of this exercise is to compare hardware differences between our local cluster
+(CHTC here at UW–Madison) and the Open Science Pool.
+Specifically, we will look at how easy it is to get access to resources
+in terms of the amount of memory that is requested.
+This will not be a very careful study,
+but should give you some idea of one way in which the pools are different.</p>
+<p>In the first two parts of the exercise,
+you will submit batches of jobs that differ only in how much memory each one requests.
+This is called this a <em>parameter sweep</em>, in that we are testing many possible values of a parameter.
+We will request memory from 8–64 GB, doubling the memory each time.
+One set of jobs will be submitted to CHTC, and the other, identical set of jobs will be submitted to the OS Pool.
 You will check the queue periodically to see how many jobs have completed and how many are still waiting to run.</p>
 <h2 id="checking-chtc-memory-availability">Checking CHTC memory availability<a class="headerlink" href="#checking-chtc-memory-availability" title="Permanent link">&para;</a></h2>
-<p>In this first part, you will create the submit file for both the local and OSG jobs, then submit the local set.</p>
+<p>In this first part, you will create the submit file for both the CHTC and OSG jobs, then submit the local set.</p>
 <h3 id="yet-another-queue-syntax">Yet another queue syntax<a class="headerlink" href="#yet-another-queue-syntax" title="Permanent link">&para;</a></h3>
-<p>Earlier, you learned about the <code>queue</code> statement and some of the different ways it can be invoked to submit
-multiple jobs.
-Similar to the <code>queue from</code> statement to submit jobs based on lines from a specific file, you can use <code>queue in</code> to
-submit jobs based on a list directly from your submit file:</p>
+<p>Earlier, you learned about the <code>queue</code> statement
+and some of the different ways it can be invoked to submit multiple jobs.
+Similar to the <code>queue from</code> statement to submit jobs based on lines from a specific file,
+you can use <code>queue in</code> to submit jobs based on a list that is written directly in your submit file:</p>
 <div class="codehilite"><pre><span></span><code>queue &lt;# of jobs&gt; &lt;variable&gt; in (
 &lt;item 1&gt;
 &lt;item 2&gt;
@@ -1229,8 +1230,8 @@ submit jobs based on a list directly from your submit file:</p>
 )
 </code></pre></div>
 
-<p>For example, to submit 6 total jobs that sleep for <code>5</code>, <code>5</code>, <code>10</code>, <code>10</code>, <code>15</code>, and <code>15</code> seconds, you could write the
-following submit file:</p>
+<p>For example, to submit 6 total jobs that sleep for <code>5</code>, <code>5</code>, <code>10</code>, <code>10</code>, <code>15</code>, and <code>15</code> seconds,
+you could write the following submit file:</p>
 <div class="codehilite"><pre><span></span><code>executable = /bin/sleep
 
 request_cpus = 1
@@ -1244,37 +1245,38 @@ queue 2 arguments in (
 )
 </code></pre></div>
 
-<p>Try submitting this yourself and check the jobs that end up in the queue with <code>condor_q -nobatch</code>.</p>
+<p>Try submitting this yourself and verify that all six jobs are in the queue,
+using the <code>condor_q -nobatch</code> command.</p>
 <h3 id="create-the-submit-files">Create the submit files<a class="headerlink" href="#create-the-submit-files" title="Permanent link">&para;</a></h3>
-<p>To create our parameter sweep, we will create a <strong>new</strong> submit file with multiple queue statements and change the value
-of our parameter (<code>request_memory</code>) for each batch of jobs.</p>
+<p>To create our parameter sweep,
+we will create a <strong>new</strong> submit file with the queue…in syntax
+and change the value of our parameter (<code>request_memory</code>) for each batch of jobs.</p>
 <ol>
-<li>If not already, log in to <code>learn.chtc.wisc.edu</code></li>
-<li>Create and change into a new subdirectory called <code>osg-ex4</code></li>
+<li>Log in or switch back to <code>learn.chtc.wisc.edu</code> (yes, back to CHTC!)</li>
+<li>Create and change into a new subdirectory called <code>osg-ex14</code></li>
 <li>
-<p>Create a submit file that is named <code>sleep.sub</code> that executes the command <code>/bin/sleep 300</code>.</p>
+<p>Create a submit file named <code>sleep.sub</code> that executes the command <code>/bin/sleep 300</code>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you do not remember all of the submit statements to write this file, or just to go faster, find a similar
-submit file from a previous exercise.
+<p>If you do not remember all of the submit statements to write this file, or just to go faster,
+find a similar submit file from a previous exercise.
 Copy the file and rename it here, and make sure the argument to <code>sleep</code> is <code>300</code>.</p>
 </div>
 </li>
 <li>
-<p>Use the <code>queue in</code> syntax to submit 10 jobs each for the following memory requests: 8, 16, 32, and 64GB.
-    You should have 10 jobs requesting 8GB, 10 jobs requesting 16GB, etc.</p>
+<p>Use the queue…in syntax to submit 10 jobs <em>each</em> for the following memory requests: 8, 16, 32, and 64&nbsp;GB.
+    There will be 40 jobs total: 10 jobs requesting 8&nbsp;GB, 10 requesting 16&nbsp;GB, etc.</p>
 </li>
-<li>Save the submit file and exit your editor</li>
 <li>Submit your jobs</li>
 </ol>
 <h3 id="monitoring-the-local-jobs">Monitoring the local jobs<a class="headerlink" href="#monitoring-the-local-jobs" title="Permanent link">&para;</a></h3>
 <p>Every few minutes, run <code>condor_q</code> and see how your sleep jobs are doing.
-To easily see how many jobs of each type you have left, run the following command:</p>
-<div class="codehilite"><pre><span></span><code><span class="gp">user@learn $ </span>condor_q &lt;Cluster ID&gt; -af RequestMemory <span class="p">|</span> sort -n <span class="p">|</span> uniq -c
+To show a timestamp and how many jobs of each type are left, run the following command:</p>
+<div class="codehilite"><pre><span></span><code><span class="gp">user@learn $ </span>**condor_q &lt;Cluster ID&gt; -af RequestMemory <span class="p">|</span> sort -n <span class="p">|</span> uniq -c**
 </code></pre></div>
 
-<p>The numbers in the left column are the number of jobs left of that type and the number on the right is the amount of
-memory you requested in MB.
+<p>The numbers in the left column are the number of jobs left of that type
+and the number on the right is the amount of memory you requested, in MB.
 Consider making a little table like the one below to track progress.</p>
 <table>
 <thead>
@@ -1312,24 +1314,39 @@ Consider making a little table like the one below to track progress.</p>
 </tr>
 </tbody>
 </table>
-<p>In the meantime, between checking on your local jobs, start the next section – taking a break every few minutes to
-record progress on your local jobs.</p>
-<h2 id="checking-osg-memory-availability">Checking OSG memory availability<a class="headerlink" href="#checking-osg-memory-availability" title="Permanent link">&para;</a></h2>
-<p>For the second part of the exercise, you will just copy over the directory from the <a href="#checking-chtc-memory-availability">above section</a>
-on <code>learn.chtc.wisc.edu</code> to <code>login04.osgconnect.net</code> and resubmit your jobs to the OSG.
-If you get stuck during the copying process, refer to <a href="ex2-login-scp.md">OSG exercise 2</a>.</p>
+<p>In the meantime, between checking on your local jobs, start the next section –
+but take a break every few minutes to switch back to <code>learn</code> and record progress on your CHTC jobs.</p>
+<h2 id="checking-os-pool-memory-availability">Checking OS Pool memory availability<a class="headerlink" href="#checking-os-pool-memory-availability" title="Permanent link">&para;</a></h2>
+<p>Now you will do essentially the same thing on the OS Pool.</p>
+<ol>
+<li>
+<p>Log in or switch to <code>login04.osgconnect.net</code></p>
+</li>
+<li>
+<p>Copy the <code>osg-ex14</code> directory from the <a href="#checking-chtc-memory-availability">section above</a>
+    from <code>learn.chtc.wisc.edu</code> to <code>login04.osgconnect.net</code></p>
+<p>If you get stuck during the copying process, refer to <a href="../part1-ex2-login-scp/">OSG exercise 1.2</a>.</p>
+</li>
+<li>
+<p>Submit the jobs to the OS Pool</p>
+</li>
+</ol>
 <h3 id="monitoring-the-remote-jobs">Monitoring the remote jobs<a class="headerlink" href="#monitoring-the-remote-jobs" title="Permanent link">&para;</a></h3>
 <p>As you did in the first part, use <code>condor_q</code> to track how your sleep jobs are doing.
-You can move onto the next exercise but keep tracking the status of your jobs.
-After you are done with the <a href="ex5-software-diffs.md">next exercise</a>, come back to this exercise,
-and move onto analyzing the results.</p>
+It is fine to move on to the next exercise, but keep tracking the status of both sets of these jobs.
+After you are done with the <a href="../part1-ex5-software-diffs/">next exercise</a>,
+come back to this exercise and analyze the results.</p>
 <h2 id="analyzing-the-results">Analyzing the results<a class="headerlink" href="#analyzing-the-results" title="Permanent link">&para;</a></h2>
-<p>Now that you've finished the other exercise, how many jobs have completed locally? How many have completed remotely?</p>
-<p>Due to the dynamic nature of the remote pool, the OSG may have noticed the demand for higher memory jobs and leased more
-high memory slots for our pool.
-That being said, 64GB+ slots are a high-demand, low-availability resource in the OSG so it's unlikely that all of your
-64GB+ jobs matched and ran to completion, if any.
-On the other hand, the local cluster has a fair number of 64GB+ slots so all your jobs have a high chance of running.</p>
+<p>Have all of your jobs from this exercise completed on both CHTC and the OS Pool?
+If not, but most of them have finished, that is fine.
+how many jobs have completed locally?
+How many have completed remotely?</p>
+<p>Due to the dynamic nature of the OS Pool,
+the demand for higher memory jobs there may have resulted in a temporary increase in high-memory slots there.
+That being said, 64&nbsp;GB (and greater) slots are a high-demand, low-availability resource in the OS Pool
+so it's unlikely that all of your 64&nbsp;GB jobs matched and ran to completion, if any.
+On the other hand, CHTC has a fair number of 64&nbsp;GB (and greater) slots
+so all your jobs have a high chance of running.</p>
                 
                   
                 
