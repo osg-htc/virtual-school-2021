@@ -72,7 +72,7 @@ tar.gz file with our environment:
 Submit a Job
 -------------
 
-1. Create a copy of the `rand_array.py` script from the [Docker Build Exercise](../part4-ex4-docker-build)
+1. Create a copy of the `rand_array.py` script from the [Docker Build Exercise](../part4-ex3-docker-build)
 
 2. The executable for this job will need to be a wrapper script. What steps do you 
 think need to be included? Write down a rough draft, then compare with the following script. 
