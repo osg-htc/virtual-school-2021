@@ -70,7 +70,6 @@ Option 2: GROMACS
 		#!/bin/bash
 		
 		gmx grompp -f ethanol.0.mdp -c ethanol.gro -p ethanol.top -o ethanol.0.tpr -max$
-		gmx mdrun -deffnm ethanol.0 -dhdl ethanol.0.dhdl.xvg
 		
 1. Unzip the input files, and move them to the current directory: 
 
