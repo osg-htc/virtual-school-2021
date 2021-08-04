@@ -2,7 +2,7 @@
 status: testing
 ---
 
-# OSG Exercise 2: Log In to the OSG Submit Server
+# OSG Exercise 1.2: Log In to the OS Pool Access Point
 
 The main goal of this exercise is to log in to an Open Science Pool Access Point
 so that you can start submitting jobs into the OS Pool instead of the local cluster at UW–Madison.

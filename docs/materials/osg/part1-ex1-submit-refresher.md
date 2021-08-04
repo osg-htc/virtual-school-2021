@@ -2,7 +2,7 @@
 status: testing
 ---
 
-# OSG Exercise 1: Refresher — Submitting Multiple Jobs
+# OSG Exercise 1.1: Refresher — Submitting Multiple Jobs
 
 The goal of this exercise is to map the physical locations of some worker servers in our local cluster.
 We will provide the executable and associated data,

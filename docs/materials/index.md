@@ -47,11 +47,11 @@ All exercises strongly recommended!
 
 ### Comparing CHTC and OSG
 
-- [Exercise 1.1: Refresher – Submitting Multiple Jobs](osg/part1-ex1-submit-refresher.md)
-- [Exercise 1.2: Log in to the OSG Submit Server](osg/part1-ex2-login-scp.md)
-- [Exercise 1.3: Running jobs in the OSG](osg/part1-ex3-submit-osg.md)
-- [Exercise 1.4: Hardware Differences in the OSG](osg/part1-ex4-hardware-diffs.md)
-- [Exercise 1.5: Software Differences in the OSG](osg/part1-ex5-software-diffs.md)
+- [Exercise 1.1: Refresher – submitting multiple jobs](osg/part1-ex1-submit-refresher.md)
+- [Exercise 1.2: Log in to the OS Pool Access Point](osg/part1-ex2-login-scp.md)
+- [Exercise 1.3: Running jobs in OSG](osg/part1-ex3-submit-osg.md)
+- [Exercise 1.4: Hardware differences between CHTC and OSG](osg/part1-ex4-hardware-diffs.md)
+- [Exercise 1.5: Software differences in OSG](osg/part1-ex5-software-diffs.md)
 
 ### Troubleshooting
 

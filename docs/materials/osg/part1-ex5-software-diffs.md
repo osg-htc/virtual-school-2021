@@ -2,7 +2,7 @@
 status: testing
 ---
 
-# OSG Exercise 5: Software Differences in OSG
+# OSG Exercise 1.5: Software Differences in OSG
 
 The goal of this exercise is to see some differences in the availability of software in the OSG.
 At your local cluster, you may be used to having certain versions of software.
