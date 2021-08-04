@@ -17,13 +17,29 @@ Many Python users manage their Python installation and environments with either 
 for creating portable Python installations and can be used on HTC systems with 
 some help from a tool called `conda pack`. 
 
+Sample Script
+-------------------
+
+1. For this example, create a script called `rand_array.py` on `learn.chtc.wisc.edu` or
+`login04.osgconnect.net`:
+
+		:::file
+		import numpy as np
+
+		#numpy array with random values
+		a = np.random.rand(4,2,3)
+
+		print(a)
+
+To run this script, we will need a copy of Python with the `numpy` library. 
+
 Create and Pack a Conda Environment
 ------------------
 
 (For a generic version of these instructions, see the [CHTC User Guide](http://chtc.cs.wisc.edu/conda-installation))
 
 1. Our first step is to create a miniconda installation on the submit server. 
-	1. Log into either `learn.chtc.wisc.edu` or `login04.osgconnect.net`
+	1. You should be logged into whichever server you made the `rand_array.py` script on. 
 	2. Download the latest Linux [miniconda installer](https://docs.conda.io/en/latest/miniconda.html)
 
 			:::console
@@ -72,9 +88,7 @@ tar.gz file with our environment:
 Submit a Job
 -------------
 
-1. Create a copy of the `rand_array.py` script from the [Docker Build Exercise](../part4-ex3-docker-build)
-
-2. The executable for this job will need to be a wrapper script. What steps do you 
+1. The executable for this job will need to be a wrapper script. What steps do you 
 think need to be included? Write down a rough draft, then compare with the following script. 
 
 3. Create a wrapper script like the following: 
