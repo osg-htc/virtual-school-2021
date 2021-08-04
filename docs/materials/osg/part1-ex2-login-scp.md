@@ -6,8 +6,8 @@ status: testing
 
 The main goal of this exercise is to log in to an Open Science Pool Access Point
 so that you can start submitting jobs into the OS Pool instead of the local cluster at UW–Madison.
-But before doing that, you will prepare a file on `learn` to copy to the OS Pool Access Point.
-And will learn how to efficiently copy files between the CHTC and OS Pool Access Points.
+But before doing that, you will first prepare a file on `learn` to copy to the OS Pool Access Point.
+Then you will learn how to efficiently copy files between the CHTC and OS Pool Access Points.
 
 If you have trouble getting `ssh` access to the OS Pool Access Point, ask the instructors right away!
 Gaining access is critical for all remaining exercises.
