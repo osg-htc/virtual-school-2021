@@ -73,7 +73,7 @@ Once completed, move onto the next exercise: [Hardware Differences in the OSG](p
 ## Extra Challenge: Cleaning up your submit directory
 
 If you run `ls` in the directory from which you submitted your job, you may see that you now have thousands of files!
-Proper data management starts to become a requirement as you start to develop truly HTC workflows;
+Proper data management starts to become a requirement as you start to develop true HTC workflows;
 it may be helpful to separate your submit files, code, and input data from your output data.
 
 1.  Try editing your submit file so that all your output and error files are saved to separate directories within your
