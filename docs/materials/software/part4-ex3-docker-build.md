@@ -13,7 +13,7 @@ based on Python, with the `numpy` Python library added on.
 Sample Script and Access Point
 -------------------
 
-This example uses the same script, `rand_array.py` as [Exercise 2.5](../part2-ex5-conda.md)
+This example uses the same script, `rand_array.py` as [Exercise 2.5](../part2-ex5-conda)
 
 This exercise **must** be run on `learn.chtc.wisc.edu`
 
