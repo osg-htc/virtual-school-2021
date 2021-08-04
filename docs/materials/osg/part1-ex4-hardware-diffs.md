@@ -81,7 +81,9 @@ and change the value of our parameter (`request_memory`) for each batch of jobs.
 ### Monitoring the local jobs
 
 Every few minutes, run `condor_q` and see how your sleep jobs are doing.
-To show a timestamp and how many jobs of each type are left, run the following command:
+To display the number of jobs remaining for each `request_memory` parameter specified, 
+run the following command:
+
 
 ``` console
 user@learn $ condor_q <Cluster ID> -af RequestMemory | sort -n | uniq -c
@@ -124,9 +126,8 @@ come back to this exercise and analyze the results.
 ## Analyzing the results
 
 Have all of your jobs from this exercise completed on both CHTC and the OS Pool?
-If not, but most of them have finished, that is fine.
-how many jobs have completed locally?
-How many have completed remotely?
+How many jobs have completed thus far on CHTC?
+How many have completed thus far on the OS Pool?
 
 Due to the dynamic nature of the OS Pool,
 the demand for higher memory jobs there may have resulted in a temporary increase in high-memory slots there.
