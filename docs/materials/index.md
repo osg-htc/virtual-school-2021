@@ -38,17 +38,27 @@ View the slides
 - [Bonus Exercise 3.2: Explore `condor_status`](htcondor/part3-ex2-status.md)
 - [Bonus Exercise 3.3: A job that needs retries](htcondor/part3-ex3-job-retry.md)
 
+
 ## OSG
 
 Links to the slides and video will be posted here.
 
 All exercises strongly recommended!
 
-- [Exercise 1: Refresher – Submitting Multiple Jobs](osg/part1-ex1-submit-refresher.md)
-- [Exercise 2: Log in to the OSG Submit Server](osg/part1-ex2-login-scp.md)
-- [Exercise 3: Running jobs in the OSG](osg/part1-ex3-submit-osg.md)
-- [Exercise 4: Hardware Differences in the OSG](osg/part1-ex4-hardware-diffs.md)
-- [Exercise 5: Software Differences in the OSG](osg/part1-ex5-software-diffs.md)
+### Comparing CHTC and OSG
+
+- [Exercise 1.1: Refresher – Submitting Multiple Jobs](osg/part1-ex1-submit-refresher.md)
+- [Exercise 1.2: Log in to the OSG Submit Server](osg/part1-ex2-login-scp.md)
+- [Exercise 1.3: Running jobs in the OSG](osg/part1-ex3-submit-osg.md)
+- [Exercise 1.4: Hardware Differences in the OSG](osg/part1-ex4-hardware-diffs.md)
+- [Exercise 1.5: Software Differences in the OSG](osg/part1-ex5-software-diffs.md)
+
+### Troubleshooting
+
+This one could take longer.  It is good to work through, but give yourself some time.
+
+- [Exercise 2.1: Troubleshooting HTCondor jobs](osg/part2-ex1-troubleshooting.md)
+
 
 ## Software
 
