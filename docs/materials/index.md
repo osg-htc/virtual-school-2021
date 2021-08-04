@@ -48,6 +48,9 @@ View the slides
 ([PDF](osg/files/osgvs21-day3-osg.pdf),
 [PowerPoint](osg/files/osgvs21-day3-osg.pptx))
 
+Watch the lecture recording
+([Introduction to OSG](https://youtu.be/MVZ8jGgiv4k))
+
 ### OSG Exercises 1: Comparing CHTC and OSG (Strongly Recommended)
 
 - [Exercise 1.1: Refresher – submitting multiple jobs](osg/part1-ex1-submit-refresher.md)
