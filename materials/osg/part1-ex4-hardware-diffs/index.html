@@ -1284,7 +1284,8 @@ Copy the file and rename it here, and make sure the argument to <code>sleep</cod
 </ol>
 <h3 id="monitoring-the-local-jobs">Monitoring the local jobs<a class="headerlink" href="#monitoring-the-local-jobs" title="Permanent link">&para;</a></h3>
 <p>Every few minutes, run <code>condor_q</code> and see how your sleep jobs are doing.
-To show a timestamp and how many jobs of each type are left, run the following command:</p>
+To display the number of jobs remaining for each <code>request_memory</code> parameter specified, 
+run the following command:</p>
 <div class="codehilite"><pre><span></span><code><span class="gp">user@learn $ </span>condor_q &lt;Cluster ID&gt; -af RequestMemory <span class="p">|</span> sort -n <span class="p">|</span> uniq -c
 </code></pre></div>
 
@@ -1351,9 +1352,8 @@ After you are done with the <a href="../part1-ex5-software-diffs/">next exercise
 come back to this exercise and analyze the results.</p>
 <h2 id="analyzing-the-results">Analyzing the results<a class="headerlink" href="#analyzing-the-results" title="Permanent link">&para;</a></h2>
 <p>Have all of your jobs from this exercise completed on both CHTC and the OS Pool?
-If not, but most of them have finished, that is fine.
-how many jobs have completed locally?
-How many have completed remotely?</p>
+How many jobs have completed thus far on CHTC?
+How many have completed thus far on the OS Pool?</p>
 <p>Due to the dynamic nature of the OS Pool,
 the demand for higher memory jobs there may have resulted in a temporary increase in high-memory slots there.
 That being said, 64&nbsp;GB (and greater) slots are a high-demand, low-availability resource in the OS Pool
