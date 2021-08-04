@@ -15,6 +15,9 @@ View the slides
 ([PDF](htcondor/files/osgvsp21-htc-htcondor.pdf),
 [PowerPoint](htcondor/files/osgvsp21-htc-htcondor.pptx))
 
+Watch the lecture recording
+([HTC Job Excecution with HTCondor](https://youtu.be/9896xAhT4dY))
+
 ### Intro Exercises 1: Running and Viewing Simple Jobs (Strongly Recommended)
 
 - [Exercise 1.1: Log in to the local submit machine and look around](htcondor/part1-ex1-login)
