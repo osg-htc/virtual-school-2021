@@ -699,8 +699,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#job-submission" class="md-nav__link">
-    Job Submission
+  <a href="#default-environment" class="md-nav__link">
+    Default Environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#container-environment" class="md-nav__link">
+    Container Environment
   </a>
   
 </li>
@@ -718,7 +725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part4-ex1-python-extras/" class="md-nav__link">
+      <a href="../part4-ex1-python-extras.md" class="md-nav__link">
         Exercise 4.1
       </a>
     </li>
@@ -1115,8 +1122,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#job-submission" class="md-nav__link">
-    Job Submission
+  <a href="#default-environment" class="md-nav__link">
+    Default Environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#container-environment" class="md-nav__link">
+    Container Environment
   </a>
   
 </li>
@@ -1138,30 +1152,55 @@
 
 <h1 id="software-exercise-31-use-singularity-from-osg-connect">Software Exercise 3.1: Use Singularity from OSG Connect<a class="headerlink" href="#software-exercise-31-use-singularity-from-osg-connect" title="Permanent link">&para;</a></h1>
 <h2 id="background">Background<a class="headerlink" href="#background" title="Permanent link">&para;</a></h2>
-<p>Containers are another way to manage software installations. We don't have the time to go fully into the details of building and using containers, but can use pre-existing containers to run jobs. </p>
-<p>One caveat for using containers: not all systems will support them. HTCondor has built-in features for using Docker and many Open Science Grid resources have Singularity installed, but they are not always available everywhere. </p>
+<p>Containers are another way to manage software installations. This guide shows how to use pre-existing containers to run jobs on the OSG.</p>
+<p>One caveat for using containers: not all systems will support them. HTCondor has built-in features for using Docker and many OSG resources have Singularity installed, but they are not always available everywhere. </p>
 <h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
-<p>Make sure you are logged into <code>login04.osgconnect.net</code> (the OSG Connect submit server for this workshop).  For this exercise we will be using Singularity containers that are hosted by OSG Connect, in a very similar way to the software modules. </p>
-<p>To get an idea on what container images are available on the OSG, take a look at the directory path <code>/cvmfs/singularity.opensciencegrid.org/opensciencegrid</code>.  </p>
-<h2 id="job-submission">Job Submission<a class="headerlink" href="#job-submission" title="Permanent link">&para;</a></h2>
-<p>For this job, we will use the OSG Connect Ubuntu "Xenial" image. Copy a submit file you used for a previous exercise on OSG Connect and add the following lines: </p>
+<p>Make sure you are logged into <code>login04.osgconnect.net</code> (the OSG Connect submit server for this workshop).  For this exercise we will be using Singularity containers that are hosted by OSG Connect. </p>
+<h2 id="default-environment">Default Environment<a class="headerlink" href="#default-environment" title="Permanent link">&para;</a></h2>
+<p>First, let's run a job without a container to see what the typical job environment is. </p>
+<ol>
+<li>
+<p>Create a bash script with the following lines: </p>
+<div class="codehilite"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+
+hostname
+cat /etc/os-release 
+gcc --version
+</code></pre></div>
+
+<p>This will print out the version of Linux on the computer and the version 
+of <code>gcc</code>, a common software compiler. </p>
+</li>
+<li>
+<p>Copy a submit file from a previous OSG Connect job and edit it so that the 
+script you just wrote is the executable. </p>
+</li>
+<li>
+<p>Submit the job and read the standard output file when it finishes. The output 
+should indicate that the job ran on "CentOS Linux" and the version of GCC will be <code>4.x</code>.</p>
+</li>
+</ol>
+<h2 id="container-environment">Container Environment<a class="headerlink" href="#container-environment" title="Permanent link">&para;</a></h2>
+<p>Now, let's try running that same script inside a container. </p>
+<ol>
+<li>
+<p>On the OSG, containers are stored and run as Singularity container images, so the job needs to run on a server that has Singularity installed. Modify the submit file from the previous step and add (or replace) the following line: </p>
+<div class="codehilite"><pre><span></span><code>requirements = HAS_SINGULARITY == true
+</code></pre></div>
+
+</li>
+<li>
+<p>For this job, we will use the OSG Connect Ubuntu "Xenial" image. The <code>+SingularityImage</code> submit file option will tell HTCondor to use this container: </p>
 <div class="codehilite"><pre><span></span><code>requirements = HAS_SINGULARITY == true
 +SingularityImage = &quot;/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-ubuntu-xenial:latest&quot;
 </code></pre></div>
 
-<p>If you had other requirements in the submit file, remove them. These options will do two things: </p>
-<ul>
-<li>require that your job runs on servers that have Singularity installed and can access the OSG Connect repository of Singularity containers</li>
-<li>tells the job which Singularity container to use</li>
-</ul>
-<p>To test and see if our job is really running in Ubuntu, use this script for the job's executable: </p>
-<div class="codehilite"><pre><span></span><code><span class="ch">#!/bin/bash</span>
-
-hostname
-lsb_release -a
-</code></pre></div>
-
-<p>Submit the job and look at the output file. </p>
+</li>
+<li>
+<p>Submit the job and look at the output file. You should see output that indicates 
+that the job was running on "Ubuntu" and has a newer version of GCC. </p>
+</li>
+</ol>
                 
                   
                 
@@ -1197,13 +1236,13 @@ lsb_release -a
         </a>
       
       
-        <a href="../part4-ex1-python-extras/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../part4-ex2-docker/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Exercise 4.1
+              Exercise 4.2
             </div>
           </div>
           <div class="md-footer__button md-icon">

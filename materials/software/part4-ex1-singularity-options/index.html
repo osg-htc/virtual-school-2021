@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="https://opensciencegrid.org/virtual-school-2021/materials/software/part4-ex1-python-extras/">
+        <link rel="canonical" href="https://opensciencegrid.org/virtual-school-2021/materials/software/part4-ex1-singularity-options/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.0">
     
     
       
-        <title>Exercise 4.1 - OSG Virtual School 2021</title>
+        <title>Part4 ex1 singularity options - OSG Virtual School 2021</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#software-exercise-41-more-python-job-features" class="md-skip">
+        <a href="#software-exercise-41-singularity-examples-on-osg-connect" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Exercise 4.1
+              Part4 ex1 singularity options
             
           </span>
         </div>
@@ -216,14 +216,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       <label class="md-nav__link" for="__nav_4">
         Materials
@@ -545,14 +543,12 @@
             
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
       
       <label class="md-nav__link" for="__nav_4_4">
         Software Exercises
@@ -664,63 +660,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Exercise 4.1
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../part4-ex1-python-extras.md" class="md-nav__link">
         Exercise 4.1
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#arguments" class="md-nav__link">
-    Arguments
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#multiple-jobs" class="md-nav__link">
-    Multiple Jobs
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#packages" class="md-nav__link">
-    Packages
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1101,22 +1045,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#arguments" class="md-nav__link">
-    Arguments
+  <a href="#background" class="md-nav__link">
+    Background
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#multiple-jobs" class="md-nav__link">
-    Multiple Jobs
+  <a href="#setup" class="md-nav__link">
+    Setup
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#packages" class="md-nav__link">
-    Packages
+  <a href="#option-1-r" class="md-nav__link">
+    Option 1: R
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#option-2-gromacs" class="md-nav__link">
+    Option 2: GROMACS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#option-3-cowsay" class="md-nav__link">
+    Option 3: Cowsay
   </a>
   
 </li>
@@ -1134,26 +1092,143 @@
               
                 
                 
-                <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: #008; } </style>
+                <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: \#008; } </style>
 
-<h1 id="software-exercise-41-more-python-job-features">Software Exercise 4.1: More Python Job Features<a class="headerlink" href="#software-exercise-41-more-python-job-features" title="Permanent link">&para;</a></h1>
-<p>If you have time and  did the previous Python exercise (<a href="../part2-ex3-python">Exercise 2.3</a>), try one (or more) of these exercises. </p>
-<h2 id="arguments">Arguments<a class="headerlink" href="#arguments" title="Permanent link">&para;</a></h2>
-<p>Similar to what was shown in a <a href="../part4-ex1-arguments">previous bonus exercise</a>, 
-can you modify your submit file and shell script so that the number provided to the <code>fib.py</code> script is an argument from the submit file? </p>
-<h2 id="multiple-jobs">Multiple Jobs<a class="headerlink" href="#multiple-jobs" title="Permanent link">&para;</a></h2>
-<p>Given this list of numbers:</p>
-<div class="codehilite"><pre><span></span><code>0
-25
-80
-110
-250
-3000
+<h1 id="software-exercise-41-singularity-examples-on-osg-connect">Software Exercise 4.1: Singularity Examples on OSG Connect<a class="headerlink" href="#software-exercise-41-singularity-examples-on-osg-connect" title="Permanent link">&para;</a></h1>
+<h2 id="background">Background<a class="headerlink" href="#background" title="Permanent link">&para;</a></h2>
+<p>The previous exercise (3.1) illustrated the idea of using containers, but 
+didn't run a specific software program. In this exercise, you can choose one 
+or more sample programs to run using a container. </p>
+<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Make sure you are logged into <code>login04.osgconnect.net</code>. </p>
+</li>
+<li>
+<p>To get an idea on what container images are available on the OSG, 
+take a look at the directory path <code>/cvmfs/singularity.opensciencegrid.org/opensciencegrid</code>.  </p>
+</li>
+</ol>
+<blockquote>
+<p>If you want to use your own container on the OSG, message your mentor or the 
+general slack channel about how to do so. </p>
+</blockquote>
+<ol>
+<li>For all three examples, make sure you have the Singularity <code>requirement</code> from the 
+<a href="../part3-ex1-singularity">previous exercise</a>) in your submit file, and you'll 
+still be using the <code>+SingularityImage</code> flag. </li>
+</ol>
+<h2 id="option-1-r">Option 1: R<a class="headerlink" href="#option-1-r" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Create the following R script, called <code>simple.R</code>:</p>
+<div class="codehilite"><pre><span></span><code>#!/usr/bin/env Rscript
+
+inputs = c(5, 19, 108, 42, 77)
+results = sum(inputs)
+print(results)
 </code></pre></div>
 
-<p>Can you submit a job for each number? </p>
-<h2 id="packages">Packages<a class="headerlink" href="#packages" title="Permanent link">&para;</a></h2>
-<p>We haven't talked about adding Python packages (like <code>numpy</code> or <code>matplotlib</code>) to the Python installation. Where would that go in the installation process? Try creating a Python installation that includes the <code>numpy</code> package. </p>
+</li>
+<li>
+<p>In your submit file, set the R script as the executable: </p>
+<div class="codehilite"><pre><span></span><code>executable = simple.R
+</code></pre></div>
+
+<p>We can use the R script directly (without another wrapper script) because 
+we included the header <code>#!/usr/bin/env Rscript</code> at the top of our script 
+file. This is a special indicator that the script should be run using 
+the <code>Rscript</code> program. </p>
+</li>
+<li>
+<p>Choose one of the existing R containers to run the job: </p>
+<div class="codehilite"><pre><span></span><code>+SingularityImage = &quot;/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-r:4.0.2&quot;
+</code></pre></div>
+
+</li>
+<li>
+<p>Submit the job and check the standard output file when it completes. </p>
+</li>
+</ol>
+<h2 id="option-2-gromacs">Option 2: GROMACS<a class="headerlink" href="#option-2-gromacs" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Example taken from <a href="http://www.alchemistry.org/wiki/GROMACS_4.6_example:_Direct_ethanol_solvation_free_energy">alchemistry.org</a></p>
+</blockquote>
+<ol>
+<li>
+<p>Create the following bash script, called <code>run_gromacs.sh</code>:</p>
+<div class="codehilite"><pre><span></span><code>#!/bin/bash
+
+gmx grompp -f ethanol.0.mdp -c ethanol.gro -p ethanol.top -o ethanol.0.tpr -max$
+</code></pre></div>
+
+</li>
+<li>
+<p>Unzip the input files, and move them to the current directory: </p>
+<div class="codehilite"><pre><span></span><code><span class="gp">username@login $ </span>tar -xzf /public/osgvs21/gromacs_input.tgz
+<span class="gp">username@login $ </span>cp gromacs_input/* ./
+</code></pre></div>
+
+</li>
+<li>
+<p>In your submit file, set the <code>run_gromacs.sh</code> script as the executable: </p>
+</li>
+<li>
+<p>Add the input files to the appropriate line in the submit file. </p>
+</li>
+<li>
+<p>Choose the GROMACS container to run the job: </p>
+<div class="codehilite"><pre><span></span><code>+SingularityImage = &quot;/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-gromacs:latest&quot;
+</code></pre></div>
+
+</li>
+<li>
+<p>Submit the job and check the standard output file when it completes. </p>
+</li>
+</ol>
+<blockquote>
+<p>Those who want a little extra challenge - this example is meant to be run 9 times, 
+per the tutorial link above. Read through the first paragraph of the tutorial and 
+try to modify this submit file (and input files) so that it runs 9 jobs, each 
+with a different <code>init-lambda-state</code> value in the <code>ethanol.X.mdp</code> file. </p>
+</blockquote>
+<h2 id="option-3-cowsay">Option 3: Cowsay<a class="headerlink" href="#option-3-cowsay" title="Permanent link">&para;</a></h2>
+<p>One final (fun) example - running the program "cowsay" from a container. </p>
+<ol>
+<li>
+<p>Create the following R script, called <code>cowsay.sh</code>:</p>
+<div class="codehilite"><pre><span></span><code>#!/bin/bash
+
+cowsay &quot;Computing is Fun&quot;
+</code></pre></div>
+
+</li>
+<li>
+<p>Make <code>cowsay.sh</code> your executable. </p>
+</li>
+<li>
+<p>Choose the <code>lolcow</code> container to run the job: </p>
+<div class="codehilite"><pre><span></span><code>+SingularityImage = &quot;/cvmfs/singularity.opensciencegrid.org/sylabsio/lolcow:latest&quot;
+</code></pre></div>
+
+</li>
+<li>
+<p>Submit the job and check out the output when it completes! </p>
+</li>
+</ol>
+<blockquote>
+<p>Note: it's possible to run jobs using containers (like this one) <em>without</em> using 
+a wrapper script. If we wanted to run the <code>cowsay</code> program, directly as the executable, 
+it would look like this: </p>
+<p>:::file
+  executable = /usr/games/cowsay
+  arguments = "Computing is Fun"
+  transfer_executable = false</p>
+<p>+SingularityImage = "/cvmfs/singularity.opensciencegrid.org/sylabsio/lolcow:latest/"</p>
+<p>Note that this example is slightly different than our previous scripts; here 
+we're using cowsay directly from the container. Since it's not a separate executable, 
+we need to add the <code>transfer_exectuable = false</code> option </p>
+</blockquote>
                 
                   
                 
@@ -1171,39 +1246,6 @@ can you modify your submit file and shell script so that the number provided to 
       
         
 <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        <a href="../part3-ex1-singularity/" class="md-footer__link md-footer__link--prev" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Exercise 3.1
-            </div>
-          </div>
-        </a>
-      
-      
-        <a href="../part4-ex2-docker/" class="md-footer__link md-footer__link--next" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Exercise 4.2
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
