@@ -2,7 +2,7 @@
 status: testing
 ---
 
-# OSG Exercise 3: Running Jobs in OSG
+# OSG Exercise 1.3: Running Jobs in OSG
 
 The goal of this exercise is for you to run jobs in OSG,
 specifically the Open Science Pool,

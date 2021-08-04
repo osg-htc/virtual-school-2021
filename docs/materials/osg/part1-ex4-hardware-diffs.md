@@ -2,7 +2,7 @@
 status: testing
 ---
 
-# OSG Exercise 4: Hardware Differences Between CHTC and OSG
+# OSG Exercise 1.4: Hardware Differences Between CHTC and OSG
 
 The goal of this exercise is to compare hardware differences between our local cluster
 (CHTC here at UW–Madison) and the Open Science Pool.
