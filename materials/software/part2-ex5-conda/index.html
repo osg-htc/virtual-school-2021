@@ -1052,6 +1052,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#sample-script" class="md-nav__link">
+    Sample Script
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#create-and-pack-a-conda-environment" class="md-nav__link">
     Create and Pack a Conda Environment
   </a>
@@ -1087,13 +1094,27 @@
 <code>Anaconda</code> or <code>miniconda</code> distributions. These distribution tools are great 
 for creating portable Python installations and can be used on HTC systems with 
 some help from a tool called <code>conda pack</code>. </p>
+<h2 id="sample-script">Sample Script<a class="headerlink" href="#sample-script" title="Permanent link">&para;</a></h2>
+<ol>
+<li>For this example, create a script called <code>rand_array.py</code> on <code>learn.chtc.wisc.edu</code> or
+<code>login04.osgconnect.net</code>:<div class="codehilite"><pre><span></span><code>import numpy as np
+
+#numpy array with random values
+a = np.random.rand(4,2,3)
+
+print(a)
+</code></pre></div>
+
+</li>
+</ol>
+<p>To run this script, we will need a copy of Python with the <code>numpy</code> library. </p>
 <h2 id="create-and-pack-a-conda-environment">Create and Pack a Conda Environment<a class="headerlink" href="#create-and-pack-a-conda-environment" title="Permanent link">&para;</a></h2>
 <p>(For a generic version of these instructions, see the <a href="http://chtc.cs.wisc.edu/conda-installation">CHTC User Guide</a>)</p>
 <ol>
 <li>
 <p>Our first step is to create a miniconda installation on the submit server. </p>
 <ol>
-<li>Log into either <code>learn.chtc.wisc.edu</code> or <code>login04.osgconnect.net</code></li>
+<li>You should be logged into whichever server you made the <code>rand_array.py</code> script on. </li>
 <li>
 <p>Download the latest Linux <a href="https://docs.conda.io/en/latest/miniconda.html">miniconda installer</a></p>
 <div class="codehilite"><pre><span></span><code><span class="gp">user@login $ </span>wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -1150,9 +1171,6 @@ tar.gz file with our environment: </p>
 </ol>
 <h2 id="submit-a-job">Submit a Job<a class="headerlink" href="#submit-a-job" title="Permanent link">&para;</a></h2>
 <ol>
-<li>
-<p>Create a copy of the <code>rand_array.py</code> script from the <a href="../part4-ex4-docker-build">Docker Build Exercise</a></p>
-</li>
 <li>
 <p>The executable for this job will need to be a wrapper script. What steps do you 
 think need to be included? Write down a rough draft, then compare with the following script. </p>
