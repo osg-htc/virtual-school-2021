@@ -41,11 +41,11 @@ View the slides
 
 ## OSG
 
-Links to the slides and video will be posted here.
+View the slides
+([PDF](osg/files/osgvs21-day3-osg.pdf),
+[PowerPoint](osg/files/osgvs21-day3-osg.pptx))
 
-All exercises strongly recommended!
-
-### Comparing CHTC and OSG
+### OSG Exercises 1: Comparing CHTC and OSG (Strongly Recommended)
 
 - [Exercise 1.1: Refresher – submitting multiple jobs](osg/part1-ex1-submit-refresher.md)
 - [Exercise 1.2: Log in to the OS Pool Access Point](osg/part1-ex2-login-scp.md)
@@ -53,7 +53,7 @@ All exercises strongly recommended!
 - [Exercise 1.4: Hardware differences between CHTC and OSG](osg/part1-ex4-hardware-diffs.md)
 - [Exercise 1.5: Software differences in OSG](osg/part1-ex5-software-diffs.md)
 
-### Troubleshooting
+### OSG Exercise 2: Troubleshooting (Strongly Recommended)
 
 This one could take longer.  It is good to work through, but give yourself some time.
 
