@@ -10,20 +10,12 @@ Software Exercise 4.3: Building Your Own Docker Container (Beta!)
 This exercise will walk you through the steps to build your own Docker container 
 based on Python, with the `numpy` Python library added on. 
 
-Sample Script
+Sample Script and Access Point
 -------------------
 
-For this example, create a script called `rand_array.py` on `learn.chtc.wisc.edu`:
+This example uses the same script, `rand_array.py` as [Exercise 2.5](../part2-ex5-conda.md)
 
-	:::file
-	import numpy as np
-
-	#numpy array with random values
-	a = np.random.rand(4,2,3)
-
-	print(a)
-
-To run this script, we will need a copy of Python with the `numpy` library. 
+This exercise **must** be run on `learn.chtc.wisc.edu`
 
 Getting Set Up
 --------------
