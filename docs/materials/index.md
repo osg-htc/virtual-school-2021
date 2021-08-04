@@ -15,6 +15,9 @@ View the slides
 ([PDF](htcondor/files/osgvsp21-htc-htcondor.pdf),
 [PowerPoint](htcondor/files/osgvsp21-htc-htcondor.pptx))
 
+Watch the lecture recording
+([HTC Job Excecution with HTCondor](https://youtu.be/9896xAhT4dY))
+
 ### Intro Exercises 1: Running and Viewing Simple Jobs (Strongly Recommended)
 
 - [Exercise 1.1: Log in to the local submit machine and look around](htcondor/part1-ex1-login)
@@ -38,17 +41,27 @@ View the slides
 - [Bonus Exercise 3.2: Explore `condor_status`](htcondor/part3-ex2-status.md)
 - [Bonus Exercise 3.3: A job that needs retries](htcondor/part3-ex3-job-retry.md)
 
+
 ## OSG
 
-Links to the slides and video will be posted here.
+View the slides
+([PDF](osg/files/osgvs21-day3-osg.pdf),
+[PowerPoint](osg/files/osgvs21-day3-osg.pptx))
 
-All exercises strongly recommended!
+### OSG Exercises 1: Comparing CHTC and OSG (Strongly Recommended)
 
-- [Exercise 1: Refresher – Submitting Multiple Jobs](osg/part1-ex1-submit-refresher.md)
-- [Exercise 2: Log in to the OSG Submit Server](osg/part1-ex2-login-scp.md)
-- [Exercise 3: Running jobs in the OSG](osg/part1-ex3-submit-osg.md)
-- [Exercise 4: Hardware Differences in the OSG](osg/part1-ex4-hardware-diffs.md)
-- [Exercise 5: Software Differences in the OSG](osg/part1-ex5-software-diffs.md)
+- [Exercise 1.1: Refresher – submitting multiple jobs](osg/part1-ex1-submit-refresher.md)
+- [Exercise 1.2: Log in to the OS Pool Access Point](osg/part1-ex2-login-scp.md)
+- [Exercise 1.3: Running jobs in OSG](osg/part1-ex3-submit-osg.md)
+- [Exercise 1.4: Hardware differences between CHTC and OSG](osg/part1-ex4-hardware-diffs.md)
+- [Exercise 1.5: Software differences in OSG](osg/part1-ex5-software-diffs.md)
+
+### OSG Exercise 2: Troubleshooting (Strongly Recommended)
+
+This one could take longer.  It is good to work through, but give yourself some time.
+
+- [Exercise 2.1: Troubleshooting HTCondor jobs](osg/part2-ex1-troubleshooting.md)
+
 
 ## Software
 

@@ -2,7 +2,7 @@
 status: testing
 ---
 
-# OSG Exercise 1: Refresher — Submitting Multiple Jobs
+# OSG Exercise 1.1: Refresher — Submitting Multiple Jobs
 
 The goal of this exercise is to map the physical locations of some worker servers in our local cluster.
 We will provide the executable and associated data,
@@ -19,7 +19,7 @@ Geolocation uses a registry to match a computer’s network address to an approx
 Now, let’s try to remember some basic HTCondor ideas from the HTC exercises:
 
 1.  Log in to `learn.chtc.wisc.edu` (yes, still at CHTC!)
-1.  Create and change into a new folder for this exercise, for example `osg-ex1`
+1.  Create and change into a new folder for this exercise, for example `osg-ex11`
 1.  Download the geolocation code:
 
         :::console
@@ -33,7 +33,7 @@ Now, let’s try to remember some basic HTCondor ideas from the HTC exercises:
     and uses the `$(Process)` macro to write different `output` and `error` files.
     Also, add the following requirement to the submit file (it’s not important to know what it does):
 
-        requirements = (HAS_CVMFS_oasis_opensciencegrid_org =?= TRUE)
+        requirements = (HAS_CVMFS_oasis_opensciencegrid_org == TRUE) && (IsOsgVoContainer =!= True)
 
     Try to do this step without looking at materials from the earlier exercises.
     But if you are stuck, see [HTC Exercise 2.2](../htcondor/part2-ex2-queue-n.md).
