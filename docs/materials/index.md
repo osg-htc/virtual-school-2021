@@ -68,7 +68,9 @@ This one could take longer.  It is good to work through, but give yourself some 
 
 ## Software
 
-Slides will be posted here
+View the slides
+([PDF](software/files/osgvs21-software.pdf),
+[PowerPoint](software/files/osgvs21-software.pptx))
 
 ### Software Exercises 1: Basic Software and Wrapper Script Use (Strongly Recommended)
 
