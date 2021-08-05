@@ -72,6 +72,9 @@ View the slides
 ([PDF](software/files/osgvs21-software.pdf),
 [PowerPoint](software/files/osgvs21-software.pptx))
 
+Watch the lecture recording
+([Backpacking with Code: Software Portability for DHTC](https://youtu.be/xUeIQbVXOMQ))
+
 ### Software Exercises 1: Basic Software and Wrapper Script Use (Strongly Recommended)
 
 - [Exercise 1.1: Work With Downloaded Software](software/part1-ex1-download.md)
