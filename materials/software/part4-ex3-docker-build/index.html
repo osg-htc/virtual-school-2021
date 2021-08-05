@@ -654,6 +654,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../part2-ex5-conda/" class="md-nav__link">
+        Exercise 2.5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../part3-ex1-singularity/" class="md-nav__link">
         Exercise 3.1
       </a>
@@ -666,7 +678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part4-ex1-python-extras.md" class="md-nav__link">
+      <a href="../part4-ex1-singularity-options/" class="md-nav__link">
         Exercise 4.1
       </a>
     </li>
@@ -752,18 +764,6 @@
   
 </nav>
       
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part4-ex4-conda.md" class="md-nav__link">
-        Exercise 4.4
-      </a>
     </li>
   
 
@@ -1154,7 +1154,7 @@
 <p>This exercise will walk you through the steps to build your own Docker container 
 based on Python, with the <code>numpy</code> Python library added on. </p>
 <h2 id="sample-script-and-access-point">Sample Script and Access Point<a class="headerlink" href="#sample-script-and-access-point" title="Permanent link">&para;</a></h2>
-<p>This example uses the same script, <code>rand_array.py</code> as <a href="../part2-ex5-conda.md">Exercise 2.5</a></p>
+<p>This example uses the same script, <code>rand_array.py</code> as <a href="../part2-ex5-conda">Exercise 2.5</a></p>
 <p>This exercise <strong>must</strong> be run on <code>learn.chtc.wisc.edu</code></p>
 <h2 id="getting-set-up">Getting Set Up<a class="headerlink" href="#getting-set-up" title="Permanent link">&para;</a></h2>
 <p>Before building your own Docker container, you need to go through the following 
@@ -1223,13 +1223,13 @@ new container, we will want to use a similar naming scheme of: </p>
 
 <p>In what follows, you will want to replace <code>USERNAME</code> with your DockerHub user name. 
 The <code>CONTAINER</code> name and <code>VERSIONTAG</code> are your choice; in what follows, we will 
-use <code>py3-numpy</code> as the container name and <code>2020-07</code> as the version tag. </p>
+use <code>py3-numpy</code> as the container name and <code>2021-08</code> as the version tag. </p>
 </li>
 <li>
 <p>To build and name the new container, open a command line window on your computer 
 where you can run Docker commands. Use the <code>cd</code> command to change your working directory 
 to the build directory with the <code>Dockerfile</code> inside. </p>
-<div class="codehilite"><pre><span></span><code><span class="gp">$ </span>docker build -t USERNAME/py3-numpy:2020-07 .
+<div class="codehilite"><pre><span></span><code><span class="gp">$ </span>docker build -t USERNAME/py3-numpy:2021-08 .
 </code></pre></div>
 
 <p>Note the <code>.</code> at the end of the command! This indicates that we're using the current 
@@ -1243,7 +1243,7 @@ elsewhere, it needs to be added to a public registry like Docker Hub. </p>
 <li>
 <p>To put your container image in Docker Hub, use the <code>docker push</code> command on the 
 command line:</p>
-<div class="codehilite"><pre><span></span><code><span class="gp">$ </span>docker push USERNAME/py3-numpy:2020-07
+<div class="codehilite"><pre><span></span><code><span class="gp">$ </span>docker push USERNAME/py3-numpy:2021-08
 </code></pre></div>
 
 <p>If the push doesn't work, you may need to run <code>docker login</code> first, enter your 
@@ -1251,7 +1251,7 @@ Docker Hub username and password and then try the push again. </p>
 </li>
 <li>
 <p>Once your container image is in DockerHub, you can use it in jobs as described 
-in [Exercise 4.3][/materials/sw/part4-ex3-docker]. </p>
+in <a href="../part4-ex2-docker">Exercise 4.2</a>. </p>
 </li>
 </ol>
 <blockquote>
