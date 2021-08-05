@@ -70,7 +70,7 @@ Now that our database and BLAST software are being transferred to the job as `ta
 1. The completed script `run_blast.sh` should look like this: 
 
         :::bash
-        #/bin/bash
+        #!/bin/bash
         
         tar -xzf ncbi-blast-2.12.0+-x64-linux.tar.gz 
         tar -xzf pdbaa.tar.gz
