@@ -101,7 +101,9 @@ Watch the lecture recording
 
 ## Data
 
-Slides will be posted here
+View the slides
+([PDF](data/files/osgvs21-data.pdf),
+[PowerPoint](data/files/osgvs21-data.pptx))
 
 ### Data Exercises 1: HTCondor File Transfer (Strongly Recommended)
 
