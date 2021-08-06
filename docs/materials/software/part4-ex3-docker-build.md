@@ -56,7 +56,7 @@ the following contents:
 		FROM continuumio/miniconda:4.7.12
 
 		# Use RUN to execute commands inside the image as it is being built up.
-		RUN conda install --yes numpy
+		RUN conda install --yes python=3 numpy
 
 		# RUN multiple commands together.
 		# Try to always "clean up" after yourself to reduce the final size of your image.
