@@ -50,28 +50,28 @@ the following contents:
 		:::file
 		# Start with this image as a "base".
 		# It's as if all the commands that created that image were inserted here.
-		# Always use a specific tag like "4.7.12", never "latest"!
+		# Always use a specific tag like "4.10.3", never "latest"!
 		# The version referenced by "latest" can change, so the build will be 
 		# more stable when building from a specific version tag. 
-		FROM continuumio/miniconda:4.7.12
+		FROM continuumio/miniconda3:4.10.3
 
 		# Use RUN to execute commands inside the image as it is being built up.
-		RUN conda install --yes python=3 numpy
+		RUN conda install --yes numpy
 
 		# RUN multiple commands together.
 		# Try to always "clean up" after yourself to reduce the final size of your image.
 		RUN apt-get update \
-		 && apt-get --yes install --no-install-recommends graphviz\
-		 && apt-get --yes clean \
-		 && rm -rf /var/lib/apt/lists/*
+ 		&& apt-get --yes install --no-install-recommends graphviz \
+ 		&& apt-get --yes clean \
+ 		&& rm -rf /var/lib/apt/lists/*
 
 	This is our specification file and provides Docker with the information it needs 
 	to build our new container. There are other options besides `FROM` and `RUN`; see 
 	the [Docker documentation](https://docs.docker.com/engine/reference/builder/) for more information. 
 
 3. Note that our container is starting from an existing container 
-`continuumio/miniconda:4.7.12`. This container is produced by the `continuumio` 
-organization; the number `4.7.12` indicates the container version. When we create our 
+`continuumio/miniconda3:4.10.3`. This container is produced by the `continuumio` 
+organization; the number `4.10.3` indicates the container version. When we create our 
 new container, we will want to use a similar naming scheme of: 
 
 		USERNAME/CONTAINER:VERSIONTAG
@@ -109,4 +109,4 @@ command line:
 in [Exercise 4.2](../part4-ex2-docker). 
 
 > Thanks to [Josh Karpel](https://github.com/JoshKarpel/osg-school-example-dockerfile) for 
-providing the sample `Dockerfile`!
+providing the original sample `Dockerfile`!
