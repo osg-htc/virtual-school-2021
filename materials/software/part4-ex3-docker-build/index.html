@@ -1193,20 +1193,20 @@ servers. </p>
 the following contents: </p>
 <div class="codehilite"><pre><span></span><code># Start with this image as a &quot;base&quot;.
 # It&#39;s as if all the commands that created that image were inserted here.
-# Always use a specific tag like &quot;4.7.12&quot;, never &quot;latest&quot;!
+# Always use a specific tag like &quot;4.10.3&quot;, never &quot;latest&quot;!
 # The version referenced by &quot;latest&quot; can change, so the build will be 
 # more stable when building from a specific version tag. 
-FROM continuumio/miniconda:4.7.12
+FROM continuumio/miniconda3:4.10.3
 
 # Use RUN to execute commands inside the image as it is being built up.
-RUN conda install --yes python=3 numpy
+RUN conda install --yes numpy
 
 # RUN multiple commands together.
 # Try to always &quot;clean up&quot; after yourself to reduce the final size of your image.
 RUN apt-get update \
- &amp;&amp; apt-get --yes install --no-install-recommends graphviz\
- &amp;&amp; apt-get --yes clean \
- &amp;&amp; rm -rf /var/lib/apt/lists/*
+&amp;&amp; apt-get --yes install --no-install-recommends graphviz \
+&amp;&amp; apt-get --yes clean \
+&amp;&amp; rm -rf /var/lib/apt/lists/*
 </code></pre></div>
 
 <p>This is our specification file and provides Docker with the information it needs 
@@ -1215,8 +1215,8 @@ the <a href="https://docs.docker.com/engine/reference/builder/">Docker documenta
 </li>
 <li>
 <p>Note that our container is starting from an existing container 
-<code>continuumio/miniconda:4.7.12</code>. This container is produced by the <code>continuumio</code> 
-organization; the number <code>4.7.12</code> indicates the container version. When we create our 
+<code>continuumio/miniconda3:4.10.3</code>. This container is produced by the <code>continuumio</code> 
+organization; the number <code>4.10.3</code> indicates the container version. When we create our 
 new container, we will want to use a similar naming scheme of: </p>
 <div class="codehilite"><pre><span></span><code>USERNAME/CONTAINER:VERSIONTAG
 </code></pre></div>
@@ -1256,7 +1256,7 @@ in <a href="../part4-ex2-docker">Exercise 4.2</a>. </p>
 </ol>
 <blockquote>
 <p>Thanks to <a href="https://github.com/JoshKarpel/osg-school-example-dockerfile">Josh Karpel</a> for 
-providing the sample <code>Dockerfile</code>!</p>
+providing the original sample <code>Dockerfile</code>!</p>
 </blockquote>
                 
                   
