@@ -1071,8 +1071,9 @@ faster, less available, GPUs. The good news is that Tensorflow code should
 work in both enviroments automatically, so if your code runs too slow on CPUs,
 moving to GPUs should be easy.</p>
 <p>To submit our job, we need a submit file and a job wrapper script. The
-submit file is a basic OSGConnect flavored HTCondor file, specifying that
-we want the job to run in a container. <code>cpu-job.submit</code> contains:</p>
+submit file is an HTCondor file specifying that
+we want the job to run in a container. Note <code>request_gpus = 0</code>, as we want
+this job to use only CPU resources. The submit file, <code>cpu-job.submit</code>, is as follows:</p>
 <div class="codehilite"><pre><span></span><code>universe = vanilla
 
 # Job requirements - ensure we are running on a Singularity enabled
@@ -1117,7 +1118,7 @@ Log = $(Cluster).log
 queue 1
 </code></pre></div>
 
-<p>And job-wrapper.sh:</p>
+<p>The job wrapper script, <code>job-wrapper.sh</code>, contains the following lines:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1140,7 +1141,9 @@ python3 test.py <span class="m">2</span>&gt;<span class="p">&amp;</span><span cl
 </code></pre></div>
 </td></tr></table>
 <p>The job can now be submitted with <code>condor_submit cpu-job.submit</code>. Once the job
-is done, check the files named after the job id for the outputs.</p>
+is done, check the files named after the job id for the outputs. Where did your
+job run? Based on the logs coming from <code>tensorflow</code> can you confirm that
+the CPU was in fact used?</p>
                 
                   
                 

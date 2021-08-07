@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#gpu-exercise-12-running-a-gpu-job" class="md-skip">
+        <a href="#gpu-exercise-13-running-a-gpu-job" class="md-skip">
           Skip to content
         </a>
       
@@ -983,9 +983,38 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Exercise 1.3
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Exercise 1.3
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gpus-on-the-open-science-pool" class="md-nav__link">
+    GPUs on the Open Science Pool
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1051,6 +1080,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gpus-on-the-open-science-pool" class="md-nav__link">
+    GPUs on the Open Science Pool
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1062,11 +1106,15 @@
               
                 
                 
-                <h1 id="gpu-exercise-12-running-a-gpu-job">GPU Exercise 1.2: Running a GPU job<a class="headerlink" href="#gpu-exercise-12-running-a-gpu-job" title="Permanent link">&para;</a></h1>
-<p>When moving the job to be run on a GPU, all we have to do is update two lines
-in the submit file: set <code>request_gpus</code> to <code>1</code> and specify a GPU enabled
-container image for <code>+SingularityImage</code>. The updated submit file can be found
-in <code>gpu-job.submit</code> with the contents:</p>
+                <h1 id="gpu-exercise-13-running-a-gpu-job">GPU Exercise 1.3: Running a GPU job<a class="headerlink" href="#gpu-exercise-13-running-a-gpu-job" title="Permanent link">&para;</a></h1>
+<p>To ensure that our job runs on a resource with an available GPU, all we need to
+do is update two lines in the submit file. First, set <code>request_gpus = 1</code>. This tells
+HTCondor that a GPU is needed to run this job. Second, we need to specify a GPU
+enabled container image. This can be done by adding 
+<code>+SingularityImage = "/cvmfs/singularity.opensciencegrid.org/opensciencegrid/tensorflow-gpu:2.3"</code>
+to the submit file. Note that in the previous section, the container image specified was not
+GPU enabled. The updated submit file with the changes mentioned above is named <code>gpu-job.submit</code>
+and contains the following contents:</p>
 <div class="codehilite"><pre><span></span><code>universe = vanilla
 
 # Job requirements - ensure we are running on a Singularity enabled
@@ -1111,13 +1159,17 @@ Log = $(Cluster).log
 queue 1
 </code></pre></div>
 
-<p>Submit a job with <code>condor_submit gpu-job.submit</code>. Once the job is complete, check
-the <code>.out</code> file for a line stating the code was run under a GPU. Something similar
+<p>Submit this job with the command <code>condor_submit gpu-job.submit</code>. Once the job is complete, check
+the <code>.out</code> file for a line stating that the code was run with GPU. You should see something similar
 to:</p>
 <div class="codehilite"><pre><span></span><code>2021-02-02 23:25:19.022467: I tensorflow/core/common_runtime/eager/execute.cc:611] Executing op MatMul in device /job:localhost/replica:0/task:0/device:GPU:0
 </code></pre></div>
 
-<p>The <code>GPU:0</code> parts shows that a GPU was found and used for the computation.</p>
+<p>The <code>GPU:0</code> part of the log statement above shows that a GPU was found and used for the computation.</p>
+<h2 id="gpus-on-the-open-science-pool">GPUs on the Open Science Pool<a class="headerlink" href="#gpus-on-the-open-science-pool" title="Permanent link">&para;</a></h2>
+<p>Curious about what GPUs make up the Open Science Pool? 
+Run <code>condor_status -const 'gpus &gt;= 1' -af CUDADeviceName | sort | uniq -c</code> to find out. 
+Which GPU models are most common? </p>
                 
                   
                 
