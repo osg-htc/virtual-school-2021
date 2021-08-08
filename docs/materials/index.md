@@ -128,6 +128,8 @@ View the slides
 
 Slides will be posted here.
 
+- [Exercise 1.1: Trying out self-checkpointing](checkpoint/part1-ex1-checkpointing.md)
+
 ### Containers and GPUs
 
 View the slides
