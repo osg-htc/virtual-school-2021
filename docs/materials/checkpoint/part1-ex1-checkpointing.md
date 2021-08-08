@@ -21,6 +21,8 @@ To get set up:
 1.  Log in to `learn.chtc.wisc.edu`
     (`login04` is fine, too, except the `condor_ssh_to_job` step below should be skipped)
 
+1.  Create and change into a new directory for this exercise
+
 1.  Download the Python script that is the main executable for this exercise:
 
         :::console
@@ -50,9 +52,9 @@ A few notes:
         :::console
         user@server $ ./fibonacci.py 10
 
-    If you run it, what happens?
+    If you run it, what happens?  (Due to the 30-second delay, be patient.)
     Can you explain its behavior?
-    What happens if you run it again, without changing any files in between?
+    What happens if you run it again, without changing any files in between?  Why?
 
 ## Preparing to run
 
