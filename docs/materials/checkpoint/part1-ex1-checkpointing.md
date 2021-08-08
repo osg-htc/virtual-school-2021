@@ -73,7 +73,10 @@ Just use a plain `queue` statement, one job is enough to experiment on.
 
 With the 30-second delay per iteration in the code and the suggested 10 iterations,
 once the script starts running you have about 5 minutes of runtime in which to see what is going on.
-So it may help to read through this section *and then* submit your job.
+So it may help to read through this section *and then* return here and submit your job.
+
+If your job has problems or finishes before you have the chance to do all the steps below,
+just remove the extra files (besides the Python script and your submit file) and try again!
 
 ### Submission and first checkpoint
 
