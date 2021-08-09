@@ -97,7 +97,7 @@ script and assign the argument values to them. Here is an example for our
 BLAST script: 
 
 	:::bash
-	#/bin/bash
+	#!/bin/bash
 	
 	DATABASE=$1
 	INFILE=$2
