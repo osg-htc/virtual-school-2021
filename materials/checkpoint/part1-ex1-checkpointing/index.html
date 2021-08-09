@@ -1296,13 +1296,15 @@ It is not very elegant, but it gets the job done.</p>
     To minimize computing time while leaving time to explore, <code>10</code> is a good number of iterations.</p>
 </li>
 <li>
-<p>The script checkpoints every other iteration through the main loop.</p>
+<p>The script checkpoints every other iteration through the main loop.
+    The exit status code for a checkpoint is 85.</p>
 </li>
 <li>
 <p>It prints some output to standard out along the way, to let you know what is going on.</p>
 </li>
 <li>
-<p>The final result is written to a separate file named <code>fibonacci.result</code>.</p>
+<p>The final result is written to a separate file named <code>fibonacci.result</code>.
+    This file does not exist until the very end of the complete run.</p>
 </li>
 <li>
 <p>It is safe to run from the command line on an access point:</p>
