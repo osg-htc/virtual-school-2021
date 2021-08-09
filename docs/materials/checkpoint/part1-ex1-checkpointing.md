@@ -42,10 +42,12 @@ A few notes:
     To minimize computing time while leaving time to explore, `10` is a good number of iterations.
 
 *   The script checkpoints every other iteration through the main loop.
+    The exit status code for a checkpoint is 85.
 
 *   It prints some output to standard out along the way, to let you know what is going on.
 
 *   The final result is written to a separate file named `fibonacci.result`.
+    This file does not exist until the very end of the complete run.
 
 *   It is safe to run from the command line on an access point:
 
