@@ -126,7 +126,9 @@ View the slides
 
 ### Self-checkpointing for long-running jobs
 
-Slides will be posted here.
+View the slides
+([PDF](checkpoint/files/osgvs21-day6-checkpointing.pdf),
+[PowerPoint](checkpoint/files/osgvs21-day6-checkpointing.pptx))
 
 - [Exercise 1.1: Trying out self-checkpointing](checkpoint/part1-ex1-checkpointing.md)
 
