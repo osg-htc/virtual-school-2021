@@ -56,7 +56,7 @@ Slides will be posted here
 
 - [Exercise 3.1: Using Software in a Singularity Container](software/part3-ex1-singularity.md)
 
-### Software Exercises 4: Bonus Exercises
+### Bonus Exercises: Bonus Exercises
 
 - [Exercise 4.1: Additional Python ](software/part4-ex1-python-extras.md)
 - [Exercise 4.2: Using Software in a Docker Container](software/part4-ex2-docker.md)
