@@ -105,6 +105,9 @@ View the slides
 ([PDF](data/files/osgvs21-data.pdf),
 [PowerPoint](data/files/osgvs21-data.pptx))
 
+Watch the lecture recording
+([Handling Data on OSG](https://youtu.be/YBGWycYZRD4))
+
 ### Data Exercises 1: HTCondor File Transfer (Strongly Recommended)
 
 - [Exercise 1.1: Understanding a job's data needs](data/part1-ex1-data-needs.md)
