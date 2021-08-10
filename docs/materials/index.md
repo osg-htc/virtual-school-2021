@@ -147,7 +147,8 @@ View the slides
 
 ### Introduction to Research Computing Facilitation
 
-Slides will be posted here.
+View the slides
+([PDF](facilitation/files/osgvs21-htc-facilitation.pdf))
 
 ### Workflows with DAGMan
 
