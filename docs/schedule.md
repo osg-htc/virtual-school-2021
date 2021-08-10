@@ -102,7 +102,13 @@ Plus, there are opportunities to learn more and a wrap-up session at the end.
 
 ### Wednesday, August 11
 
-The OSG School Showcase consists of three researchers talking about their science, their computing,
+The **Docker Container Build-a-thon** is optional and is not a lecture or lesson.
+It is specifically for those participants who have software that they would like to put into a container.
+There will be a very short (about 10 minute) demonstration of the basics of building a container,
+and for the rest of the time, each person will working on their own containers.
+OSG staff (and fellow participants!) will be there to provide help and guidance.
+
+The **OSG School Showcase** consists of three researchers talking about their science, their computing,
 and how the process of learning about and using High Throughput Computing transformed their work.
 For many participants of past Schools, this was a highlight!
 Please try to arrange your schedule to attend this one-time-only event.
@@ -110,7 +116,8 @@ There will be time at the end to talk to the presenters.
 
 | **Times<br>(US Central)** | **Activities** |
 | ---: | :--- |
-|  9:00&ndash;11:00 | Staff available |
+|  9:00&ndash;10:00 | **Docker Container Build-a-thon** |
+| 10:00&ndash;11:00 | Staff available |
 | 11:00&ndash;12:30 | **OSG School Showcase** |
 | 12:30&ndash;17:00 | Staff available |
 
