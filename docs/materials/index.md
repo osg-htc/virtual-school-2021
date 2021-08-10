@@ -9,8 +9,8 @@ View the slides
 ## Intro to HTCondor Job Execution
 
 View the slides
-([PDF](/materials/htcondor/files/osgvsp21-htc-htcondor.pdf),
-[PowerPoint](/materials/htcondor/files/osgvsp21-htc-htcondor.pptx))
+([PDF](htcondor/files/osgvsp21-htc-htcondor.pdf),
+[PowerPoint](htcondor/files/osgvsp21-htc-htcondor.pptx))
 
 ### Intro Exercises 1: Running and Viewing Simple Jobs (Strongly Recommended)
 
