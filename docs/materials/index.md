@@ -106,7 +106,8 @@ Slides will be posted here.
 
 ### Workflows with DAGMan
 
-Slides will be posted here.
+([PDF](workflows/files/osgvs21-bonus-dagman.pdf),
+[PowerPoint](workflows/files/osgvs21-bonus-dagman.pptx))
 
 - [Exercise 1.1: Coordinating set of jobs: A simple DAG](workflows/part1-ex1-simple-dag.md)
 - [Exercise 1.2: A brief detour through the Mandelbrot set](workflows/part1-ex2-mandelbrot.md)
