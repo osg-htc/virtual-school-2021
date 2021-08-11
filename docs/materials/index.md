@@ -179,4 +179,4 @@ OSGVS21 Showcase slides will be posted here as available.
 
 1.  **Anirvan Shukla**
     (University of Hawaiʻi at Mānoa),
-    Antimatter.
+    “Antimatter: Using high throughput computing to study very rare processes”
