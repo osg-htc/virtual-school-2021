@@ -165,15 +165,18 @@ View the slides
 
 OSGVS21 Showcase slides will be posted here as available.
 
-1.  Spencer Ericksen
+1.  **Spencer Ericksen**
     (University of Wisconsin–Madison),
-    High-throughput drug discovery.
+    “Scaling virtual screening to ultra-large virtual chemical libraries”
+    ([PDF](files/osgvs21-day8-showcase-1-ericksen-screening.pdf)).
 
-1.  Hannah Moshontz
+1.  **Hannah Moshontz**
     (University of Wisconsin–Madison),
     “Using high throughput computing for a simulation study on cross-validation for model evaluation
-    in psychological science” ([PDF](files/osgvs21-day8-showcase-2-moshontz-htcpsych.pdf)).
+    in psychological science”
+    ([PDF](files/osgvs21-day8-showcase-2-moshontz-htcpsych.pdf),
+    [OSF page with scripts](https://osf.io/axzy9/)).
 
-1.  Anirvan Shukla
+1.  **Anirvan Shukla**
     (University of Hawaiʻi at Mānoa),
     Antimatter.
