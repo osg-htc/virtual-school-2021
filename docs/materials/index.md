@@ -160,3 +160,20 @@ View the slides
 - [Exercise 1.3: A more complex DAG](workflows/part1-ex3-complex-dag.md)
 - [Exercise 1.4: Handling jobs that fail with DAGMan](workflows/part1-ex4-failed-dag.md)
 - [Bonus Exercise 4.5: HTCondor challenges](workflows/part1-ex5-challenges.md)
+
+## Showcase
+
+OSGVS21 Showcase slides will be posted here as available.
+
+1.  Spencer Ericksen
+    (University of Wisconsin–Madison),
+    High-throughput drug discovery.
+
+1.  Hannah Moshontz
+    (University of Wisconsin–Madison),
+    “Using high throughput computing for a simulation study on cross-validation for model evaluation
+    in psychological science” ([PDF](files/osgvs21-day8-showcase-2-moshontz-htcpsych.pdf)).
+
+1.  Anirvan Shukla
+    (University of Hawaiʻi at Mānoa),
+    Antimatter.
