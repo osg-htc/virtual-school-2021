@@ -69,7 +69,7 @@ Option 2: GROMACS
 		:::file
 		#!/bin/bash
 		
-		gmx grompp -f ethanol.0.mdp -c ethanol.gro -p ethanol.top -o ethanol.0.tpr -max$
+		gmx grompp -f ethanol.0.mdp -c ethanol.gro -p ethanol.top -o ethanol.0.tpr -maxwarn 4
 		
 1. Unzip the input files, and move them to the current directory: 
 
