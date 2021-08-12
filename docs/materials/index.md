@@ -163,7 +163,7 @@ View the slides
 
 ## Showcase
 
-OSGVS21 Showcase slides will be posted here as available.
+Below are the OSGVS21 Showcase speakers, presentation titles, and links to slides (etc.).
 
 1.  **Spencer Ericksen**
     (University of Wisconsin–Madison),
