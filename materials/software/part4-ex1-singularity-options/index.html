@@ -1268,7 +1268,7 @@ the <code>Rscript</code> program. </p>
 <p>Create the following bash script, called <code>run_gromacs.sh</code>:</p>
 <div class="codehilite"><pre><span></span><code>#!/bin/bash
 
-gmx grompp -f ethanol.0.mdp -c ethanol.gro -p ethanol.top -o ethanol.0.tpr -max$
+gmx grompp -f ethanol.0.mdp -c ethanol.gro -p ethanol.top -o ethanol.0.tpr -maxwarn 4
 </code></pre></div>
 
 </li>
