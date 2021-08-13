@@ -181,3 +181,9 @@ Below are the OSGVS21 Showcase speakers, presentation titles, and links to slide
     (University of Hawaiʻi at Mānoa),
     “Antimatter: Using high throughput computing to study very rare processes”
     ([PDF](files/osgvs21-day8-showcase-3-shukla-antimatter.pdf)).
+
+## Final “What’s Next?” Information
+
+View the slides
+([PDF](files/osgvs21-day10-whatsnext.pdf),
+[PowerPoint](files/osgvs21-day10-whatsnext.pptx))
