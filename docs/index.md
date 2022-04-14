@@ -16,7 +16,7 @@ post-doctoral students, faculty, and staff!
 This virtual offering has been tuned for remote participation,
 with the goal of helping attendees get their own work running within the 2-week period,
 and is not merely a translation of the in-person program
-(last offered in [2019](https://opensciencegrid.org/user-school-2019/)).
+(last offered in [2019](https://osg-htc.org/user-school-2019/)).
 
 **The Virtual School will be held the weeks of August 2&ndash;6 and 9&ndash;13.** 
 The event is free and materials will be posted publicly.
