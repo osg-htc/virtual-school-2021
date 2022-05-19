@@ -37,7 +37,7 @@ Note: We hope to return to an in-person OSG User School in 2022!
 ## Contact Us
 
 The OSG Virtual School is part of the
-[OSG Outreach Area](https://opensciencegrid.org/outreach/)&nbsp;&mdash; please visit that site to
+[OSG Outreach Area](https://osg-htc.org/outreach/)&nbsp;&mdash; please visit that site to
 learn about past OSG Schools.
 
 If you have any questions about the event, feel free to email us:
